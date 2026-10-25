@@ -4,6 +4,18 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ---
 
+### [v021] - 2026-10-25
+* **fix(updater):** Eliminated Cloudflare CDN edge caching (`cf-cache-status: HIT` on unversioned `GIN-TV-Launcher_latest.apk`) that previously caused legacy `v017` installations to download a cached `v017` binary during self-updates:
+  * Pointed `version.json` `apkUrl` directly to the versioned release binary (`https://gincz.com/GIN-TV-Launcher_v021.apk`).
+  * Configured Nginx `Cache-Control: no-store, no-cache, must-revalidate, max-age=0` (`cf-cache-status: BYPASS`) for `.apk` and `.json` endpoints.
+  * Added cache-busting query timestamps and `useCaches = false` in `UpdateManager.kt`, restoring `Intent.ACTION_VIEW` as the primary Android TV installer flow.
+* **feat(network):** Authentic Windows 10 taskbar network icons (`Segoe MDL2 Assets` geometry):
+  * **Ethernet (`ic_net_ethernet.xml`):** Left-side vertical RJ-45 connector head and cable paired with right-side monitor and stand.
+  * **Wi-Fi (`ic_net_wifi.xml`):** True concentric 90-degree circular arcs centered on the bottom signal dot.
+  * **Pure Opacity States:** 100% white (`alpha = 1.0f`) when connected, 30% opacity (`alpha = 0.30f`) when disconnected, with zero red strikethrough overlays (`ic_slash.xml` removed).
+
+---
+
 ### [v020] - 2026-10-25
 * **feat(ui):** Enlarged application icons and reduced inner card margins:
   * Increased favorite card icons from 76dp to 94dp (`item_app.xml`), reducing empty perimeter borders inside the card container for prominent TV display visibility.
