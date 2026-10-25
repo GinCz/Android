@@ -4,6 +4,16 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ---
 
+### [v023] - 2026-10-25
+* **feat(favorites):** Added **"⭐ Добавить в Избранное" (Add to Favorites)** option to the long-press OK context menu inside the **All Apps (`Все приложения`)** tab, allowing previously hidden/removed apps to be restored to Favorites at any time.
+* **refactor(menu):** Reordered the long-press OK application context menu (`dialog_app_menu.xml`) across both **Favorites** and **All Apps** tabs so **"ℹ️ Свойства приложения" (App Properties)** is consistently positioned at the very bottom:
+  1. `⇄  Переместить карточку` (Move card)
+  2. `👁️  Скрыть из Избранного` (in Favorites) / `⭐  Добавить в Избранное` (in All Apps)
+  3. `🗑️  Удалить приложение` (Uninstall app)
+  4. `ℹ️  Свойства приложения` (App properties — bottom item)
+
+---
+
 ### [v022] - 2026-10-25
 * **refactor(toolbar):** Reordered top-left action toolbar so Settings (`⚙`) is the rightmost button (`[ ⭐ ] [ ▦ ] [ 🧹 ] [ ⎋ ] [ 🌙 ] [ ⚙ ]`).
 * **feat(settings):** Both single click and long press on the Settings (`⚙`) button now directly open the unified GIN-Launcher Control Center menu (providing one-click access to Android System Settings as well as GIN-Launcher settings).
