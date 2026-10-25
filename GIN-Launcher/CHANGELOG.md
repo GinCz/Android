@@ -4,6 +4,19 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ---
 
+### [v020] - 2026-10-25
+* **feat(ui):** Enlarged application icons and reduced inner card margins:
+  * Increased favorite card icons from 76dp to 94dp (`item_app.xml`), reducing empty perimeter borders inside the card container for prominent TV display visibility.
+  * Increased compact all-apps icons from 56dp to 74dp (`item_app_compact.xml`).
+  * Adjusted card container paddings and minimum heights for optimal alignment.
+* **style(ui):** Card background opacity increased from ~20% to 40% (`#66FFFFFF` gradient in `bg_app_item.xml`), delivering distinct frosted glass outlines with enhanced readability against dynamic wallpapers.
+* **feat(network):** Refined native Windows 10 network status icons:
+  * Crisp monitor screen with stand and RJ-45 cable connector for Ethernet LAN.
+  * Triple radiating concentric arc fan with base dot for Wi-Fi.
+  * Scaled icon footprint to 24dp for improved distance legibility on large screens.
+
+---
+
 ### [v019] - 2026-10-25
 * **refactor(ui):** Integrated Quick Sleep Timer (🌙) into the primary left action toolbar (`[ ⭐ ] [ ▦ ] [ 🧹 ] [ ⎋ ] [ ⚙ ] [ 🌙 ]`), cleanly separating user actions from the right-hand system info cluster.
 * **fix(namedays):** Toggling the Name Day / Svátek badge to hidden (`Скрыто`) now smoothly collapses only the namedays pill without displacing or hiding the sleep timer button or network status.
