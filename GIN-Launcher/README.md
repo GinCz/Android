@@ -4,25 +4,25 @@
 
 ![Platform](https://img.shields.io/badge/Platform-Android%206.0+%20%7C%20Smart%20TV%20%7C%20Google%20TV-3DDC84?logo=android&logoColor=white)
 ![UI](https://img.shields.io/badge/UI-Leanback%20D--Pad%20Optimized-00E5FF)
-![Release](https://img.shields.io/badge/Release-v023-brightgreen)
+![Release](https://img.shields.io/badge/Release-v024-brightgreen)
 ![License](https://img.shields.io/badge/License-Freeware%20%7C%20Free%20to%20Use-blue)
 
 **Ultra-fast, ad-free, and resource-efficient launcher engineered for Android TV boxes, Google TV, FireTV, and Smart TVs (MediaTek, Vestel, Xiaomi, TCL, Sony). Sub-25MB RAM footprint, instant D-pad navigation, dynamic 1080p thematic wallpapers, integrated night sleep timer, and dual network status sentinels.**
 
-[⬇️ Download GIN-TV-Launcher.apk (v023)](#-quick-download--latest-release-v023) • [Key Features](#-key-features) • [Changelog](CHANGELOG.md)
+[⬇️ Download GIN-TV-Launcher.apk (v024)](#-quick-download--latest-release-v024) • [Key Features](#-key-features) • [Changelog](CHANGELOG.md)
 
 </div>
 
 ---
 
-## 🚀 Quick Download & Latest Release (v023)
+## 🚀 Quick Download & Latest Release (v024)
 
 <div align="center">
 
-### 📺 [⬇️ Download GIN-TV-Launcher.apk from High-Speed CDN](https://gincz.com/GIN-TV-Launcher_v023.apk)
+### 📺 [⬇️ Download GIN-TV-Launcher.apk from High-Speed CDN](https://gincz.com/GIN-TV-Launcher_v024.apk)
 *Standalone Production APK (4.9 MB) • Signed Release • Android 6.0+ (API 23–35)*
 
-**Alternative Direct Mirror:** [GitHub Raw Release (v023)](https://github.com/GinCz/Android/raw/main/GIN-Launcher/GIN-TV-Launcher.apk)
+**Alternative Direct Mirror:** [GitHub Raw Release (v024)](https://github.com/GinCz/Android/raw/main/GIN-Launcher/GIN-TV-Launcher.apk)
 
 </div>
 
@@ -108,7 +108,7 @@
 └────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-* **Hold OK on App Card:** Opens Card Management menu (Move position, Add to Favorites [in All Apps] / Hide from Favorites [in Favorites], Uninstall, and App Properties at the bottom).
+* **Hold OK on App Card:** Opens Card Management menu (Move position, Multi-Select Add/Remove Favorites [in All Apps] / Hide from Favorites [in Favorites], Uninstall, and App Properties at the bottom).
 * **Hold OK on Settings (⚙):** Opens GIN-Launcher Control Center.
 
 ---

@@ -4,6 +4,14 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ---
 
+### [v024] - 2026-10-25
+* **feat(favorites):** Replaced single-item add action in **All Apps (`Все приложения`)** with interactive **Multi-Select Favorites Edit Mode (`⭐ Добавить / удалить из Избранного`)**:
+  * Holding **OK** on any app in **All Apps** and choosing **`⭐ Добавить / удалить из Избранного`** enters multi-selection mode directly on the All Apps grid.
+  * **Visual Status Differentiation:** Apps already in Favorites render in **100% vivid full color**, whereas apps not in Favorites render **grayscale and semi-transparent (`35%` opacity)**.
+  * **Multi-Icon Toggle:** Navigate across the grid with D-Pad arrows and press **OK** on any number of icons to toggle them between Favorites (vivid color) and Hidden (grey semi-transparent); press **Back** to save and exit.
+
+---
+
 ### [v023] - 2026-10-25
 * **feat(favorites):** Added **"⭐ Добавить в Избранное" (Add to Favorites)** option to the long-press OK context menu inside the **All Apps (`Все приложения`)** tab, allowing previously hidden/removed apps to be restored to Favorites at any time.
 * **refactor(menu):** Reordered the long-press OK application context menu (`dialog_app_menu.xml`) across both **Favorites** and **All Apps** tabs so **"ℹ️ Свойства приложения" (App Properties)** is consistently positioned at the very bottom:

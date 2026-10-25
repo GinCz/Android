@@ -15,7 +15,7 @@
 
 | Приложение | Файл пакета (.apk) | Назначение и ключевые возможности | Релиз |
 | :--- | :--- | :--- | :--- | :---: |
-| 🚀 **[GIN-Launcher ↗](GIN-Launcher/)** | [**`GIN-TV-Launcher.apk` ↗](GIN-Launcher/GIN-TV-Launcher.apk) | Быстрый Leanback ланчер для Smart TV: D-pad навигация, Windows 10 сетевые индикаторы LAN/Wi-Fi, темные полупрозрачные карточки, таймер сна, очистка RAM и 12 тем обоев. | 🟢 `v023` (Active) |
+| 🚀 **[GIN-Launcher ↗](GIN-Launcher/)** | [**`GIN-TV-Launcher.apk` ↗](GIN-Launcher/GIN-TV-Launcher.apk) | Быстрый Leanback ланчер для Smart TV: D-pad навигация, Windows 10 сетевые индикаторы LAN/Wi-Fi, темные полупрозрачные карточки, таймер сна, очистка RAM и 12 тем обоев. | 🟢 `v024` (Active) |
 | 🎬 **[GIN-Cinema ↗](GIN-Cinema/)** | [**`GIN-Cinema.apk` ↗](GIN-Cinema/GIN-Cinema.apk) | Онлайн-кинотеатр с поддержкой 4K HDR, аппаратным декодером ExoPlayer и адаптацией под пульты Android TV. | 🟢 `v114` (Active) |
 | 📺 **[GIN-TV ↗](GIN-TV/)** | [**`GIN-TV.apk` ↗](GIN-TV/GIN-TV.apk) | Высокоскоростной плеер онлайн-ТВ и IPTV с переключением каналов за 0.3с и встроенной телепрограммой (EPG). | 🟢 `v077` (Active) |
 | 🌐 **[GIN-IP ↗](GIN-IP/)** | [**`GIN-IP.apk` ↗](GIN-IP/GIN-IP.apk) | Диагностика сетевых подключений, определение внешнего IP, провайдера, ASN и тест задержки DNS в 1 касание. | 🟢 `v013` (Active) |
