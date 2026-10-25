@@ -4,6 +4,16 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ---
 
+### [v018] - 2026-10-25
+* **fix(updater):** Resolved self-updating failure on Android TV where update installer aborted after downloading.
+  * Migrated primary installation pipeline to Android's official `PackageInstaller.Session` API, streaming APK bytes directly into system staging memory to completely bypass `FileProvider` permission drops and scoped storage constraints.
+  * Implemented `InstallReceiver` to intercept system installation state changes and automatically handle `STATUS_PENDING_USER_ACTION`, launching the native TV confirmation dialog.
+  * Added temporary suspension mechanism (`pauseForUpdate`) in `HomeInterceptorService` to prevent the accessibility service from erroneously refocusing the launcher when the package installer launches.
+  * Declared required `<queries>` intent filters and package names in `AndroidManifest.xml` for package installer visibility under target SDK 35 (Android 15).
+  * Added TV-compatible fallback routines for unknown app source permissions and silent root install (`su -c pm install -r`) where available.
+
+---
+
 ### [v017] - 2026-10-25
 * **feat(network):** Concurrent dual network status sentinels for both Ethernet LAN (`🖧`) and Wi-Fi (`📶`) with real-time connectivity callback and visual red strike-through overlay (`/`) on disconnection.
 * **feat(sleep):** Quick night sleep timer on the status bar with instant interval selection (30, 60, 90, 120, 180 min) without secondary confirmations. Features glowing amber-yellow active indicator (`#FFD600`) and live minute-by-minute countdown badge.
