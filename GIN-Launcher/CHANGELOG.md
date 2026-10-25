@@ -4,6 +4,13 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ---
 
+### [v022] - 2026-10-25
+* **refactor(toolbar):** Reordered top-left action toolbar so Settings (`⚙`) is the rightmost button (`[ ⭐ ] [ ▦ ] [ 🧹 ] [ ⎋ ] [ 🌙 ] [ ⚙ ]`).
+* **feat(settings):** Both single click and long press on the Settings (`⚙`) button now directly open the unified GIN-Launcher Control Center menu (providing one-click access to Android System Settings as well as GIN-Launcher settings).
+* **style(ui):** Replaced light-grey frosted backgrounds on app cards (`bg_app_item.xml`), top action buttons (`bg_top_btn.xml`, `bg_top_btn_active.xml`), and status pills (`bg_weather_pill.xml`) with dark smoked-glass surfaces (`#B30C1018`, ~30% transparency / 70% dark opacity) so colorful app icons and crisp white Windows 10 network indicators stand out with maximum contrast.
+
+---
+
 ### [v021] - 2026-10-25
 * **fix(updater):** Eliminated Cloudflare CDN edge caching (`cf-cache-status: HIT` on unversioned `GIN-TV-Launcher_latest.apk`) that previously caused legacy `v017` installations to download a cached `v017` binary during self-updates:
   * Pointed `version.json` `apkUrl` directly to the versioned release binary (`https://gincz.com/GIN-TV-Launcher_v021.apk`).

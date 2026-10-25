@@ -4,25 +4,25 @@
 
 ![Platform](https://img.shields.io/badge/Platform-Android%206.0+%20%7C%20Smart%20TV%20%7C%20Google%20TV-3DDC84?logo=android&logoColor=white)
 ![UI](https://img.shields.io/badge/UI-Leanback%20D--Pad%20Optimized-00E5FF)
-![Release](https://img.shields.io/badge/Release-v021-brightgreen)
+![Release](https://img.shields.io/badge/Release-v022-brightgreen)
 ![License](https://img.shields.io/badge/License-Freeware%20%7C%20Free%20to%20Use-blue)
 
 **Ultra-fast, ad-free, and resource-efficient launcher engineered for Android TV boxes, Google TV, FireTV, and Smart TVs (MediaTek, Vestel, Xiaomi, TCL, Sony). Sub-25MB RAM footprint, instant D-pad navigation, dynamic 1080p thematic wallpapers, integrated night sleep timer, and dual network status sentinels.**
 
-[⬇️ Download GIN-TV-Launcher.apk (v021)](#-quick-download--latest-release-v021) • [Key Features](#-key-features) • [Changelog](CHANGELOG.md)
+[⬇️ Download GIN-TV-Launcher.apk (v022)](#-quick-download--latest-release-v022) • [Key Features](#-key-features) • [Changelog](CHANGELOG.md)
 
 </div>
 
 ---
 
-## 🚀 Quick Download & Latest Release (v021)
+## 🚀 Quick Download & Latest Release (v022)
 
 <div align="center">
 
-### 📺 [⬇️ Download GIN-TV-Launcher.apk from High-Speed CDN](https://gincz.com/GIN-TV-Launcher_v021.apk)
+### 📺 [⬇️ Download GIN-TV-Launcher.apk from High-Speed CDN](https://gincz.com/GIN-TV-Launcher_v022.apk)
 *Standalone Production APK (4.9 MB) • Signed Release • Android 6.0+ (API 23–35)*
 
-**Alternative Direct Mirror:** [GitHub Raw Release (v021)](https://github.com/GinCz/Android/raw/main/GIN-Launcher/GIN-TV-Launcher.apk)
+**Alternative Direct Mirror:** [GitHub Raw Release (v022)](https://github.com/GinCz/Android/raw/main/GIN-Launcher/GIN-TV-Launcher.apk)
 
 </div>
 
