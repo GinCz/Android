@@ -4,6 +4,15 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ---
 
+### [v019] - 2026-10-25
+* **refactor(ui):** Integrated Quick Sleep Timer (🌙) into the primary left action toolbar (`[ ⭐ ] [ ▦ ] [ 🧹 ] [ ⎋ ] [ ⚙ ] [ 🌙 ]`), cleanly separating user actions from the right-hand system info cluster.
+* **fix(namedays):** Toggling the Name Day / Svátek badge to hidden (`Скрыто`) now smoothly collapses only the namedays pill without displacing or hiding the sleep timer button or network status.
+* **feat(network):** Replaced legacy Unicode and emoji symbols with crisp, native Windows 10 VectorDrawables:
+  * **Wi-Fi:** Authentic Windows 10 radiating curved arc fan (`ic_net_wifi.xml`). When disconnected, renders at 30% semi-transparency without harsh red strikethrough lines. Glows vivid cyan (`#00E5FF`, 100% opacity) upon connection.
+  * **Ethernet:** Iconic Windows 10 monitor with stand and RJ-45 plug connector (`ic_net_ethernet.xml`). Shines bright cyan (`#00E5FF`, 100% opacity) when wired network is connected, and rests at 30% semi-transparency when disconnected.
+
+---
+
 ### [v018] - 2026-10-25
 * **fix(updater):** Resolved self-updating failure on Android TV where update installer aborted after downloading.
   * Migrated primary installation pipeline to Android's official `PackageInstaller.Session` API, streaming APK bytes directly into system staging memory to completely bypass `FileProvider` permission drops and scoped storage constraints.

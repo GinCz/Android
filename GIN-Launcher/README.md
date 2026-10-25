@@ -4,25 +4,25 @@
 
 ![Platform](https://img.shields.io/badge/Platform-Android%206.0+%20%7C%20Smart%20TV%20%7C%20Google%20TV-3DDC84?logo=android&logoColor=white)
 ![UI](https://img.shields.io/badge/UI-Leanback%20D--Pad%20Optimized-00E5FF)
-![Release](https://img.shields.io/badge/Release-v018-brightgreen)
+![Release](https://img.shields.io/badge/Release-v019-brightgreen)
 ![License](https://img.shields.io/badge/License-Freeware%20%7C%20Free%20to%20Use-blue)
 
 **Ultra-fast, ad-free, and resource-efficient launcher engineered for Android TV boxes, Google TV, FireTV, and Smart TVs (MediaTek, Vestel, Xiaomi, TCL, Sony). Sub-25MB RAM footprint, instant D-pad navigation, dynamic 1080p thematic wallpapers, integrated night sleep timer, and dual network status sentinels.**
 
-[⬇️ Download GIN-TV-Launcher.apk (v018)](#-quick-download--latest-release-v018) • [Key Features](#-key-features) • [Changelog](CHANGELOG.md)
+[⬇️ Download GIN-TV-Launcher.apk (v019)](#-quick-download--latest-release-v019) • [Key Features](#-key-features) • [Changelog](CHANGELOG.md)
 
 </div>
 
 ---
 
-## 🚀 Quick Download & Latest Release (v018)
+## 🚀 Quick Download & Latest Release (v019)
 
 <div align="center">
 
 ### 📺 [⬇️ Download GIN-TV-Launcher.apk from High-Speed CDN](https://gincz.com/GIN-TV-Launcher_latest.apk)
 *Standalone Production APK (4.9 MB) • Signed Release • Android 6.0+ (API 23–35)*
 
-**Alternative Direct Mirror:** [GitHub Raw Release (v018)](https://github.com/GinCz/Android/raw/main/GIN-Launcher/GIN-TV-Launcher.apk)
+**Alternative Direct Mirror:** [GitHub Raw Release (v019)](https://github.com/GinCz/Android/raw/main/GIN-Launcher/GIN-TV-Launcher.apk)
 
 </div>
 
@@ -33,12 +33,14 @@
 
 ## 🌟 Key Features
 
-### 1. 🖧 Dual Network Status Sentinels (LAN & Wi-Fi)
-* **Concurrent Real-Time Monitoring:** Displays active status for both physical Ethernet cable (`🖧`) and Wi-Fi (`📶`) side by side on the main status bar.
-* **Smart Disconnection Indicators:** When an interface is disconnected or has no internet access, the icon dims and is overlaid with a crisp **red diagonal strike-through** (`/`).
+### 1. 🖧 Windows 10 Dual Network Status Sentinels (LAN & Wi-Fi)
+* **Windows 10 Design Language:** Pixel-perfect vector drawables modeled directly on Windows 10 taskbar iconography — radiating curved arc fan for Wi-Fi and the iconic monitor/RJ-45 plug for wired Ethernet.
+* **Smart 30% Semi-Transparency:** When disconnected, Wi-Fi smoothly dims to a subtle 30% opacity (`alpha = 0.30`) without distracting red strikethrough lines.
+* **Radiant Active Connectivity:** When connected, Ethernet and Wi-Fi glow with a vibrant cyan luminescence (`#00E5FF`, 100% opacity).
 * **Zero-Polling Network Callback:** Leverages Android's native `ConnectivityManager.NetworkCallback` to reflect cable unplugging or Wi-Fi reconnects in under 100 milliseconds without consuming background CPU cycles.
 
 ### 2. 🌙 Quick Nighttime Sleep Timer (30–180 min)
+* **Unified Action Toolbar:** Integrated as the 6th button in the primary left toolbar (`[ ⭐ ] [ ▦ ] [ 🧹 ] [ ⎋ ] [ ⚙ ] [ 🌙 ]`), cleanly decoupled from right-side information widgets.
 * **One-Click Dropdown Menu:** Dedicated `🌙` action button on the top bar. Pressing OK instantly opens the quick selector:
   * `30 minutes`
   * `60 minutes (1 hour)`
