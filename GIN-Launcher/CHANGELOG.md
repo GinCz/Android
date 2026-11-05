@@ -4,6 +4,23 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ---
 
+### [v027] - 2026-11-05
+* **ui(settings):** Optimized Control Center Settings dialog layout into an ergonomic **2-Column Layout (`dialog_launcher_settings.xml`)**:
+  * Prevents vertical overflow on 720p/1080p/4K TV screens: 4 rows per column (`Left Column`: Wallpapers, Night Mode, Screen Off, Sleep Timer; `Right Column`: Remote Buttons, Android Settings, Accessibility, Power/Reboot).
+  * Compact 2x2 grid layout for Programmable Remote Buttons dialog (`dialog_remote_buttons.xml`), eliminating vertical clipping.
+* **fix(uninstall):** Fixed application uninstallation failure from long-press OK menu:
+  * Added `<uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />` and explicit `<queries>` intent filters for `android.intent.action.DELETE` / `UNINSTALL_PACKAGE`.
+  * Added `HomeInterceptorService.pauseForUpdate()` prior to intent dispatch so the accessibility service does not intercept package uninstaller windows.
+  * Added multi-tier fallback: `PackageInstaller.Session` / `ACTION_UNINSTALL_PACKAGE` / `ACTION_DELETE` with `Intent.FLAG_ACTIVITY_NEW_TASK`.
+* **fix(accessibility):** Resolved Android 13/14 "Restricted Settings" (`ACCESS_RESTRICTED_SETTINGS`) causing accessibility toggle to flip off immediately:
+  * Automated root grant via `appops set com.gincz.ginlauncher ACCESS_RESTRICTED_SETTINGS allow`.
+  * Auto-activates `HomeInterceptorService` via `settings put secure enabled_accessibility_services`.
+* **fix(remote-keys):** Mitigated OEM firmware key hijacking where vendor remote buttons (e.g. Red / YouTube button launching fake `com.android.vending` / Tubesky) pre-empt standard key events:
+  * Integrated stock package detection (`handleWindowPackageChanged`) during key capture: auto-returns focus to GIN-Launcher and maps the slot to override the hijacked target package.
+  * Disabled predatory pre-installed vendor package `com.android.vending` (Tubesky) via `pm disable-user --user 0`.
+
+---
+
 ### [v026] - 2026-11-05
 * **feat(remote-mapper):** Added **4 Programmable Remote Control Button Slots (`🎮 Кнопки пульта (4 слота)`)** in the GIN-Launcher Control Center settings (`dialog_launcher_settings.xml`, `dialog_remote_buttons.xml`, `RemoteKeyMapper.kt`):
   * **4 Dedicated Color/Function Slots:**
