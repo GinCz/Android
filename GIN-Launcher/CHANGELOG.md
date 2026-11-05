@@ -4,6 +4,25 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ---
 
+### [v026] - 2026-11-05
+* **feat(remote-mapper):** Added **4 Programmable Remote Control Button Slots (`🎮 Кнопки пульта (4 слота)`)** in the GIN-Launcher Control Center settings (`dialog_launcher_settings.xml`, `dialog_remote_buttons.xml`, `RemoteKeyMapper.kt`):
+  * **4 Dedicated Color/Function Slots:**
+    1. `🔴 Кнопка 1 (Красная / YouTube)`
+    2. `🔵 Кнопка 2 (Синяя / Prime Video)`
+    3. `⚪ Кнопка 3 (Белая 1)`
+    4. `⚪ Кнопка 4 (Белая 2)`
+  * **Interactive 3-Step Programming Flow:** Select Slot (1–4) ➔ Press any target button on the remote control (`dialog_key_capture.xml`) ➔ Choose any installed application from the visual grid (e.g. `GIN-Tube`, `SmartTube`, `GIN-TV`, `GIN-Cinema`).
+  * **Dual-Level Hardware Interception (`KeyEvent` + `ScanCode` + OEM Window Fallback):** Intercepts both standard Android `KeyEvent` / hardware `scanCode` globally via `HomeInterceptorService` (`flagRequestFilterKeyEvents`) and firmware-hardcoded OEM app launches (`TYPE_WINDOW_STATE_CHANGED`).
+  * **Automatic Background App Killer (`🧹 Закрывать все другие приложения при нажатии`):** Enabled by default. Pressing a programmed button automatically closes all other background/foreground apps (preserving `GIN-Launcher` and Google Cast `com.google.android.apps.mediashell`) before launching the selected app.
+
+---
+
+### [v025] - 2026-10-25
+* **feat(power):** Added **Restart (`🔄 Перезагрузка`)** and **Shutdown (`⏻ Выключение`)** buttons in the Control Center settings menu.
+* **fix(cast):** Added Google Cast (`com.google.android.apps.mediashell`) safety invariant and self-healing check ensuring stock launcher (`com.google.android.tvlauncher`) is never disabled.
+
+---
+
 ### [v024] - 2026-10-25
 * **feat(favorites):** Replaced single-item add action in **All Apps (`Все приложения`)** with interactive **Multi-Select Favorites Edit Mode (`⭐ Добавить / удалить из Избранного`)**:
   * Holding **OK** on any app in **All Apps** and choosing **`⭐ Добавить / удалить из Избранного`** enters multi-selection mode directly on the All Apps grid.
