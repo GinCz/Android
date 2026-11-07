@@ -4,6 +4,16 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ---
 
+### [v033] - 2026-11-07
+* **fix(vpn-state-sync):** Restored single-process architecture for `LauncherVpnService` by removing `android:process=":vpn"` from `AndroidManifest.xml`.
+  * Eliminates cross-process memory caching discrepancies in Android's `SharedPreferencesImpl` where `MainActivity` was unable to observe status updates written by the isolated `:vpn` process.
+  * Direct volatile in-memory state inspection in `LauncherVpnService` (`isVpnActive`, `isAdFilterActive`, `getActiveProfile`) guarantees instant and 100% accurate status reflection when exiting and re-entering launcher settings.
+* **fix(tls-reality-sni-validation):** Implemented strict domain validation on SNI in `GinVpnHub`:
+  * Explicitly rejects numeric IP addresses used as SNI targets, preventing Go TLS `x509: cannot validate certificate for <IP> because it doesn't contain any IP SANs` failures that blackholed tunnel traffic.
+  * Embedded high-speed verified European fallback nodes in `BUILTIN_EU_NODES` (Czechia Oracle-49, Germany DE-222, Germany Oracle, FFPN) with unblocked Reality ports (8443, 443).
+
+---
+
 ### [v032] - 2026-11-07
 * **fix(vpn-process-isolation):** Isolated `LauncherVpnService` into a dedicated background process (`android:process=":vpn"` in `AndroidManifest.xml`).
   * Completely shields the main launcher process (`com.gincz.ginlauncher`) from native C/Go teardown routines.

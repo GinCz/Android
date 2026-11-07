@@ -15,7 +15,7 @@ Each application is distributed as a single standalone APK build without third-p
 
 | Application | Target Platform | Latest Release | Direct Download (.apk) | SHA-256 Checksum |
 | :--- | :--- | :---: | :--- | :--- |
-| 🚀 **[GIN-Launcher ↗](GIN-Launcher/)** | Android TV / Google TV / FireTV | `v027` | [⬇️ **Download GIN-TV-Launcher.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-Launcher/GIN-TV-Launcher.apk) | `67d04ad62959...` |
+| 🚀 **[GIN-Launcher ↗](GIN-Launcher/)** | Android TV / Google TV / FireTV | `v033` | [⬇️ **Download GIN-TV-Launcher.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-Launcher/GIN-TV-Launcher.apk) | `36.5 MB` |
 | 🎬 **[GIN-Cinema ↗](GIN-Cinema/)** | Android TV / Tablets / Phones | `v114` | [⬇️ **Download GIN-Cinema.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-Cinema/GIN-Cinema.apk) | `5c6a3fe852e3...` |
 | 📺 **[GIN-TV ↗](GIN-TV/)** | Android TV / Smart TV / Mobile | `v077` | [⬇️ **Download GIN-TV.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-TV/GIN-TV.apk) | `da988b95ef5d...` |
 | 🌐 **[GIN-IP ↗](GIN-IP/)** | All Android Devices (Phone/TV) | `v013` | [⬇️ **Download GIN-IP.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-IP/GIN-IP.apk) | `bbee1deb4cd8...` |
