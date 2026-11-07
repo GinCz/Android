@@ -4,22 +4,22 @@
 
 ![Platform](https://img.shields.io/badge/Platform-Android%207.0+%20%7C%20Android%20TV-3DDC84?logo=android&logoColor=white)
 ![Player](https://img.shields.io/badge/Engine-ExoPlayer%20Hardware%20HEVC-FF007F)
-![Release](https://img.shields.io/badge/Release-v114-brightgreen)
+![Release](https://img.shields.io/badge/Release-v117-brightgreen)
 ![License](https://img.shields.io/badge/License-Freeware%20%7C%20Free%20to%20Use-blue)
 
 **Premium, ad-free online cinema streaming client optimized for Android TV, TV boxes, tablets, and smartphones. Hardware-accelerated 4K/1080p playback with full D-Pad remote control support.**
 
-[⬇️ Download v114](#-quick-download--latest-release-v114) • [Key Features](#-key-features) • [Changelog](CHANGELOG.md)
+[⬇️ Download v117](#-quick-download--latest-release-v117) • [Key Features](#-key-features) • [Changelog](CHANGELOG.md)
 
 </div>
 
 ---
 
-## 🚀 Quick Download & Latest Release (v114)
+## 🚀 Quick Download & Latest Release (v117)
 
 <div align="center">
 
-### 🎬 [⬇️ Click Here to Download GIN-Cinema.apk (v114)](https://github.com/GinCz/Windows_scripts/raw/main/Android/GIN-Cinema/GIN-Cinema.apk)
+### 🎬 [⬇️ Click Here to Download GIN-Cinema.apk (v117)](https://github.com/GinCz/Windows_scripts/raw/main/Android/GIN-Cinema/GIN-Cinema.apk)
 *Single standalone APK (11.5 MB) • Android 7.0+ & Android TV*
 
 </div>
