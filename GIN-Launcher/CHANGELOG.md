@@ -4,6 +4,26 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ---
 
+### [v032] - 2026-11-07
+* **fix(vpn-process-isolation):** Isolated `LauncherVpnService` into a dedicated background process (`android:process=":vpn"` in `AndroidManifest.xml`).
+  * Completely shields the main launcher process (`com.gincz.ginlauncher`) from native C/Go teardown routines.
+  * Added re-entrancy and double-stop guards in `Tun2socks.kt` and `LauncherVpnService.kt` to eliminate JVM aborts on disconnect.
+  * Turning off VPN now cleanly disconnects without ever exiting GIN-Launcher or reverting to the stock Google TV launcher.
+* **feat(strict-eu-filtering):** Implemented `GinVpnHub.isStrictlyEuropean()` filter:
+  * Restricts node selection strictly to certified European Union countries (DE, NL, PL, AT, FR, etc.).
+  * Blacklists non-EU country tags (`RU`, `UZ`, `KZ`, `BY`, `US`) and non-EU TLDs (`.ru`, `.su`, `.by`, `.kz`, `.uz`).
+  * Updated European Reality subscription list (`sub_EU.txt`) with 6 verified low-latency nodes in Germany, Netherlands, and Poland.
+* **feat(shared-preferences-state):** Persisted VPN and AdGuard DNS modes to `gin_launcher_vpn_state` for multi-process safety and instant UI synchronization across settings dialogs.
+
+---
+
+### [v031] - 2026-11-07
+* **feat(dual-arch-native):** Compiled and packaged dual-architecture native libraries (`arm64-v8a` + `armeabi-v7a`) for both Go `tun2socks` and Go `xray-core`.
+  * Guarantees 100% native compatibility across all Android TV architectures (64-bit and 32-bit MediaTek, Realtek, Amlogic).
+* **feat(embedded-vpn-core):** Integrated native Xray VLESS Reality client and AdGuard DNS tunnel directly into GIN-Launcher without requiring external helper tools or ADB configuration.
+
+---
+
 ### [v027] - 2026-11-05
 * **ui(settings):** Optimized Control Center Settings dialog layout into an ergonomic **2-Column Layout (`dialog_launcher_settings.xml`)**:
   * Prevents vertical overflow on 720p/1080p/4K TV screens: 4 rows per column (`Left Column`: Wallpapers, Night Mode, Screen Off, Sleep Timer; `Right Column`: Remote Buttons, Android Settings, Accessibility, Power/Reboot).
