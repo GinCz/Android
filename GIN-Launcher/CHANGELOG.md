@@ -4,6 +4,14 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ---
 
+### [v034] - 2026-11-07
+* **ui(vector-icons):** Replaced missing Unicode glyph `⏻` (`U+23FB`), which rendered as an empty square/cross on TV fonts, with vector drawables `ic_power_off.xml` and `ic_reboot_action.xml` for crisp rendering across all display resolutions.
+* **feat(native-power-controls):** Integrated direct TV system power dialog invocation via `HomeInterceptorService.showPowerDialog()` (`GLOBAL_ACTION_POWER_DIALOG`), giving users the native Android TV menu for Shut down and Restart.
+* **feat(secure-settings-auto-enable):** Added automatic accessibility service activation via `WRITE_SECURE_SETTINGS` on launcher startup.
+* **feat(interactive-power-fallback):** When accessibility service is not yet enabled, launcher displays an interactive guidance dialog instead of silently dismissing settings.
+
+---
+
 ### [v033] - 2026-11-07
 * **fix(vpn-state-sync):** Restored single-process architecture for `LauncherVpnService` by removing `android:process=":vpn"` from `AndroidManifest.xml`.
   * Eliminates cross-process memory caching discrepancies in Android's `SharedPreferencesImpl` where `MainActivity` was unable to observe status updates written by the isolated `:vpn` process.
