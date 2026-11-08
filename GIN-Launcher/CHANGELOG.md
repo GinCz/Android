@@ -4,6 +4,26 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ---
 
+### [v038] - 2026-11-08
+* **feat(dynamic-key-filter):** Switched `HomeInterceptorService` to dynamic key event filtering:
+  * Removed static `flagRequestFilterKeyEvents` from `accessibility_service_config.xml` (`flagDefault`).
+  * `FLAG_REQUEST_FILTER_KEY_EVENTS` is attached dynamically at runtime via `setServiceInfo()` only when button mappings are active or button capture dialog is open.
+  * When no buttons are remapped, `KeyboardInterceptor` is completely detached from the Android input subsystem, guaranteeing 100% native remote control responsiveness.
+* **fix(volume-hold-auto-repeat):** Restored smooth continuous volume adjustment when holding down `Volume +` or `Volume -`:
+  * Implemented continuous auto-repeat handling for `KEYCODE_VOLUME_UP`, `KEYCODE_VOLUME_DOWN`, and `KEYCODE_VOLUME_MUTE` in `RemoteKeyMapper`.
+  * Routed key repeat events directly to `AudioManager.adjustSuggestedStreamVolume(..., AudioManager.FLAG_SHOW_UI)`, restoring smooth hardware-level volume stepping with visible OSD slider.
+* **fix(remote-pairing-protection):** Added explicit exemption in `handleWindowPackageChanged` for `com.google.android.tv.remote` and `com.vestel.smartcenter` packages so that smartphone remote control pairing dialogs are never covered or dismissed.
+* **deploy:** Successfully compiled and deployed to Vestel Android TV via ADB `127.0.0.1:15555` and uploaded to `gincz.com`.
+
+---
+
+### [v037] - 2026-11-08
+* **perf(zero-jni-cleanup):** Completely purged heavy native VPN binaries (`libxray.so` 35MB, `libtun2socks.so` 12MB).
+  * Reduced APK installer size from 36.5MB to 4.9MB (~9x lighter).
+* **feat(native-adguard-dot):** Implemented lightweight zero-overhead ad blocking via native Android Private DNS (DNS-over-TLS) using `dns.adguard-dns.com` via `WRITE_SECURE_SETTINGS`.
+
+---
+
 ### [v034] - 2026-11-07
 * **ui(vector-icons):** Replaced missing Unicode glyph `⏻` (`U+23FB`), which rendered as an empty square/cross on TV fonts, with vector drawables `ic_power_off.xml` and `ic_reboot_action.xml` for crisp rendering across all display resolutions.
 * **feat(native-power-controls):** Integrated direct TV system power dialog invocation via `HomeInterceptorService.showPowerDialog()` (`GLOBAL_ACTION_POWER_DIALOG`), giving users the native Android TV menu for Shut down and Restart.
