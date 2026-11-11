@@ -1,33 +1,33 @@
-# 📜 GIN-APP: История Изменений и Эволюция (Changelog)
+# 📜 GIN-APP: Release Changelog
 
-> **Проект:** GIN-APP Android by VladiMIR+AI  
-> **Репозиторий:** [Windows_scripts / Android / GIN-APP ↗](https://github.com/GinCz/Windows_scripts/tree/main/Android/GIN-APP)  
-> **Автор:** Владимир Буланцев ([GinCz ↗](https://github.com/GinCz))  
-> **Назначение:** Полный интерактивный журнал версий портала обновлений и каталога приложений GinCz.
+> **Project:** GIN-APP Android by Vladimir Bulantsev + AI  
+> **Repository:** [GinCz/Android ↗](https://github.com/GinCz/Android/tree/main/GIN-APP)  
+> **Author:** Vladimir Bulantsev ([GinCz ↗](https://github.com/GinCz))  
+> **Scope:** Full interactive version log for the GinCz application portal and auto-updater.
 
 ---
 
-## 🔬 Детальный разбор версий (Интерактивный журнал)
+## 🔬 Version History & Architecture Log
 
-*(Нажмите на заголовок любого релиза ниже, чтобы раскрыть или свернуть подробности)*
+*(Click on any release header below to expand details)*
 
 <details open>
-<summary><b>🔥 Релиз v006 (13.10.2026) — Единый каталог и авто-инсталлятор APK [Актуальная версия]</b></summary>
+<summary><b>🔥 Release v006 (2026-10-13) — Unified Catalog & APK Auto-Installer [Current Release]</b></summary>
 <br>
 
-* **Ключевые изменения:**
-  - Централизованный каталог всех Android-приложений экосистемы (GIN-Cinema, GIN-TV, GIN-IP, GIN-VPN).
-  - 1-Click загрузка и установка актуальных версий APK с верификацией контрольных сумм.
-  - Фоновый мониторинг новых релизов и push-уведомления об обновлениях.
+* **Key Capabilities:**
+  - Centralized catalog of all ecosystem applications (GIN-Cinema, GIN-TV, GIN-IP, GIN-VPN).
+  - 1-Click download and silent installation of latest production builds with SHA-256 verification.
+  - Background release monitoring with toast update notifications.
 
 </details>
 
 <details>
-<summary><b>🚀 Релиз v002 (05.10.2026) — Базовый релиз APK Portal</b></summary>
+<summary><b>🚀 Release v002 (2026-10-05) — Baseline APK Portal</b></summary>
 <br>
 
-* **Ключевые изменения:**
-  - Карточки приложений с версиями, описанием и кнопкой прямого скачивания.
-  - Поддержка Android TV и мобильных экранов.
+* **Key Capabilities:**
+  - Visual application cards with versions, key features, and direct download buttons.
+  - Full compatibility across Android TV leanback and touchscreen mobile devices.
 
 </details>

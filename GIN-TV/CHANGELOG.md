@@ -1,33 +1,33 @@
-# 📜 GIN-TV: История Изменений и Эволюция (Changelog)
+# 📜 GIN-TV: Release Changelog
 
-> **Проект:** GIN-TV Android by VladiMIR+AI  
-> **Репозиторий:** [Windows_scripts / Android / GIN-TV ↗](https://github.com/GinCz/Windows_scripts/tree/main/Android/GIN-TV)  
-> **Автор:** Владимир Буланцев ([GinCz ↗](https://github.com/GinCz))  
-> **Назначение:** Полный интерактивный журнал версий для онлайн-ТВ и IPTV плеера.
+> **Project:** GIN-TV Android by Vladimir Bulantsev + AI  
+> **Repository:** [GinCz/Android ↗](https://github.com/GinCz/Android/tree/main/GIN-TV)  
+> **Author:** Vladimir Bulantsev ([GinCz ↗](https://github.com/GinCz))  
+> **Scope:** Full interactive version log for the online TV and IPTV player.
 
 ---
 
-## 🔬 Детальный разбор версий (Интерактивный журнал)
+## 🔬 Version History & Architecture Log
 
-*(Нажмите на заголовок любого релиза ниже, чтобы раскрыть или свернуть подробности)*
+*(Click on any release header below to expand details)*
 
 <details open>
-<summary><b>🔥 Релиз v077 (15.10.2026) — Оптимизация HLS буферизации [Актуальная версия]</b></summary>
+<summary><b>🔥 Release v077 (2026-10-15) — HLS Buffer Optimization [Current Release]</b></summary>
 <br>
 
-* **Ключевые изменения:**
-  - Оптимизирован адаптивный буфер HLS/M3U8 потоков для стабильной трансляции федеральных и кабельных телеканалов.
-  - Мгновенное переключение каналов (Fast Channel Switch) за ~0.3 секунды.
-  - Поддержка программ телепередач (EPG XMLTV) с авто-обновлением.
+* **Key Capabilities:**
+  - Optimized adaptive HLS/M3U8 buffer pipeline for rock-solid broadcast IPTV streaming.
+  - Sub-300ms fast channel switching with instant stream sync.
+  - Dynamic electronic program guide (EPG XMLTV) with automated updates.
 
 </details>
 
 <details>
-<summary><b>📺 Релиз v055 (10.10.2026) — D-Pad интерфейс для пультов Smart TV</b></summary>
+<summary><b>📺 Release v055 (2026-10-10) — D-Pad Remote Navigation for Smart TVs</b></summary>
 <br>
 
-* **Ключевые изменения:**
-  - Меню каналов в виде боковой всплывающей шторки с категориями (Кино, Новости, Познавательные, Спорт, Музыка).
-  - Управление цифровыми кнопками пульта для быстрого перехода на номер канала.
+* **Key Capabilities:**
+  - Slide-out side drawer channel list categorized by genres (Movies, News, Discovery, Sports, Music).
+  - Direct numeric keypad navigation for instant channel hopping via remote control.
 
 </details>

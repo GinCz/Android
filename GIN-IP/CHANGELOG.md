@@ -1,58 +1,58 @@
-# 📜 GIN-IP: История Изменений и Эволюция (Changelog)
+# 📜 GIN-IP: Release Changelog
 
-> **Проект:** GIN-IP Android by VladiMIR+AI  
-> **Репозиторий:** [Android / GIN-IP ↗](https://github.com/GinCz/Android/tree/main/GIN-IP)  
-> **Автор:** Владимир Буланцев ([GinCz ↗](https://github.com/GinCz))  
-> **Назначение:** Полный интерактивный журнал версий утилиты сетевой диагностики, геолокации и интеллектуального Speed Test.
+> **Project:** GIN-IP Android by Vladimir Bulantsev + AI  
+> **Repository:** [GinCz/Android ↗](https://github.com/GinCz/Android/tree/main/GIN-IP)  
+> **Author:** Vladimir Bulantsev ([GinCz ↗](https://github.com/GinCz))  
+> **Scope:** Comprehensive version log for the network diagnostics, geolocation, and intelligent Speed Test utility.
 
 ---
 
-## 🔬 Детальный разбор версий (Интерактивный журнал)
+## 🔬 Version History & Architecture Log
 
-*(Нажмите на заголовок любого релиза ниже, чтобы раскрыть или свернуть подробности)*
+*(Click on any release header below to expand details)*
 
 <details open>
-<summary><b>🔥 Релиз v018 (08.11.2026) — Интеллектуальный Speed Test с авто-подбором сервера провайдера (ISP Matching) и Multi-Stream [Актуальная версия]</b></summary>
+<summary><b>🔥 Release v018 (2026-11-08) — Intelligent Speed Test with ISP Matching & Multi-Stream [Current Release]</b></summary>
 <br>
 
-* **Ключевые изменения:**
-  - **Умный выбор сервера провайдера («ISP Matching First»):** Перед тестированием анализируется имя и ASN провайдера (`INTERCONNECT s.r.o.`, `Vodafone`, `CETIN`, `O2` и др.). Если в списке серверов есть узел текущего провайдера абонента, приоритет безоговорочно отдается ему, минуя перегруженные или сторонние узлы (такие как Pragmatel).
-  - **Трёхпозиционный селектор узлов:**
-    - `⚡ AUTO (ISP)`: Автоматический выбор ближайшего или On-Net сервера своего провайдера для замера максимальной пропускной способности тарифа (выбран по умолчанию).
-    - `🇪🇺 DE (222)`: Прямой замер задержки и скорости до личного сервера в Германии (NetCup).
-    - `🇷🇺 RU (109)`: Прямой замер задержки и скорости до личного сервера в России (FastVDS Москва).
-  - **Top-5 Ping Race Fallback:** Если у локального провайдера нет собственного спидтест-сервера, замеряется пинг серией пакетов до 5 ближайших узлов с авто-исключением ошибочных или зависших хостов.
-  - **Multi-Stream Progressive Download:** Прогрессивное наращивание чанков (от 4.4 МБ до 24.1 МБ) за несколько параллельных фаз, позволяющее окну TCP полностью раскрыться и зафиксировать реальную полку канала (вплоть до 1 Гбит/с).
-  - **Обновление интерфейса:** Отображение выбранного сервера и его пинга в подзаголовке (`★ INTERCONNECT s.r.o. (Prague) — 2 ms`), экспорт детального отчёта в буфер обмена.
+* **Key Capabilities:**
+  - **ISP Matching First:** Automatically resolves active carrier name and ASN (`INTERCONNECT s.r.o.`, `Vodafone`, `CETIN`, `O2`). When carrier test nodes are present, prioritizes on-net servers over overloaded third-party nodes.
+  - **3-Position Target Node Selector:**
+    - `⚡ AUTO (ISP)`: Dynamically selects nearest on-net carrier server to measure true connection tier bandwidth (default).
+    - `🇪🇺 DE (222)`: Direct latency and throughput benchmark to private server in Germany (NetCup).
+    - `🇷🇺 RU (109)`: Direct latency and throughput benchmark to private server in Russia (FastVDS Moscow).
+  - **Top-5 Ping Race Fallback:** When no local on-net server is detected, executes multi-packet ICMP/HTTP ping race against 5 nearest hosts with auto-elimination of stalled nodes.
+  - **Multi-Stream Progressive Download:** Progressively scales chunk sizes (4.4 MB to 24.1 MB) across concurrent threads to saturate high-speed Gigabit connections (up to 1 Gbps).
+  - **Interface Update:** Subtitle telemetry displays active server and latency (`★ INTERCONNECT s.r.o. (Prague) — 2 ms`), with one-tap clipboard report export.
 
 </details>
 
 <details>
-<summary><b>🚀 Релиз v017 (18.10.2026) — Оптимизация сигнатуры футера и оформления</b></summary>
+<summary><b>🚀 Release v017 (2026-10-18) — Footer Signature & Visual Polish</b></summary>
 <br>
 
-* **Ключевые изменения:**
-  - Песочно-жёлтая текстовая сигнатура `VladiMIR+AI ||| v017` в нижней строке экрана.
-  - Удаление лишней рамки вокруг кнопки футера для чистоты интерфейса на Android TV.
+* **Key Capabilities:**
+  - Clean sand-yellow signature text `VladiMIR+AI ||| v017` pinned to bottom edge.
+  - Removed redundant border framing on footer button for a cleaner Android TV interface.
 
 </details>
 
 <details>
-<summary><b>🚀 Релиз v016 (14.10.2026) — Двуязычная локализация RU/EN</b></summary>
+<summary><b>🚀 Release v016 (2026-10-14) — Dynamic Localization & City Deduplication</b></summary>
 <br>
 
-* **Ключевые изменения:**
-  - Мгновенное переключение локализации интерфейса и названий регионов/стран без перезапуска.
-  - Устранение дублирования названий городов в строке геолокации.
+* **Key Capabilities:**
+  - Instant live localization switching for interface labels and region names without app restart.
+  - Resolved city name deduplication in geolocation strings.
 
 </details>
 
 <details>
-<summary><b>🚀 Релиз v010 (08.10.2026) — Базовый релиз GIN-IP</b></summary>
+<summary><b>🚀 Release v010 (2026-10-08) — Baseline Release of GIN-IP</b></summary>
 <br>
 
-* **Ключевые изменения:**
-  - Легковесный нативный интерфейс Material 3 с темной темой OLED.
-  - Отображение внутреннего IP адреса в Wi-Fi сети и MAC-адреса шлюза.
+* **Key Capabilities:**
+  - Lightweight Material 3 UI with pure OLED dark theme.
+  - Real-time display of local LAN/Wi-Fi IP, default gateway, and hardware MAC address.
 
 </details>

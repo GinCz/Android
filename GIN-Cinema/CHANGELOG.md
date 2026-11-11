@@ -1,54 +1,54 @@
-# 📜 GIN-Cinema: История Изменений и Эволюция (Changelog)
+# 📜 GIN-Cinema: Release Changelog
 
-> **Проект:** GIN-Cinema Android by VladiMIR+AI  
-> **Репозиторий:** [Windows_scripts / Android / GIN-Cinema ↗](https://github.com/GinCz/Windows_scripts/tree/main/Android/GIN-Cinema)  
-> **Автор:** Владимир Буланцев ([GinCz ↗](https://github.com/GinCz))  
-> **Назначение:** Полный интерактивный журнал версий для Android TV и мобильных устройств.
+> **Project:** GIN-Cinema Android by Vladimir Bulantsev + AI  
+> **Repository:** [GinCz/Android ↗](https://github.com/GinCz/Android/tree/main/GIN-Cinema)  
+> **Author:** Vladimir Bulantsev ([GinCz ↗](https://github.com/GinCz))  
+> **Scope:** Full interactive version log for Android TV, Google TV, and mobile devices.
 
 ---
 
-## 🔬 Детальный разбор версий (Интерактивный журнал)
+## 🔬 Version History & Architecture Log
 
-*(Нажмите на заголовок любого релиза ниже, чтобы раскрыть или свернуть подробности)*
+*(Click on any release header below to expand details)*
 
 <details open>
-<summary><b>🔥 Релиз v117 (07.11.2026) — Интеллектуальный фильтр качества и исключение «тряпок» [Актуальная версия]</b></summary>
+<summary><b>🔥 Release v117 (2026-11-07) — Intelligent Quality Filter & CamRip Elimination [Current Release]</b></summary>
 <br>
 
-* **Ключевые изменения:**
-  - **Автоматическая фильтрация экранных копий:** Встроен многоуровневый фильтр, предотвращающий показ и воспроизведение видеопотоков качества ниже 720p (CAMRip, TS, TeleSync, 350p).
-  - **Блокировка невышедших релизов:** Каталог и полки рекомендаций теперь сверяют статус официального цифрового релиза (Digital Release) по базе TMDB. Фильмы, идущие исключительно в кинотеатрах или находящиеся в производстве (как «Одиссея» Кристофера Нолана), не попадают на главную страницу, пока не выйдет качественный WEB-DL/BDRip.
-  - **Защита от подмены фильмов при смене озвучки:** Устранена ситуация, когда при отсутствии потока на выбранном провайдере (например, HDRezka) плеер вслепую переключался на сторонние балансеры, включавшие старые одноименные фильмы. Теперь плеер корректно сигнализирует о недоступности озвучки без ложных переключений.
+* **Key Capabilities:**
+  - **Automated Low-Quality Stream Filtering:** Integrated multi-tier quality filter preventing the display and playback of video streams below 720p (CAMRip, TS, TeleSync, 350p).
+  - **Theatrical-Only Release Blocking:** Catalog and recommendation shelves now verify official digital release dates via TMDB metadata. Theatrical-only or in-production movies are hidden until high-bitrate WEB-DL/BDRip releases become available.
+  - **Audio Track Matching Integrity:** Fixed fallback mismatch where missing audio tracks on a selected balancer erroneously switched to unrelated titles with similar names.
 
 </details>
 
 <details>
-<summary><b>🔥 Релиз v114 (14.10.2026) — Оптимизация видеопотоков и автообновление</b></summary>
+<summary><b>🔥 Release v114 (2026-10-14) — Stream Engine Optimization & Seamless Updates</b></summary>
 <br>
 
-* **Ключевые изменения:**
-  - Обновлен внутренний парсер зеркал HDRezka и CDN-эндпоинтов для стабильного воспроизведения в 4K / 1080p Ultra.
-  - Повышена устойчивость HLS/DASH стриминга при низких скоростях мобильного интернета.
-  - Синхронизация версий и бесшовная проверка обновлений через API.
+* **Key Capabilities:**
+  - Upgraded internal CDN mirror resolver for smooth 4K and 1080p Ultra bitrate playback.
+  - Improved adaptive HLS/DASH streaming resilience under variable mobile network bandwidth.
+  - Synchronized version reporting and seamless OTA update checking via API.
 
 </details>
 
 <details>
-<summary><b>📺 Релиз v113 (13.10.2026) — D-Pad навигация для Android TV</b></summary>
+<summary><b>📺 Release v113 (2026-10-13) — Native D-Pad Navigation for Android TV</b></summary>
 <br>
 
-* **Ключевые изменения:**
-  - Полная оптимизация управления с пульта ДУ (D-Pad Navigation) для Android TV и приставок (Xiaomi Mi Box, Google TV, Smart TV).
-  - Фокусировка постеров с плавным зумом и подсветкой контура.
+* **Key Capabilities:**
+  - Full remote control D-Pad navigation tuning for Android TV boxes (Xiaomi Mi Box, Google TV, Smart TV).
+  - Smooth card focus animations with subtle zoom and border glow.
 
 </details>
 
 <details>
-<summary><b>⚡ Релиз v108 (10.10.2026) — Аппаратное декодирование ExoPlayer</b></summary>
+<summary><b>⚡ Release v108 (2026-10-10) — Hardware ExoPlayer Decoding</b></summary>
 <br>
 
-* **Ключевые изменения:**
-  - Переход на кастомный профиль ExoPlayer с форсированным аппаратным декодированием H.264/HEVC/AV1.
-  - Нулевая нагрузка на процессор приставки и отсутствие перегрева.
+* **Key Capabilities:**
+  - Transitioned to customized ExoPlayer profile with forced hardware H.264/HEVC/AV1 acceleration.
+  - Minimal CPU overhead on Smart TV processors with zero overheating or thermal throttling.
 
 </details>

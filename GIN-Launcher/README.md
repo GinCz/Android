@@ -78,7 +78,7 @@
 * **Deep Inactivity Sleep Mode:** Automatically sends the TV into Standby mode if forgotten on the home screen (`1h`, `2h`, `3h` (default), `4h`, `5h`, `6h`, or `Off`).
 
 ### 6. 📅 Dual Cultural Calendar (Name Day / Svátek)
-* **Bilingual Celebration Badge:** Shows today's Russian *День Ангела* and Czech *Svátek* alongside European weather and date.
+* **Celebration Badge:** Displays current Name Day celebrations alongside European weather, time, and date widgets.
 * **Toggle Visibility:** Can be toggled on or off directly within Launcher Settings.
 
 ### 7. ⎋ Native TV Input Panel (MediaTek & Android TV)

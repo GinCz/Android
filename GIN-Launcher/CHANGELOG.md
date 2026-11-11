@@ -80,39 +80,39 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 ---
 
 ### [v026] - 2026-11-05
-* **feat(remote-mapper):** Added **4 Programmable Remote Control Button Slots (`🎮 Кнопки пульта (4 слота)`)** in the GIN-Launcher Control Center settings (`dialog_launcher_settings.xml`, `dialog_remote_buttons.xml`, `RemoteKeyMapper.kt`):
+* **feat(remote-mapper):** Added **4 Programmable Remote Control Button Slots (`🎮 Remote Buttons (4 Slots)`)** in the GIN-Launcher Control Center settings (`dialog_launcher_settings.xml`, `dialog_remote_buttons.xml`, `RemoteKeyMapper.kt`):
   * **4 Dedicated Color/Function Slots:**
-    1. `🔴 Кнопка 1 (Красная / YouTube)`
-    2. `🔵 Кнопка 2 (Синяя / Prime Video)`
-    3. `⚪ Кнопка 3 (Белая 1)`
-    4. `⚪ Кнопка 4 (Белая 2)`
+    1. `🔴 Slot 1 (Red / YouTube)`
+    2. `🔵 Slot 2 (Blue / Prime Video)`
+    3. `⚪ Slot 3 (White 1)`
+    4. `⚪ Slot 4 (White 2)`
   * **Interactive 3-Step Programming Flow:** Select Slot (1–4) ➔ Press any target button on the remote control (`dialog_key_capture.xml`) ➔ Choose any installed application from the visual grid (e.g. `GIN-Tube`, `SmartTube`, `GIN-TV`, `GIN-Cinema`).
   * **Dual-Level Hardware Interception (`KeyEvent` + `ScanCode` + OEM Window Fallback):** Intercepts both standard Android `KeyEvent` / hardware `scanCode` globally via `HomeInterceptorService` (`flagRequestFilterKeyEvents`) and firmware-hardcoded OEM app launches (`TYPE_WINDOW_STATE_CHANGED`).
-  * **Automatic Background App Killer (`🧹 Закрывать все другие приложения при нажатии`):** Enabled by default. Pressing a programmed button automatically closes all other background/foreground apps (preserving `GIN-Launcher` and Google Cast `com.google.android.apps.mediashell`) before launching the selected app.
+  * **Automatic Background App Killer (`🧹 Close all other apps on launch`):** Enabled by default. Pressing a programmed button automatically closes all other background/foreground apps (preserving `GIN-Launcher` and Google Cast `com.google.android.apps.mediashell`) before launching the selected app.
 
 ---
 
 ### [v025] - 2026-10-25
-* **feat(power):** Added **Restart (`🔄 Перезагрузка`)** and **Shutdown (`⏻ Выключение`)** buttons in the Control Center settings menu.
+* **feat(power):** Added **Restart (`🔄 Reboot`)** and **Shutdown (`⏻ Power Off`)** buttons in the Control Center settings menu.
 * **fix(cast):** Added Google Cast (`com.google.android.apps.mediashell`) safety invariant and self-healing check ensuring stock launcher (`com.google.android.tvlauncher`) is never disabled.
 
 ---
 
 ### [v024] - 2026-10-25
-* **feat(favorites):** Replaced single-item add action in **All Apps (`Все приложения`)** with interactive **Multi-Select Favorites Edit Mode (`⭐ Добавить / удалить из Избранного`)**:
-  * Holding **OK** on any app in **All Apps** and choosing **`⭐ Добавить / удалить из Избранного`** enters multi-selection mode directly on the All Apps grid.
+* **feat(favorites):** Replaced single-item add action in **All Apps** with interactive **Multi-Select Favorites Edit Mode (`⭐ Add / Remove from Favorites`)**:
+  * Holding **OK** on any app in **All Apps** and choosing **`⭐ Add / Remove from Favorites`** enters multi-selection mode directly on the All Apps grid.
   * **Visual Status Differentiation:** Apps already in Favorites render in **100% vivid full color**, whereas apps not in Favorites render **grayscale and semi-transparent (`35%` opacity)**.
   * **Multi-Icon Toggle:** Navigate across the grid with D-Pad arrows and press **OK** on any number of icons to toggle them between Favorites (vivid color) and Hidden (grey semi-transparent); press **Back** to save and exit.
 
 ---
 
 ### [v023] - 2026-10-25
-* **feat(favorites):** Added **"⭐ Добавить в Избранное" (Add to Favorites)** option to the long-press OK context menu inside the **All Apps (`Все приложения`)** tab, allowing previously hidden/removed apps to be restored to Favorites at any time.
-* **refactor(menu):** Reordered the long-press OK application context menu (`dialog_app_menu.xml`) across both **Favorites** and **All Apps** tabs so **"ℹ️ Свойства приложения" (App Properties)** is consistently positioned at the very bottom:
-  1. `⇄  Переместить карточку` (Move card)
-  2. `👁️  Скрыть из Избранного` (in Favorites) / `⭐  Добавить в Избранное` (in All Apps)
-  3. `🗑️  Удалить приложение` (Uninstall app)
-  4. `ℹ️  Свойства приложения` (App properties — bottom item)
+* **feat(favorites):** Added **"⭐ Add to Favorites"** option to the long-press OK context menu inside the **All Apps** tab, allowing previously hidden/removed apps to be restored to Favorites at any time.
+* **refactor(menu):** Reordered the long-press OK application context menu (`dialog_app_menu.xml`) across both **Favorites** and **All Apps** tabs so **"ℹ️ App Properties"** is consistently positioned at the very bottom:
+  1. `⇄  Move card`
+  2. `👁️  Hide from Favorites` (in Favorites) / `⭐  Add to Favorites` (in All Apps)
+  3. `🗑️  Uninstall app`
+  4. `ℹ️  App properties` (bottom item)
 
 ---
 
@@ -150,7 +150,7 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ### [v019] - 2026-10-25
 * **refactor(ui):** Integrated Quick Sleep Timer (🌙) into the primary left action toolbar (`[ ⭐ ] [ ▦ ] [ 🧹 ] [ ⎋ ] [ ⚙ ] [ 🌙 ]`), cleanly separating user actions from the right-hand system info cluster.
-* **fix(namedays):** Toggling the Name Day / Svátek badge to hidden (`Скрыто`) now smoothly collapses only the namedays pill without displacing or hiding the sleep timer button or network status.
+* **fix(namedays):** Toggling the Name Day celebration badge to hidden (`Hidden`) now smoothly collapses only the namedays pill without displacing or hiding the sleep timer button or network status.
 * **feat(network):** Replaced legacy Unicode and emoji symbols with crisp, native Windows 10 VectorDrawables:
   * **Wi-Fi:** Authentic Windows 10 radiating curved arc fan (`ic_net_wifi.xml`). When disconnected, renders at 30% semi-transparency without harsh red strikethrough lines. Glows vivid cyan (`#00E5FF`, 100% opacity) upon connection.
   * **Ethernet:** Iconic Windows 10 monitor with stand and RJ-45 plug connector (`ic_net_ethernet.xml`). Shines bright cyan (`#00E5FF`, 100% opacity) when wired network is connected, and rests at 30% semi-transparency when disconnected.
@@ -187,7 +187,7 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 ---
 
 ### [v015] - 2026-10-24
-* **feat(namedays):** Russian *День Ангела* prioritized as primary text with Czech *Svátek* nested below.
+* **feat(namedays):** International Name Day celebrations with dual cultural holiday feeds.
 * **feat(filter):** Implemented system package filter to automatically hide headless OEM background services (ACBridge, SmartCenter, Katniss).
 
 ---
