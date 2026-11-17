@@ -12,7 +12,20 @@
 *(Click on any release header below to expand details)*
 
 <details open>
-<summary><b>🔥 Release v117 (2026-11-07) — Intelligent Quality Filter & CamRip Elimination [Current Release]</b></summary>
+<summary><b>🔥 Release v118 (2026-11-18) — High-Definition Instant Seek Previews [Current Release]</b></summary>
+<br>
+
+* **Key Capabilities:**
+  - **Instant Parallel 3-Card Seek Previews:** The target, previous (-10s), and next (+10s) preview cards are now loaded concurrently in parallel, rendering immediately upon completion without delay or UI blocking.
+  - **High-Definition 320x180 (16:9) Resolution:** Upgraded thumbnail extraction resolution from 140x78 to 320x180 pixels, delivering crisp, detailed preview images on 1080p and 4K displays.
+  - **Balanced HLS Preview Variant:** Automatically targets ~1.4 Mbps 480p/720p streams instead of low-bitrate 240p/360p streams, eliminating pixelation and macroblock artifacts.
+  - **Fast-Path Keyframe Decoding:** Extracts the initial IDR keyframe at -1L in ~20ms, bypassing EOF scan timeouts and decoder lockups on Android TV chipsets (Amlogic, Rockchip, Realtek).
+  - **Multi-CDN Media Proxy Support:** Whitelisted Sambray and Ukrtelcdn CDN pools on backend, ensuring seamless segment fetching and 0ms cached retrieval.
+
+</details>
+
+<details>
+<summary><b>🔥 Release v117 (2026-11-07) — Intelligent Quality Filter & CamRip Elimination</b></summary>
 <br>
 
 * **Key Capabilities:**
