@@ -4,6 +4,23 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ---
 
+### [v042] - 2026-11-18
+* **fix(remote-key-filter):** Permanently eliminated `FLAG_REQUEST_FILTER_KEY_EVENTS` and set `android:canRequestFilterKeyEvents="false"` in `accessibility_service_config.xml`.
+  * Removed all key event filtering from `HomeInterceptorService`. The Android `InputDispatcher` no longer delays or blocks input events via Binder IPC.
+  * Completely restored 0ms lag-free D-pad navigation across all foreground applications (HD-Rezka, video players, and apps now receive 100% of left/right/up/down clicks).
+* **fix(native-volume-control):** Completely removed software volume interception from `RemoteKeyMapper.kt`.
+  * Hardware volume buttons (`KEYCODE_VOLUME_UP`, `KEYCODE_VOLUME_DOWN`, `KEYCODE_VOLUME_MUTE`) now route directly to the TV audio HAL and amplifier with zero interception, eliminating volume slider stutter and skipped presses.
+* **gov(architecture-mandates):** Codified Sections 5 and 6 in `RULES.md`, strictly banning accessibility key filtering and volume interception across all current and future releases.
+* **deploy:** Compiled release APK `GIN-TV-Launcher_v042.apk`, published to `https://gincz.com/version.json`, Samba `/storage/user/APK/`, and MEGA Cloud (`MEGA/WIN-FLASH/ANDROID/GIN_APK/`).
+
+---
+
+### [v041] - 2026-11-18
+* **feat(instant-power-dialog):** 1-click invocation of native TV Power Dialog (`GLOBAL_ACTION_POWER_DIALOG`), displaying native TV options (Power off, Restart, Screenshot).
+* **ui(emoji-cleanup):** Cleaned up unsupported Unicode glyphs for uniform cross-device display.
+
+---
+
 ### [v038] - 2026-11-08
 * **feat(dynamic-key-filter):** Switched `HomeInterceptorService` to dynamic key event filtering:
   * Removed static `flagRequestFilterKeyEvents` from `accessibility_service_config.xml` (`flagDefault`).
