@@ -12,12 +12,28 @@
 *(Click on any release header below to expand details)*
 
 <details open>
-<summary><b>🔥 Release v077 (2026-10-15) — HLS Buffer Optimization [Current Release]</b></summary>
+<summary><b>🔥 Release v083 (2026-11-19) — Non-Blocking Error Overlay, Fast Channel Hopping & Permissive SSL [Current Release]</b></summary>
 <br>
 
 * **Key Capabilities:**
-  - Optimized adaptive HLS/M3U8 buffer pipeline for rock-solid broadcast IPTV streaming.
-  - Sub-300ms fast channel switching with instant stream sync.
+  - **Non-blocking Channel Error Notification:** Removed the modal popup dialog that intercepted remote focus. Channels that fail to buffer now display a clean, non-intrusive overlay with a sad emoji 😕 and retry hint without stealing remote control focus.
+  - **Instant Remote Navigation:** Users can hop to the next/previous channel immediately via DPAD UP/DOWN or CHANNEL UP/DOWN without dismissing any windows. DPAD LEFT/OK opens the full channel list.
+  - **Permissive SSL for IPTV CDNs:** Injected permissive SSL engine (`SSLSocketFactory` + wildcard `HostnameVerifier`) to natively play external IPTV streams with mismatched domain certificates (such as `stream.mcquack.net`).
+
+</details>
+
+<details>
+<summary><b>📦 Release v082 (2026-11-17) — Buffer Menu & Family Status Badges</b></summary>
+<br>
+
+* **Key Capabilities:**
+  - Enhanced buffer configuration menu with high-contrast frame.
+  - Device/family pairing status badge improvements.
+
+</details>
+
+<details>
+<summary><b>📦 Release v077 (2026-10-15) — HLS Buffer Optimization</b></summary>
   - Dynamic electronic program guide (EPG XMLTV) with automated updates.
 
 </details>
