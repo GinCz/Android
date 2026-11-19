@@ -12,7 +12,18 @@
 *(Click on any release header below to expand details)*
 
 <details open>
-<summary><b>🔥 Release v123 (2026-11-19) — TV Movie Cards Border Refinement & Elegant Gold Contour [Current Release]</b></summary>
+<summary><b>🔥 Release v124 (2026-11-19) — Cross-Device Sync of Source, Voice-Over & Position [Current Release]</b></summary>
+<br>
+
+* **Key Capabilities:**
+  - **Cross-Device Source & Voice-Over Persistence:** Selected media provider, source, and audio track/voice-over are now synced to the backend along with the playback timestamp.
+  - **Seamless Resume:** Opening a movie or series from Favorites, History, or "Continue Watching" on TV or mobile automatically resolves the exact previous source and selects the matching ExoPlayer audio track.
+  - **Immediate Progress Flush:** Playback position, active voice-over, and source are persisted continuously during playback and immediately on exit or source switch.
+
+</details>
+
+<details>
+<summary><b>🔥 Release v123 (2026-11-19) — TV Movie Cards Border Refinement & Elegant Gold Contour</b></summary>
 <br>
 
 * **Key Capabilities:**
@@ -21,30 +32,6 @@
   - **Universal UI Application:** Seamlessly applied across `TvHomeScreen` shelves, TOP-200 more card, `TvCategoryScreen` grid, `TvSearchScreen` results, `TvPersonScreen` filmography, `LibraryScreens` (Favorites, History, Unfinished), and `DetailRows` similar movies.
 
 </details>
-
-<details>
-<summary><b>🔥 Release v122 (2026-11-19) — Remote Color Buttons Hotkeys & Dynamic Palette</b></summary>
-
-<details>
-<summary><b>🔥 Release v121 (2026-11-19) — Content Transition Isolation & Player Key Invalidation</b></summary>
-<br>
-
-* **Key Capabilities:**
-  - **Compose State Key Isolation:** Wrapped `TvDetailScreen` and `TvPlayerScreen` in strict Compose keys to cleanly reset player and detail state on content switch.
-  - **Instant Source Reload:** Purged player sources cache upon season/episode navigation to prevent playback of previous content.
-
-</details>
-
-<details>
-<summary><b>🔥 Release v118 (2026-11-18) — High-Definition Instant Seek Previews</b></summary>
-<br>
-
-* **Key Capabilities:**
-  - **Instant Parallel 3-Card Seek Previews:** The target, previous (-10s), and next (+10s) preview cards are now loaded concurrently in parallel, rendering immediately upon completion without delay or UI blocking.
-  - **High-Definition 320x180 (16:9) Resolution:** Upgraded thumbnail extraction resolution from 140x78 to 320x180 pixels, delivering crisp, detailed preview images on 1080p and 4K displays.
-  - **Balanced HLS Preview Variant:** Automatically targets ~1.4 Mbps 480p/720p streams instead of low-bitrate 240p/360p streams, eliminating pixelation and macroblock artifacts.
-  - **Fast-Path Keyframe Decoding:** Extracts the initial IDR keyframe at -1L in ~20ms, bypassing EOF scan timeouts and decoder lockups on Android TV chipsets (Amlogic, Rockchip, Realtek).
-  - **Multi-CDN Media Proxy Support:** Whitelisted Sambray and Ukrtelcdn CDN pools on backend, ensuring seamless segment fetching and 0ms cached retrieval.
 
 </details>
 
