@@ -12,7 +12,29 @@
 *(Click on any release header below to expand details)*
 
 <details open>
-<summary><b>🔥 Release v118 (2026-11-18) — High-Definition Instant Seek Previews [Current Release]</b></summary>
+<summary><b>🔥 Release v122 (2026-11-19) — Remote Color Buttons Hotkeys & Dynamic Palette [Current Release]</b></summary>
+<br>
+
+* **Key Capabilities:**
+  - **4 Remote Color Buttons Hotkeys:** Instant one-click navigation using physical TV remote color buttons (Red: Favorites, Green: Continue Watching / Unfinished, Yellow: History, Blue: Search) as well as F1-F4 / Search keys.
+  - **Color Harmonization in SideNav & BottomNav:** Heart icon on TV sidebar is styled in vivid red with dedicated container glow; Continue Watching is green; History is warm yellow; Search is bright blue.
+  - **Visual Remote Guide:** Added 4-color indicator dots in TV sidebar guide for intuitive remote control orientation.
+  - **Extended Startup Screen Preferences:** Quick-launch options in settings now feature remote color button badges.
+
+</details>
+
+<details>
+<summary><b>🔥 Release v121 (2026-11-19) — Content Transition Isolation & Player Key Invalidation</b></summary>
+<br>
+
+* **Key Capabilities:**
+  - **Compose State Key Isolation:** Wrapped `TvDetailScreen` and `TvPlayerScreen` in strict Compose keys to cleanly reset player and detail state on content switch.
+  - **Instant Source Reload:** Purged player sources cache upon season/episode navigation to prevent playback of previous content.
+
+</details>
+
+<details>
+<summary><b>🔥 Release v118 (2026-11-18) — High-Definition Instant Seek Previews</b></summary>
 <br>
 
 * **Key Capabilities:**
