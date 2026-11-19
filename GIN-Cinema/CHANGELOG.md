@@ -12,16 +12,18 @@
 *(Click on any release header below to expand details)*
 
 <details open>
-<summary><b>🔥 Release v122 (2026-11-19) — Remote Color Buttons Hotkeys & Dynamic Palette [Current Release]</b></summary>
+<summary><b>🔥 Release v123 (2026-11-19) — TV Movie Cards Border Refinement & Elegant Gold Contour [Current Release]</b></summary>
 <br>
 
 * **Key Capabilities:**
-  - **4 Remote Color Buttons Hotkeys:** Instant one-click navigation using physical TV remote color buttons (Red: Favorites, Green: Continue Watching / Unfinished, Yellow: History, Blue: Search) as well as F1-F4 / Search keys.
-  - **Color Harmonization in SideNav & BottomNav:** Heart icon on TV sidebar is styled in vivid red with dedicated container glow; Continue Watching is green; History is warm yellow; Search is bright blue.
-  - **Visual Remote Guide:** Added 4-color indicator dots in TV sidebar guide for intuitive remote control orientation.
-  - **Extended Startup Screen Preferences:** Quick-launch options in settings now feature remote color button badges.
+  - **33% Slimmer Focused Card Border:** Active focused card border reduced from 3.dp to `2.dp` (`TvCardFocusedBorderWidth`), preserving the rich 3D gold gradient (`GinGoldBrush`) while eliminating visual bulkiness.
+  - **Delicate 0.6.dp Gold Outline for Unfocused Cards:** All unfocused movie cards are now contoured with a subtle, razor-thin `0.6.dp` gold border (`TvCardUnfocusedBorderBrush` with 45–65% opacity), more than 3x thinner than the focused card. Renders as a crisp 1-pixel outline on 1080p and 4K TV displays.
+  - **Universal UI Application:** Seamlessly applied across `TvHomeScreen` shelves, TOP-200 more card, `TvCategoryScreen` grid, `TvSearchScreen` results, `TvPersonScreen` filmography, `LibraryScreens` (Favorites, History, Unfinished), and `DetailRows` similar movies.
 
 </details>
+
+<details>
+<summary><b>🔥 Release v122 (2026-11-19) — Remote Color Buttons Hotkeys & Dynamic Palette</b></summary>
 
 <details>
 <summary><b>🔥 Release v121 (2026-11-19) — Content Transition Isolation & Player Key Invalidation</b></summary>
