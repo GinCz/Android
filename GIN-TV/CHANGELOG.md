@@ -12,7 +12,17 @@
 *(Click on any release header below to expand details)*
 
 <details open>
-<summary><b>🔥 Release v083 (2026-11-19) — Non-Blocking Error Overlay, Fast Channel Hopping & Permissive SSL [Current Release]</b></summary>
+<summary><b>🔥 Release v084 (2026-11-19) — 2-Step DPAD Remote Navigation & Long-Press Favorites [Current Release]</b></summary>
+<br>
+
+* **Key Capabilities:**
+  - **2-Step Navigation for Budget Remotes:** Designed for TV sticks with basic remotes (no CH+/CH- buttons). In full screen, the first press of **UP** opens the playback/quick action menu, while a second press of **UP** immediately switches to the next channel. Pressing **DOWN** closes the menu if open, or switches to the previous channel if the menu is already closed.
+  - **Long-Press OK to Toggle Favorite:** On channels in the list, users without number keys can hold OK to quickly add or remove channels from favorites.
+
+</details>
+
+<details>
+<summary><b>📦 Release v083 (2026-11-19) — Non-Blocking Error Overlay, Fast Channel Hopping & Permissive SSL</b></summary>
 <br>
 
 * **Key Capabilities:**
