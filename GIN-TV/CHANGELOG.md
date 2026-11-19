@@ -12,7 +12,18 @@
 *(Click on any release header below to expand details)*
 
 <details open>
-<summary><b>🔥 Release v084 (2026-11-19) — 2-Step DPAD Remote Navigation & Long-Press Favorites [Current Release]</b></summary>
+<summary><b>🔥 Release v085 (2026-11-19) — Default Free EU Playlist, 1-Year Trial & Strict Subscription Enforcement [Current Release]</b></summary>
+<br>
+
+* **Key Capabilities:**
+  - **Default European Playlist & 1-Year Subscription:** Newly connected devices are automatically assigned the free European playlist (`free_eu`) and a 1-year subscription trial (`paid_until = now + 365 days`). Device pairing is immediately activated with admin Telegram alerts and subscription management actions.
+  - **Strict Subscription Protection:** Devices without an active subscription cannot access channels or catalog. The app displays a dedicated fullscreen "🔴 НЕТ ПОДПИСКИ" panel with device PIN, expiration info, and "Check Subscription" / "Settings" buttons. Playback is strictly prevented on both client and player levels.
+  - **Server-Side API 403 Enforcement:** The server enforces valid subscription on `/api/gin-tv/v1/playlist` and `/api/gin-tv/v1/web/catalog`, returning HTTP 403 Forbidden when expired or unpaid.
+
+</details>
+
+<details>
+<summary><b>📦 Release v084 (2026-11-19) — 2-Step DPAD Remote Navigation & Long-Press Favorites</b></summary>
 <br>
 
 * **Key Capabilities:**
