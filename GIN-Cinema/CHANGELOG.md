@@ -12,7 +12,52 @@
 *(Click on any release header below to expand details)*
 
 <details open>
-<summary><b>🔥 Release v124 (2026-11-19) — Cross-Device Sync of Source, Voice-Over & Position [Current Release]</b></summary>
+<summary><b>🔥 Release v128 (2026-11-23) — Complete Mobile & TV Settings Parity & Mobile Quality Selection [Current Release]</b></summary>
+<br>
+
+* **Key Capabilities:**
+  - **100% Settings Parity (Android Phone vs Android TV):** Added all 3 missing settings cards to mobile `ProfileScreen.kt` using sleek horizontally scrollable FilterChips with GinGold accent:
+    1. Default video quality (Авто, 1080p, 720p, 480p)
+    2. Startup screen (Главная, Избранное, Досмотреть, История, Поиск)
+    3. OLED Screen Saver & Idle Dimmer timeout (1 мин, 2 мин, 5 мин, Выкл)
+    4. Seek step duration (5с, 10с, 20с, 30с)
+  - **Mobile Player Default Quality Support:** Integrated ExoPlayer track selection parameters in `PhonePlayerScreen.kt` honoring user preference on launch.
+  - **Seamless Navigation & Dimmer Binding:** Wired up phone startup screen navigation and idle dimmer listeners in phone UI.
+
+</details>
+
+<details>
+<summary><b>🔥 Release v127 (2026-11-21) — Manual Source Selection Dialog & WebView Error Fallback</b></summary>
+<br>
+
+* **Key Capabilities:**
+  - **Manual Source Selection Dialog:** Fast balancer switching directly during playback.
+  - **Faster Stream Sniffer:** Streamlined media extraction with automatic WebView fallback.
+
+</details>
+
+<details>
+<summary><b>🔥 Release v126 (2026-11-21) — Security Hardening, HMAC Device Auth & WebView Isolation</b></summary>
+<br>
+
+* **Key Capabilities:**
+  - **HMAC Device Authentication:** Cryptographically signed device tokens for IDOR prevention.
+  - **WebView Hardening:** Disabled local file access and external window creation in player webviews.
+
+</details>
+
+<details>
+<summary><b>🔥 Release v125 (2026-11-20) — Playback Race Condition Resolution & SSRF Defense</b></summary>
+<br>
+
+* **Key Capabilities:**
+  - **Playback Race Condition Fix:** Atomic state tracking for episode switching and playlist resolution.
+  - **Strict Private Network SSRF Filtering:** Safeguarded internal endpoints from direct player probes.
+
+</details>
+
+<details>
+<summary><b>🔥 Release v124 (2026-11-19) — Cross-Device Sync of Source, Voice-Over & Position</b></summary>
 <br>
 
 * **Key Capabilities:**
