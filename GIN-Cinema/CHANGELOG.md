@@ -12,7 +12,19 @@
 *(Click on any release header below to expand details)*
 
 <details open>
-<summary><b>🔥 Release v129 (2026-11-23) — Dual Action Buttons, Video Quality Filtration (&ge;480p) & 3-Row Sources Grid with Voiceover Inspector [Current Release]</b></summary>
+<summary><b>🔥 Release v130 (2026-11-23) — Default Rating-Descending Sort & Interactive Sorting Mode Chips [Current Release]</b></summary>
+<br>
+
+* **Key Capabilities:**
+  - **Default Rating-Descending Sort:** Search and filter catalog results on both Android TV (`TvSearchScreen.kt`) and Android Phone (`SearchScreen.kt`) now automatically sort movies from highest rating to lowest. Low-rated releases (e.g. 3.8) are pushed down to the end of the catalog, ensuring premier, acclaimed movies occupy top positions.
+  - **Intelligent Weighting & Anti-Abuse:** Evaluates ratings taking vote counts into account (`voteCount >= 10`), preventing obscure single-vote 10.0 entries from hijacking top spots while reliably showcasing legitimate blockbusters.
+  - **Interactive Sorting Mode Chips:** Added a dedicated 5th row "Сортировка" with mode chips: `⭐ По рейтингу` (default), `🔥 По популярности` (TMDB popularity order), `📅 По новизне` (release date order).
+  - **Full D-Pad Remote Navigation:** Smooth focus traversal between country chips, sort chips, search query input, and movie cards grid.
+
+</details>
+
+<details>
+<summary><b>🔥 Release v129 (2026-11-23) — Dual Action Buttons, Video Quality Filtration (&ge;480p) & 3-Row Sources Grid with Voiceover Inspector</b></summary>
 <br>
 
 * **Key Capabilities:**
