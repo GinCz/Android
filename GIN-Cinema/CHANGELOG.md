@@ -12,7 +12,18 @@
 *(Click on any release header below to expand details)*
 
 <details open>
-<summary><b>🔥 Release v130 (2026-11-23) — Default Rating-Descending Sort & Interactive Sorting Mode Chips [Current Release]</b></summary>
+<summary><b>🔥 Release v131 (2026-11-24) — Seamless 3-Row D-Pad Remote Navigation & Voiceover Inspector for Every Video Source [Current Release]</b></summary>
+<br>
+
+* **Key Capabilities:**
+  - **Seamless D-Pad Traversal (Left / Right / Up / Down):** Resolved focus locking on Android TV remote controls in the in-player "Озвучка" menu. Fixed autoFocus stealing from lower voiceover lists; directional D-Pad navigation now moves naturally left and right across 3 columns of sources, wraps between rows, and allows jumping straight into the voiceovers list on D-Pad Down or OK.
+  - **Provider Grouping & Voiceover Counter:** Intelligently groups sources into recognized providers (`⚡ CDNVideoHub`, `🇷🇺 HDRezka`, `🍿 Collaps`, `🍿 DelivEmbed`, `🇨🇿 Videasy`, `🇨🇿 MultiEmbed`, `🇬🇧 VidSrc`) with instant voiceover count badges (e.g. `⚡ CDNVideoHub (4)`).
+  - **Comprehensive Voiceover Inspector:** Moving focus to any source in the upper grid instantly displays all available voiceovers and translations in the bottom half of the screen (multi-studio dubs, internal ExoPlayer audio tracks, API translations). Clicking any voiceover switches audio track or source seamlessly while preserving playback timecode.
+
+</details>
+
+<details>
+<summary><b>🔥 Release v130 (2026-11-23) — Default Rating-Descending Sort & Interactive Sorting Mode Chips</b></summary>
 <br>
 
 * **Key Capabilities:**
