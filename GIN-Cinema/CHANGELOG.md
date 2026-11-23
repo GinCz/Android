@@ -12,7 +12,18 @@
 *(Click on any release header below to expand details)*
 
 <details open>
-<summary><b>🔥 Release v128 (2026-11-23) — Complete Mobile & TV Settings Parity & Mobile Quality Selection [Current Release]</b></summary>
+<summary><b>🔥 Release v129 (2026-11-23) — Dual Action Buttons, Video Quality Filtration (&ge;480p) & 3-Row Sources Grid with Voiceover Inspector [Current Release]</b></summary>
+<br>
+
+* **Key Capabilities:**
+  - **Dual Action Row in Detail Cards:** Split the wide "Continue" button into two separate buttons side-by-side on both Android TV (`TvDetailScreen.kt`) and Android Phone (`DetailScreen.kt`): "Продолжить просмотр" on the left and dedicated "Источники" on the right for instant provider switching.
+  - **Video Quality Ladder Hardening:** Removed obsolete and unplayable low resolutions (144p, 240p, 360p) from player quality menus (`PlayerMenus.kt`, `PlayerTrackMenu.kt`). Floor quality is strictly locked at 480p minimum.
+  - **3-Row / 3-Column Sources Grid & Voiceover Inspector:** Overhauled the player "Озвучка" menu: top half displays source provider buttons neatly arranged in a 3-column / 3-row grid with flag emojis and active indicator; bottom half interactively reveals all voiceovers and audio tracks available for the focused/clicked source.
+
+</details>
+
+<details>
+<summary><b>🔥 Release v128 (2026-11-23) — Complete Mobile & TV Settings Parity & Mobile Quality Selection</b></summary>
 <br>
 
 * **Key Capabilities:**
