@@ -12,6 +12,17 @@
 *(Click on any release header below to expand details)*
 
 <details open>
+<summary><b>🔥 Release v136 (2026-11-24) — Autonomous Silicon Hardware GIN-ID & Elimination of IPC Binder Deadlocks [Current Release]</b></summary>
+<br>
+
+* **Key Capabilities:**
+  - **Elimination of Cross-App IPC Deadlocks:** Completely eradicated synchronous `ContentResolver` calls to `com.gincz.gintv.pin_provider`. Fixed immediate launch crashes caused by circular Binder locks when app data was cleared.
+  - **Local Silicon Hardware Fingerprint:** Computes the 9-digit GIN-ID directly from CPU silicon features and bootloader motherboard serials locally in 0.001s without invoking external application providers.
+  - **Full Production Deployment:** Successfully deployed across production servers (Oracle-49, DE-222 ru-tv.eu, Samba `/storage/user/APK`, MEGA Cloud 02) with all 5 live update checks fully verified.
+
+</details>
+
+<details>
 <summary><b>🔥 Release v131 (2026-11-24) — Seamless 3-Row D-Pad Remote Navigation & Voiceover Inspector for Every Video Source [Current Release]</b></summary>
 <br>
 

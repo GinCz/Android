@@ -12,6 +12,17 @@
 *(Click on any release header below to expand details)*
 
 <details open>
+<summary><b>🔥 Release v091 (2026-11-24) — Autonomous Silicon Hardware GIN-ID & Elimination of IPC Binder Deadlocks [Current Release]</b></summary>
+<br>
+
+* **Key Capabilities:**
+  - **Elimination of Cross-App IPC Deadlocks:** Completely eradicated synchronous `ContentResolver` queries to `cz.gin.cinema.pin_provider`. Resolved the startup crash and ANR freeze occurring after app data wipes when both apps synchronously waited on Binder transactions for each other.
+  - **Pure Silicon Deterministic GIN-ID:** Generates the canonical 9-digit device PIN (`XXX-XXX-XXX`) strictly and locally from CPU silicon traits (`/proc/cpuinfo`, SoC eFuse, CPU architecture) and motherboard serial in <= 0.001s with zero inter-process overhead.
+  - **Zero-Crash Resilience:** Immediate launch without dependence on external apps or background services, preserving full stability even under fresh installs or cold data resets.
+
+</details>
+
+<details>
 <summary><b>🔥 Release v085 (2026-11-19) — Default Free EU Playlist, 1-Year Trial & Strict Subscription Enforcement [Current Release]</b></summary>
 <br>
 
