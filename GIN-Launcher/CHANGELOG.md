@@ -103,7 +103,7 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
     2. `🔵 Slot 2 (Blue / Prime Video)`
     3. `⚪ Slot 3 (White 1)`
     4. `⚪ Slot 4 (White 2)`
-  * **Interactive 3-Step Programming Flow:** Select Slot (1–4) ➔ Press any target button on the remote control (`dialog_key_capture.xml`) ➔ Choose any installed application from the visual grid (e.g. `GIN-Tube`, `SmartTube`, `GIN-TV`, `GIN-Cinema`).
+  * **Interactive 3-Step Programming Flow:** Select Slot (1–4) ➔ Press any target button on the remote control (`dialog_key_capture.xml`) ➔ Choose any installed application from the visual grid (e.g. `GIN-Tube`, `SmartTube`, `GIN-TV`, `GIN-KINO`).
   * **Dual-Level Hardware Interception (`KeyEvent` + `ScanCode` + OEM Window Fallback):** Intercepts both standard Android `KeyEvent` / hardware `scanCode` globally via `HomeInterceptorService` (`flagRequestFilterKeyEvents`) and firmware-hardcoded OEM app launches (`TYPE_WINDOW_STATE_CHANGED`).
   * **Automatic Background App Killer (`🧹 Close all other apps on launch`):** Enabled by default. Pressing a programmed button automatically closes all other background/foreground apps (preserving `GIN-Launcher` and Google Cast `com.google.android.apps.mediashell`) before launching the selected app.
 

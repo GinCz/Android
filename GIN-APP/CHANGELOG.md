@@ -16,7 +16,7 @@
 <br>
 
 * **Key Capabilities:**
-  - Centralized catalog of all ecosystem applications (GIN-Cinema, GIN-TV, GIN-IP, GIN-VPN).
+  - Centralized catalog of all ecosystem applications (GIN-KINO, GIN-TV, GIN-IP, GIN-VPN).
   - 1-Click download and silent installation of latest production builds with SHA-256 verification.
   - Background release monitoring with toast update notifications.
 

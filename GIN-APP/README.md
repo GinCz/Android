@@ -6,7 +6,7 @@
 ![Release](https://img.shields.io/badge/Release-v006-brightgreen)
 ![License](https://img.shields.io/badge/License-Freeware%20%7C%20Free%20to%20Use-blue)
 
-**The unified application hub for the VladiMIR+AI ecosystem. Easily discover, download, and update GIN-Cinema, GIN-TV, GIN-IP, and GIN-VPN in 1 tap.**
+**The unified application hub for the VladiMIR+AI ecosystem. Easily discover, download, and update GIN-KINO, GIN-TV, GIN-IP, and GIN-VPN in 1 tap.**
 
 [⬇️ Download v006](#-quick-download--latest-release-v006) • [Key Features](#-key-features) • [Changelog](CHANGELOG.md)
 
