@@ -12,6 +12,17 @@
 *(Click on any release header below to expand details)*
 
 <details open>
+<summary><b>🔥 Release v094 (2026-11-25) — Build Manifest Synchronization & Update Loop Fix [Current Release]</b></summary>
+<br>
+
+* **Key Capabilities:**
+  - **Build Manifest Synchronization:** Fixed versionCode and versionName in `app/build.gradle.kts` to strictly match the release pipeline, eliminating the issue where the installed application reported the previous version (v092) and re-prompted for updates.
+  - **Automated Badging Verification:** Integrated mandatory `aapt` inspection into the build pipeline to guarantee APK bytecode metadata matches distribution manifests before deployment.
+  - **Canonical Domain Transition:** Fully synchronized update feeds with `cinema.gincz.com`.
+
+</details>
+
+<details>
 <summary><b>🔥 Release v091 (2026-11-24) — Autonomous Silicon Hardware GIN-ID & Elimination of IPC Binder Deadlocks [Current Release]</b></summary>
 <br>
 
