@@ -1,7 +1,7 @@
-# 📜 GIN-KINO: Release Changelog
+# 📜 GIN-Cinema: Release Changelog
 
-> **Project:** GIN-KINO Android by Vladimir Bulantsev + AI  
-> **Repository:** [GinCz/Android ↗](https://github.com/GinCz/Android/tree/main/GIN-KINO)  
+> **Project:** GIN-Cinema Android by Vladimir Bulantsev + AI  
+> **Repository:** [GinCz/Android ↗](https://github.com/GinCz/Android/tree/main/GIN-Cinema)  
 > **Author:** Vladimir Bulantsev ([GinCz ↗](https://github.com/GinCz))  
 > **Scope:** Full interactive version log for Android TV, Google TV, and mobile devices.
 

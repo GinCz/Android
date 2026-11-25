@@ -1,4 +1,4 @@
-# 🎬 GIN-KINO: High-Definition Streaming Client for Android & Android TV
+# 🎬 GIN-Cinema: High-Definition Streaming Client for Android & Android TV
 
 <div align="center">
 
@@ -19,7 +19,7 @@
 
 <div align="center">
 
-### 🎬 [⬇️ Click Here to Download GIN-KINO.apk (v130)](https://github.com/GinCz/Android/raw/main/GIN-KINO/GIN-KINO.apk)
+### 🎬 [⬇️ Click Here to Download GIN-Cinema.apk (v130)](https://github.com/GinCz/Android/raw/main/GIN-Cinema/GIN-Cinema.apk)
 *Single standalone APK (11.5 MB) • Android 7.0+ & Android TV*
 
 </div>

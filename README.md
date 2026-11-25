@@ -16,7 +16,7 @@ Each application is distributed as a single standalone APK build without third-p
 | Application | Target Platform | Latest Release | Direct Download (.apk) | SHA-256 Checksum |
 | :--- | :--- | :---: | :--- | :--- |
 | 🚀 **[GIN-Launcher ↗](GIN-Launcher/)** | Android TV / Google TV / FireTV | `v034` | [⬇️ **Download GIN-TV-Launcher.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-Launcher/GIN-TV-Launcher.apk) | `36.5 MB` |
-| 🎬 **[GIN-KINO ↗](GIN-KINO/)** | Android TV / Tablets / Phones | `v114` | [⬇️ **Download GIN-KINO.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-KINO/GIN-KINO.apk) | `5c6a3fe852e3...` |
+| 🎬 **[GIN-Cinema ↗](GIN-Cinema/)** | Android TV / Tablets / Phones | `v114` | [⬇️ **Download GIN-Cinema.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-Cinema/GIN-Cinema.apk) | `5c6a3fe852e3...` |
 | 📺 **[GIN-TV ↗](GIN-TV/)** | Android TV / Smart TV / Mobile | `v077` | [⬇️ **Download GIN-TV.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-TV/GIN-TV.apk) | `da988b95ef5d...` |
 | 🌐 **[GIN-IP ↗](GIN-IP/)** | All Android Devices (Phone/TV) | `v013` | [⬇️ **Download GIN-IP.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-IP/GIN-IP.apk) | `bbee1deb4cd8...` |
 | 📦 **[GIN-APP ↗](GIN-APP/)** | Android TV / Mobile Hub | `v006` | [⬇️ **Download GIN-APP.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-APP/GIN-APP.apk) | `55ae6d199abd...` |
@@ -32,7 +32,7 @@ Each application is distributed as a single standalone APK build without third-p
 - **Sleep Timer:** Auto-standby sleep timer designed for bedtime streaming.
 - **Dynamic Theming:** 12 curated high-definition wallpapers with ambient transitions.
 
-### 🎬 [GIN-KINO](GIN-KINO/) — Online Cinema Streaming Client
+### 🎬 [GIN-Cinema](GIN-Cinema/) — Online Cinema Streaming Client
 - **ExoPlayer Engine:** Native hardware-accelerated HEVC/H.264/AV1 4K HDR video decoding.
 - **Family Sync Ecosystem:** Fast family PIN synchronization (`XXX-XXX-XXX`) across TV, mobile, and desktop.
 - **Zero Ads:** Clean, uninterrupted playback without popups or commercial interruptions.
@@ -69,7 +69,7 @@ Get-FileHash -Algorithm SHA256 .\GIN-TV-Launcher.apk
 | Package Name | File | SHA-256 Hash |
 | :--- | :--- | :--- |
 | `GIN-TV-Launcher` | `GIN-TV-Launcher.apk` | `67d04ad62959efbf22ffa2ae800b2bd43ac2160cfbdea75dcc117a0eb98fcb84` |
-| `GIN-KINO` | `GIN-KINO.apk` | `5c6a3fe852e3baad0409806856c6c8ed415b9c8362b7c89d9b6452149c4bc0af` |
+| `GIN-Cinema` | `GIN-Cinema.apk` | `5c6a3fe852e3baad0409806856c6c8ed415b9c8362b7c89d9b6452149c4bc0af` |
 | `GIN-TV` | `GIN-TV.apk` | `da988b95ef5dea5d81af8ca0ab6d71e06e49aca1c4492227ec6a404cd0c2fb29` |
 | `GIN-IP` | `GIN-IP.apk` | `bbee1deb4cd896ffa60367bfac670f7745803f2a8d1435373121230da22951ea` |
 | `GIN-APP` | `GIN-APP.apk` | `55ae6d199abd1dd4c9dd11ba5927eb7248e70dca78e4fe29b62d36ac03432df8` |
