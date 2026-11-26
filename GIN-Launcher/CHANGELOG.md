@@ -4,6 +4,17 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ---
 
+### [v053] - 2026-11-26
+* **feat(fast-updater-engine):** Completely modernized update subsystem adopting the best architecture from GIN-Cinema:
+  * Replaced legacy blocking `HttpURLConnection` with high-performance `OkHttpClient` (`okhttp:4.12.0`).
+  * Enforced **Strict IPv4-First/Only DNS Resolution** directly in the OkHttp client (`Dns.SYSTEM.lookup.filter { it is Inet4Address }`), completely eliminating Android TV / Ethernet IPv6 latency, broken router RA timeouts, and Cloudflare AAAA routing delays.
+  * Implemented resilient multi-mirror failover prioritized for Russia and worldwide (`https://ru-tv.eu/cinema_apk/launcher/version.json` direct IPv4 on DE-222, `https://cinema.gincz.com/cinema_apk/launcher/version.json` on Oracle-49, and `https://gincz.com/version.json`).
+  * Separated check from download: manifest verification runs in ~30 ms; user is presented with a non-blocking confirmation dialog with changelog details.
+  * Added live download progress tracking (0%..100%) and 32 KB buffered streaming.
+* **deploy:** Compiled `GIN-TV-Launcher_v053.apk`, updated `version.json`, deployed to Samba `\\s.gincz.com\user\APK\`, MEGA Cloud (`/MEGA/WIN-FLASH/ANDROID/GIN_APK/`), and public repository `D:\AI\GitHub\Android\GIN-Launcher\`.
+
+---
+
 ### [v052] - 2026-11-26
 * **feat(wallhaven-dynamic-4k):** Replaced static lists with dynamic keyword-based 4K wallpaper fetching from Wallhaven API (`q=<keywords>&sorting=random&resolutions=3840x2160,2560x1440&ratios=16x9&purity=100`). Guaranteed infinite unique 4K wallpapers rotating strictly every 5 hours without local storage overhead.
 * **feat(infinite-procedural-gradients):** Implemented mathematical dynamic generation (`generateInfiniteProceduralWallpaper`) utilizing random harmonic HSV color wheels, multi-octave Bezier curves, and ambient wave layers for infinite dark ambient art variations.

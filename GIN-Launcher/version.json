@@ -1,9 +1,9 @@
 ﻿{
-    "changelog":  "v052: Динамическая подгрузка 4K обоев по ключевым словам из Wallhaven, бесконечная генерация градиентов по формуле, живая заставка с тонкими шевелящимися краями волн и плавным 3-секундным кроссфейдом неярких часов.",
-    "gin_launcher_version_name":  "v052",
-    "versionName":  "v052",
-    "versionCode":  52,
-    "gin_launcher_version_code":  52,
-    "gin_launcher_apk":  "https://gincz.com/GIN-TV-Launcher_v052.apk",
-    "apkUrl":  "https://gincz.com/GIN-TV-Launcher_v052.apk"
+    "changelog": "v053: Высокоскоростной сетевой стек OkHttp с принудительным IPv4 DNS-резолвером (100% ликвидация любых задержек IPv6 на кабеле и Wi-Fi), мгновенная проверка манифеста за ~30 мс, отказоустойчивые зеркала (ru-tv.eu, cinema.gincz.com, gincz.com), интерактивный диалог и живой прогресс загрузки.",
+    "gin_launcher_version_name": "v053",
+    "versionName": "v053",
+    "versionCode": 53,
+    "gin_launcher_version_code": 53,
+    "gin_launcher_apk": "https://ru-tv.eu/cinema_apk/GIN-TV-Launcher_v053.apk",
+    "apkUrl": "https://ru-tv.eu/cinema_apk/GIN-TV-Launcher_v053.apk"
 }
