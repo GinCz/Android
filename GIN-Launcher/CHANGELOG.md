@@ -4,6 +4,25 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ---
 
+### [v051] - 2026-11-26
+* **feat(wallpaper-5h-cycle):** Switched wallpaper automatic rotation cycle to 5 hours (`FIVE_HOURS_MILLIS = 5 * 3600 * 1000L`).
+  * Eliminated modulo-time collision bug; implemented persistent SharedPreferences state tracking (`wp_index_${category}` and `wp_last_change_time`) for guaranteed non-repeating sequential rotation.
+* **feat(large-wallpaper-collections):** Expanded curated Full HD photo collections to 25+ images per category (Nature, Space, Flowers, Earth, Abstract, Cities, Ocean, Cars, Animals, Naruto).
+* **feat(16-procedural-themes):** Expanded original procedural gradient gallery from 4 to 16 rich organic dark themes with Bezier aurora ribbons and glowing crests.
+* **feat(living-ambient-screensaver):** Developed high-performance hardware-accelerated `AmbientWavesView` rendering deep organic flowing waves (Amethyst, Emerald Aurora, Sapphire) on pure OLED obsidian background.
+* **feat(screensaver-year-display):** Added 4-digit YEAR to the screensaver date view (`EEEE, d MMMM yyyy`).
+* **feat(smooth-clock-dissolve):** Replaced erratic jump relocations with graceful 1.8s fade-out, micro-scale down, smooth move across 9 balanced anchor zones, and 2.0s fade-in while background waves continuously flow.
+* **deploy:** Compiled `GIN-TV-Launcher_v051.apk`, deployed to `https://gincz.com/version.json`, Samba `\\s.gincz.com\user\APK\`, and MEGA Cloud (`/MEGA/WIN-FLASH/ANDROID/GIN_APK/`).
+
+---
+
+### [v050] - 2026-11-26
+* **fix(reboot-native-settings):** Fixed TV reboot/power hang by invoking native `AboutActivity` instead of broadcast intents.
+* **fix(home-interceptor-clean):** Cleaned filter triggers in `HomeInterceptorService` and separated Leanback/Home intent filters in `AndroidManifest.xml`.
+* **deploy:** Compiled `GIN-TV-Launcher_v050.apk` and published automated update.
+
+---
+
 ### [v042] - 2026-11-18
 * **fix(remote-key-filter):** Permanently eliminated `FLAG_REQUEST_FILTER_KEY_EVENTS` and set `android:canRequestFilterKeyEvents="false"` in `accessibility_service_config.xml`.
   * Removed all key event filtering from `HomeInterceptorService`. The Android `InputDispatcher` no longer delays or blocks input events via Binder IPC.
