@@ -4,6 +4,16 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
 
 ---
 
+### [v052] - 2026-11-26
+* **feat(wallhaven-dynamic-4k):** Replaced static lists with dynamic keyword-based 4K wallpaper fetching from Wallhaven API (`q=<keywords>&sorting=random&resolutions=3840x2160,2560x1440&ratios=16x9&purity=100`). Guaranteed infinite unique 4K wallpapers rotating strictly every 5 hours without local storage overhead.
+* **feat(infinite-procedural-gradients):** Implemented mathematical dynamic generation (`generateInfiniteProceduralWallpaper`) utilizing random harmonic HSV color wheels, multi-octave Bezier curves, and ambient wave layers for infinite dark ambient art variations.
+* **feat(living-ambient-waves-screensaver):** Completely overhauled `AmbientWavesView` for OLED TV: pure pitch black (`#000000`) background with ultra-subtle, barely visible undulating wave strands (violet, emerald, cyan, indigo; alpha ~10-18%, 24s period).
+* **feat(subdued-clock-crossfade):** Replaced harsh snaps with dual-container cross-fading (`screensaverClockContainerA` and `screensaverClockContainerB`), smoothly cross-dissolving across 9 balanced zones over 3.0s. Soft subdued colors (`#7892A2` clock, `#4A6270` date with full 4-digit year `EEEE, d MMMM yyyy`) eliminate glare in dark rooms.
+* **fix(permanent-launcher-lock):** Diagnosed and permanently fixed TV reverting to stock Google TV launcher: disabled competing stock launcher `com.google.android.tvlauncher` (`mPriority=2`) and `com.google.android.tvrecommendations` on TV while preserving Chromecast `mediashell`. Set GIN-Launcher as immutable default.
+* **deploy:** Compiled `GIN-TV-Launcher_v052.apk`, deployed to `https://gincz.com/version.json`, Samba `\\s.gincz.com\user\APK\`, and MEGA Cloud (`/MEGA/WIN-FLASH/ANDROID/GIN_APK/`).
+
+---
+
 ### [v051] - 2026-11-26
 * **feat(wallpaper-5h-cycle):** Switched wallpaper automatic rotation cycle to 5 hours (`FIVE_HOURS_MILLIS = 5 * 3600 * 1000L`).
   * Eliminated modulo-time collision bug; implemented persistent SharedPreferences state tracking (`wp_index_${category}` and `wp_last_change_time`) for guaranteed non-repeating sequential rotation.
@@ -122,7 +132,7 @@ All notable updates, fixes, and architectural evolutions for **GIN-TV-Launcher**
     2. `🔵 Slot 2 (Blue / Prime Video)`
     3. `⚪ Slot 3 (White 1)`
     4. `⚪ Slot 4 (White 2)`
-  * **Interactive 3-Step Programming Flow:** Select Slot (1–4) ➔ Press any target button on the remote control (`dialog_key_capture.xml`) ➔ Choose any installed application from the visual grid (e.g. `GIN-Tube`, `SmartTube`, `GIN-TV`, `GIN-KINO`).
+  * **Interactive 3-Step Programming Flow:** Select Slot (1–4) ➔ Press any target button on the remote control (`dialog_key_capture.xml`) ➔ Choose any installed application from the visual grid (e.g. `GIN-Tube`, `SmartTube`, `GIN-TV`, `GIN-Cinema`).
   * **Dual-Level Hardware Interception (`KeyEvent` + `ScanCode` + OEM Window Fallback):** Intercepts both standard Android `KeyEvent` / hardware `scanCode` globally via `HomeInterceptorService` (`flagRequestFilterKeyEvents`) and firmware-hardcoded OEM app launches (`TYPE_WINDOW_STATE_CHANGED`).
   * **Automatic Background App Killer (`🧹 Close all other apps on launch`):** Enabled by default. Pressing a programmed button automatically closes all other background/foreground apps (preserving `GIN-Launcher` and Google Cast `com.google.android.apps.mediashell`) before launching the selected app.
 

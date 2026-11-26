@@ -1,0 +1,9 @@
+﻿{
+    "changelog":  "v052: Динамическая подгрузка 4K обоев по ключевым словам из Wallhaven, бесконечная генерация градиентов по формуле, живая заставка с тонкими шевелящимися краями волн и плавным 3-секундным кроссфейдом неярких часов.",
+    "gin_launcher_version_name":  "v052",
+    "versionName":  "v052",
+    "versionCode":  52,
+    "gin_launcher_version_code":  52,
+    "gin_launcher_apk":  "https://gincz.com/GIN-TV-Launcher_v052.apk",
+    "apkUrl":  "https://gincz.com/GIN-TV-Launcher_v052.apk"
+}
