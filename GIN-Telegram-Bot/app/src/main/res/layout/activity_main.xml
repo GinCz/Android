@@ -124,42 +124,79 @@
             android:inputType="text"
             android:background="@color/surface"
             android:padding="12dp"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="12dp" />
 
-        <LinearLayout
+        <!-- SIM 1 Configuration -->
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="14dp">
+            android:text="SIM 1 (Слот 1): имя и номер"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp" />
 
-            <EditText
-                android:id="@+id/et_sim1_name"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/sim1_hint"
-                android:textColorHint="@color/text_secondary"
-                android:textColor="@color/text_primary"
-                android:textSize="13sp"
-                android:inputType="text"
-                android:background="@color/surface"
-                android:padding="12dp"
-                android:layout_marginEnd="6dp" />
+        <EditText
+            android:id="@+id/et_sim1_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sim1_hint"
+            android:textColorHint="@color/text_secondary"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:inputType="text"
+            android:background="@color/surface"
+            android:padding="12dp"
+            android:layout_marginBottom="6dp" />
 
-            <EditText
-                android:id="@+id/et_sim2_name"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/sim2_hint"
-                android:textColorHint="@color/text_secondary"
-                android:textColor="@color/text_primary"
-                android:textSize="13sp"
-                android:inputType="text"
-                android:background="@color/surface"
-                android:padding="12dp"
-                android:layout_marginStart="6dp" />
-        </LinearLayout>
+        <EditText
+            android:id="@+id/et_sim1_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sim1_number_hint"
+            android:textColorHint="@color/text_secondary"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:inputType="phone"
+            android:background="@color/surface"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- SIM 2 Configuration -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIM 2 (Слот 2): имя и номер"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_sim2_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sim2_hint"
+            android:textColorHint="@color/text_secondary"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:inputType="text"
+            android:background="@color/surface"
+            android:padding="12dp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/et_sim2_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sim2_number_hint"
+            android:textColorHint="@color/text_secondary"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:inputType="phone"
+            android:background="@color/surface"
+            android:padding="12dp"
+            android:layout_marginBottom="14dp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -247,7 +284,7 @@
             android:id="@+id/btn_update_signature"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="VladiMIR+AI ||| v002"
+            android:text="VladiMIR+AI ||| v003"
             android:textSize="13sp"
             android:textStyle="bold"
             android:textColor="@color/sand_yellow"

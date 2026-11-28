@@ -52,9 +52,16 @@ public class SmsReceiver extends BroadcastReceiver {
 
             // Extract SIM Slot / Operator
             int slotIndex = detectSimSlot(context, intent, bundle);
-            String simLabel = (slotIndex == 1) ?
-                    ("[SIM 2 • " + config.getSim2Name() + "]") :
-                    ("[SIM 1 • " + config.getSim1Name() + "]");
+            String simName = (slotIndex == 1) ? config.getSim2Name() : config.getSim1Name();
+            String simNumber = (slotIndex == 1) ? config.getSim2Number() : config.getSim1Number();
+            String slotTag = (slotIndex == 1) ? "SIM 2" : "SIM 1";
+
+            String simLabel;
+            if (simName != null && !simName.trim().isEmpty()) {
+                simLabel = "[" + slotTag + " • " + simName.trim() + "]";
+            } else {
+                simLabel = "[" + slotTag + "]";
+            }
 
             // Concatenate multi-part SMS messages by sender
             Map<String, StringBuilder> messagesBySender = new HashMap<>();
@@ -93,12 +100,18 @@ public class SmsReceiver extends BroadcastReceiver {
                 String sender = entry.getKey();
                 String fullText = entry.getValue().toString();
 
-                String html = "📩 <b>" + TelegramClient.escapeHtml(simLabel) + "</b> <i>" + timeStr + "</i>\n" +
-                        "<b>От:</b> <code>" + TelegramClient.escapeHtml(sender) + "</code>\n\n" +
-                        TelegramClient.escapeHtml(fullText);
+                StringBuilder html = new StringBuilder();
+                html.append("📩 <b>").append(TelegramClient.escapeHtml(simLabel)).append("</b> <i>").append(timeStr).append("</i>\n");
 
-                Log.i(TAG, "Forwarding SMS from " + sender + " (" + simLabel + ")");
-                TelegramClient.sendAsync(context, html, true, null);
+                if (simNumber != null && !simNumber.trim().isEmpty()) {
+                    html.append("<b>На номер:</b> <code>").append(TelegramClient.escapeHtml(simNumber.trim())).append("</code>\n");
+                }
+
+                html.append("<b>От:</b> <code>").append(TelegramClient.escapeHtml(sender)).append("</code>\n\n");
+                html.append(TelegramClient.escapeHtml(fullText));
+
+                Log.i(TAG, "Forwarding SMS from " + sender + " (" + simLabel + (simNumber != null && !simNumber.trim().isEmpty() ? " -> " + simNumber.trim() : "") + ")");
+                TelegramClient.sendAsync(context, html.toString(), true, null);
             }
 
         } catch (Exception e) {

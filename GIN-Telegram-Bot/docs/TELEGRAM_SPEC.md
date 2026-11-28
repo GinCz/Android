@@ -11,7 +11,8 @@ Outbound Telegram notifications use Telegram's native HTML parse mode (`parse_mo
 ### 📩 SMS Template (SIM 1):
 ```html
 📩 <b>[SIM 1 • Operator A]</b> <i>10:45:12</i>
-<b>From:</b> <code>+19876543210</code>
+<b>На номер:</b> <code>+19870001122</code>
+<b>От:</b> <code>+19876543210</code>
 
 Your verification code is: <b>849201</b>. Do not share this code with anyone.
 ```
@@ -19,7 +20,8 @@ Your verification code is: <b>849201</b>. Do not share this code with anyone.
 ### 📩 SMS Template (SIM 2):
 ```html
 📩 <b>[SIM 2 • Operator B]</b> <i>10:46:05</i>
-<b>From:</b> <code>BANK_ALERT</code>
+<b>На номер:</b> <code>+19870003344</code>
+<b>От:</b> <code>BANK_ALERT</code>
 
 Card *4829: Transaction of $45.20 at GROCERY STORE. Available balance: $1,240.50.
 ```

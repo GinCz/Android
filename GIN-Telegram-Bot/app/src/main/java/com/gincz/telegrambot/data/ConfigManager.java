@@ -18,7 +18,9 @@ public class ConfigManager {
     private static final String KEY_KUMA_INTERVAL = "key_kuma_interval";
     private static final String KEY_WHITELIST = "key_whitelisted_apps";
     private static final String KEY_SIM1_NAME = "key_sim1_name";
+    private static final String KEY_SIM1_NUMBER = "key_sim1_number";
     private static final String KEY_SIM2_NAME = "key_sim2_name";
+    private static final String KEY_SIM2_NUMBER = "key_sim2_number";
     private static final String KEY_SERVICE_ACTIVE = "key_service_active";
 
     private ConfigManager(Context context) {
@@ -80,12 +82,28 @@ public class ConfigManager {
         prefs.edit().putString(KEY_SIM1_NAME, name != null ? name.trim() : "МТС").apply();
     }
 
+    public String getSim1Number() {
+        return prefs.getString(KEY_SIM1_NUMBER, "");
+    }
+
+    public void setSim1Number(String number) {
+        prefs.edit().putString(KEY_SIM1_NUMBER, number != null ? number.trim() : "").apply();
+    }
+
     public String getSim2Name() {
         return prefs.getString(KEY_SIM2_NAME, "МегаФон");
     }
 
     public void setSim2Name(String name) {
         prefs.edit().putString(KEY_SIM2_NAME, name != null ? name.trim() : "МегаФон").apply();
+    }
+
+    public String getSim2Number() {
+        return prefs.getString(KEY_SIM2_NUMBER, "");
+    }
+
+    public void setSim2Number(String number) {
+        prefs.edit().putString(KEY_SIM2_NUMBER, number != null ? number.trim() : "").apply();
     }
 
     public boolean isServiceActive() {

@@ -1,31 +1,37 @@
-# 📝 Changelog — GIN-Telegram-Bot
+# 📝 История изменений (CHANGELOG) — GIN-Telegram-Bot
 
-All notable changes to this project will be documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+Все изменения проекта документируются в данном файле.
 
 ---
 
-## [v002] - 2026-11-28
-
-### Added
-- **On-Demand In-App Update Engine:** Implemented pure native `UpdateManager` and zero-dependency `GenericFileProvider` enabling manual one-tap APK updates without Google Play or external libraries across Android 5.0 through 15+.
-- **Signature Version Button:** Pinned `VladiMIR+AI ||| v002` action button at the bottom of settings interface, triggering real-time version manifest polling, progress dialog download, and native package installer launch.
-- **Redundant Update Mirrors:** Deployed HTTPS manifests and binary distributions to high-availability endpoints (`https://gincz.com/gin_telegram_bot_version.json` and `https://eco-seo.cz/apk/telegram_bot/version.json`).
-
-### Fixed & Improved
-- **Dedicated WakeLock in `TelegramClient.sendAsync`:** Acquired a temporary partial WakeLock during asynchronous Telegram API calls to prevent CPU sleep during lockscreen/Doze modes.
+## [v003] — 2026-11-28
+### Добавлено
+- **Полноценная идентификация телефонных номеров SIM 1 и SIM 2:** В настройках приложения добавлены отдельные поля ввода для телефонных номеров первой и второй SIM-карт (`et_sim1_number`, `et_sim2_number`) с сохранением в `ConfigManager`.
+- **Строка получателя «На номер» в Telegram-оповещениях:** В исходящие HTML-сообщения `SmsReceiver` добавлена вторая строчка с моноширинным оформлением `<b>На номер:</b> <code>+7...</code>`. Теперь в Telegram сразу видно, на какой конкретно телефонный номер пришло входящее SMS.
+- **Информативное тестовое сообщение:** В кнопку «Проверить Telegram» добавлено подробное перечисление активной конфигурации SIM 1 и SIM 2 с их именами и номерами.
+- **Фирменная кнопка версии обновлена до `v003`:** В нижней части настроек отображается статус `VladiMIR+AI ||| v003`.
 
 ---
 
-## [v001] - 2026-11-28
+## [v002] — 2026-11-28
+### Добавлено
+- **Система ручного обновления по запросу:** Добавлен модуль `UpdateManager` и встроенный нативный `GenericFileProvider` (без сторонних библиотек AndroidX) для безопасной загрузки и запуска обновления APK на Android 5.0–15+.
+- **Фирменная кнопка `VladiMIR+AI ||| v002`:** В настройки в нижнюю часть экрана добавлена акцентная кнопка песочно-желтого цвета (`#E5A93C`) со статусом текущей версии приложения. При нажатии запускается проверка наличия новой версии, диалог с changelog и загрузка/установка APK.
+- **Отказоустойчивые веб-зеркала обновлений:** Развернуты манифесты `version.json` и прямая отдача релизных APK на высокоскоростных зеркалах `https://gincz.com/gin_telegram_bot_version.json` и `https://eco-seo.cz/apk/telegram_bot/version.json`.
 
-### Added
-- **Native SMS Gateway:** High-priority `SmsReceiver` with multipart message reassembly and Dual-SIM carrier slot detection.
-- **Push Notification Listener:** `NotificationListenerService` capturing status-bar alerts from user-whitelisted financial and 2FA applications.
-- **Direct Telegram HTTP Client:** Native TLS 1.2+ transport using `HttpURLConnection` with zero third-party dependencies.
-- **Offline Message Buffer:** SQLite-based `OfflineQueue` for temporary caching and automatic retry when network connectivity is disrupted.
-- **Uptime Kuma Integration:** Periodic push heartbeat monitoring reporting battery level, Wi-Fi RSSI, and queue metrics every 15 minutes.
-- **Settings Activity:** Clean single-screen interface for configuring Bot Token, Chat ID, SIM names, Push URL, and app whitelist.
-- **R8 FullMode Shrinking:** Ultra-optimized 30 KB release binary with zero third-party libraries.
+### Исправлено и Улучшено
+- **Собственный `WakeLock` для `TelegramClient.sendAsync`:** Метод `sendAsync` теперь гарантированно удерживает процессор Android в бодрствующем состоянии на время выполнения сетевого запроса к `api.telegram.org` (таймаут 10 сек). Это исключает засыпание фонового потока после быстрого завершения синхронного `SmsReceiver.onReceive()`.
+
+---
+
+## [v001] — 2026-11-28
+### Добавлено
+- Полноценная реализация ультралегкого (30 КБ) нативного шлюза `GIN-Telegram-Bot` для замены `Remote Bot Pro`.
+- Каркас Gradle-проекта на чистом Android SDK без сторонних фреймворков (`minSdk 21`, `targetSdk 35`, `compileSdk 35`) с оптимизацией Google R8.
+- Модуль `SmsReceiver`: перехват SMS с приоритетом 2147483647, автоопределение слота SIM 1/SIM 2 (`SubscriptionManager` + MediaTek extras) и HTML-форматирование.
+- Модуль `NotificationListener`: фоновый системный сервис с белым списком банковских и государственных приложений (`ru.tinkoff.activities`, `ru.sberbankmobile`, `ru.gosuslugi.eskiapp` и др.), фильтрацией системного шума и дедупликацией (30 сек).
+- Модуль `KumaPinger` и `HeartbeatManager`: периодический пинг сервера Uptime Kuma раз в 15 минут через точный `AlarmManager` с передачей телеметрии (уровень заряда, статус зарядки, SSID и RSSI Wi-Fi, размер офлайн-очереди).
+- Модуль `OfflineQueue`: отказоустойчивая локальная база данных SQLite для буферизации сообщений при сбое Wi-Fi и их автоматического сброса в Telegram при восстановлении связи.
+- Модуль `TelegramClient`: нативный легковесный транспорт через `HttpURLConnection` для прямой отправки в Telegram Bot API.
+- Пользовательский интерфейс `MainActivity`: ввод параметров Bot Token, Chat ID, префикса устройства, названий SIM, Uptime Kuma URL, кнопки проверки связи и диалог выбора приложений с чекбоксами.
+- Скрипт автоматизированной сборки и развертывания `build_deploy.sh` с выкладкой в Samba DE-222 (`/storage/user/APK/`) и MEGA Cloud (`MEGA/WIN-FLASH/ANDROID/GIN_APK/`).

@@ -48,7 +48,9 @@ public class MainActivity extends Activity {
     private EditText etChatId;
     private EditText etDeviceName;
     private EditText etSim1Name;
+    private EditText etSim1Number;
     private EditText etSim2Name;
+    private EditText etSim2Number;
     private EditText etKumaUrl;
     private Switch switchService;
     private TextView tvNotifStatus;
@@ -63,7 +65,9 @@ public class MainActivity extends Activity {
         etChatId = findViewById(R.id.et_chat_id);
         etDeviceName = findViewById(R.id.et_device_name);
         etSim1Name = findViewById(R.id.et_sim1_name);
+        etSim1Number = findViewById(R.id.et_sim1_number);
         etSim2Name = findViewById(R.id.et_sim2_name);
+        etSim2Number = findViewById(R.id.et_sim2_number);
         etKumaUrl = findViewById(R.id.et_kuma_url);
         switchService = findViewById(R.id.switch_service);
         tvNotifStatus = findViewById(R.id.tv_notif_status);
@@ -156,7 +160,9 @@ public class MainActivity extends Activity {
         etChatId.setText(config.getChatId());
         etDeviceName.setText(config.getDeviceName());
         etSim1Name.setText(config.getSim1Name());
+        etSim1Number.setText(config.getSim1Number());
         etSim2Name.setText(config.getSim2Name());
+        etSim2Number.setText(config.getSim2Number());
         etKumaUrl.setText(config.getKumaUrl());
         switchService.setChecked(config.isServiceActive());
     }
@@ -167,7 +173,9 @@ public class MainActivity extends Activity {
         config.setChatId(etChatId.getText().toString());
         config.setDeviceName(etDeviceName.getText().toString());
         config.setSim1Name(etSim1Name.getText().toString());
+        config.setSim1Number(etSim1Number.getText().toString());
         config.setSim2Name(etSim2Name.getText().toString());
+        config.setSim2Number(etSim2Number.getText().toString());
         config.setKumaUrl(etKumaUrl.getText().toString());
         config.setServiceActive(switchService.isChecked());
 
@@ -225,10 +233,28 @@ public class MainActivity extends Activity {
     }
 
     private void sendTestTelegramMessage() {
-        String deviceName = ConfigManager.getInstance(this).getDeviceName();
-        String html = "🚀 <b>[" + TelegramClient.escapeHtml(deviceName) + " • Тест связи]</b>\n" +
-                "Шлюз GIN-Telegram-Bot успешно настроен и готов к приёму входящих сообщений.\n" +
-                "<b>Статус:</b> Связь с Telegram Bot API подтверждена.";
+        ConfigManager cfg = ConfigManager.getInstance(this);
+        String deviceName = cfg.getDeviceName();
+        String sim1 = cfg.getSim1Name();
+        String sim1Num = cfg.getSim1Number();
+        String sim2 = cfg.getSim2Name();
+        String sim2Num = cfg.getSim2Number();
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("🚀 <b>[").append(TelegramClient.escapeHtml(deviceName)).append(" • Тест связи]</b>\n");
+        sb.append("Шлюз GIN-Telegram-Bot успешно настроен и готов к приёму входящих сообщений.\n\n");
+        sb.append("<b>Конфигурация SIM:</b>\n");
+        sb.append("• <b>SIM 1:</b> ").append(TelegramClient.escapeHtml(sim1));
+        if (sim1Num != null && !sim1Num.trim().isEmpty()) {
+            sb.append(" (<code>").append(TelegramClient.escapeHtml(sim1Num.trim())).append("</code>)");
+        }
+        sb.append("\n• <b>SIM 2:</b> ").append(TelegramClient.escapeHtml(sim2));
+        if (sim2Num != null && !sim2Num.trim().isEmpty()) {
+            sb.append(" (<code>").append(TelegramClient.escapeHtml(sim2Num.trim())).append("</code>)");
+        }
+        sb.append("\n\n<b>Статус:</b> Связь с Telegram Bot API подтверждена.");
+
+        String html = sb.toString();
 
         Toast.makeText(this, "Отправка тестового сообщения...", Toast.LENGTH_SHORT).show();
         TelegramClient.sendAsync(this, html, false, new TelegramClient.SendCallback() {
