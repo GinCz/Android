@@ -1,4 +1,4 @@
-# 📱 Android Applications & Smart TV Suite
+﻿# 📱 Android Applications & Smart TV Suite
 
 > **Official Showcase & Distribution Repository:** [GinCz/Android ↗](https://github.com/GinCz/Android)  
 > **Author & Architect:** Ing. Vladimir Bulantsev ([GinCz ↗](https://github.com/GinCz)) & Anti-Gravity AI  
@@ -15,6 +15,8 @@ Each application is distributed as a single standalone APK build without third-p
 
 | Application | Target Platform | Latest Release | Direct Download (.apk) | SHA-256 Checksum |
 | :--- | :--- | :---: | :--- | :--- |
+| 📱 **[GIN-Telegram-Bot ↗](GIN-Telegram-Bot/)** | All Android Devices (Phone/Tablet) | 001-plan | [⬇️ **Download GIN-Telegram-Bot.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-Telegram-Bot/GIN-Telegram-Bot.apk) | < 200 KB |
+| ✉️ **[GIN-SMS-Backup ↗](GIN-SMS-Backup/)** | All Android Devices (Phone/Tablet) | 001-plan | [⬇️ **Download GIN-SMS-Backup.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-SMS-Backup/GIN-SMS-Backup.apk) | < 250 KB |
 | 🚀 **[GIN-Launcher ↗](GIN-Launcher/)** | Android TV / Google TV / FireTV | `v053` | [⬇️ **Download GIN-TV-Launcher.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-Launcher/GIN-TV-Launcher.apk) | `d7da91130050...` |
 | 🎬 **[GIN-Cinema ↗](GIN-Cinema/)** | Android TV / Tablets / Phones | `v114` | [⬇️ **Download GIN-Cinema.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-Cinema/GIN-Cinema.apk) | `40dad63dedc5...` |
 | 📺 **[GIN-TV ↗](GIN-TV/)** | Android TV / Smart TV / Mobile | `v077` | [⬇️ **Download GIN-TV.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-TV/GIN-TV.apk) | `ddd075718b01...` |
@@ -25,6 +27,18 @@ Each application is distributed as a single standalone APK build without third-p
 ---
 
 ## ⚡ Application Highlights
+
+### 📱 [GIN-Telegram-Bot](GIN-Telegram-Bot/) — Ultra-Lightweight SMS & Push Gateway
+- **Sub-300ms Telegram Dispatch:** Direct native HTTP POST forwarding for incoming SMS with Dual-SIM identification.
+- **Selective App Push Forwarding:** Intercepts push notifications from user-selected apps (banking, 2FA, logistics).
+- **Uptime Kuma Heartbeat:** Automatic periodic push pings (every 15 min) reporting battery, Wi-Fi RSSI, and queue health.
+- **Zero Google Play Overhead:** Operates independently of Google services, consuming under 5MB RAM and < 200KB disk.
+
+### ✉️ [GIN-SMS-Backup](GIN-SMS-Backup/) — Standalone Gmail IMAP Archiver
+- **Direct IMAP TLS Sync:** Archives SMS to Gmail folder SMS directly over imap.gmail.com:993 via Java SSL sockets.
+- **Pacing & Anti-Block Engine:** Enforces safe 3.0s delays between uploads and reuses open TLS sessions to prevent Google bans.
+- **Dual-SIM & Threading Support:** RFC 2822 compliant MIME headers preserve conversation threads and tag SIM slots.
+- **Never Sleeps:** Resilient Foreground Service architecture with offline SQLite queue.
 
 ### 🚀 [GIN-TV-Launcher](GIN-Launcher/) — Leanback Smart TV Home Interface
 - **Ultra-Lightweight Footprint:** Sub-25MB RAM consumption, optimized for low-end MediaTek / Amlogic chipsets.
