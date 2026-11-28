@@ -3,7 +3,7 @@
 <div align="center">
 
 ![Platform](https://img.shields.io/badge/Platform-Android%205.0+-3DDC84?logo=android&logoColor=white)
-![Release](https://img.shields.io/badge/Release-v001-brightgreen)
+![Release](https://img.shields.io/badge/Release-v004-brightgreen)
 ![APK Size](https://img.shields.io/badge/APK%20Size-30%20KB-orange)
 ![RAM Footprint](https://img.shields.io/badge/RAM-3--5%20MB-blue)
 ![External Deps](https://img.shields.io/badge/External%20Dependencies-0%20(Zero)-success)

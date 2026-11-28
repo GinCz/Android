@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="GIN-Telegram-Bot"
-            android:textSize="22sp"
+            android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="@color/accent"
             android:gravity="center" />
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="SMS &amp; Push Gateway • Uptime Kuma Heartbeat"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textColor="@color/text_secondary"
             android:gravity="center"
             android:layout_marginBottom="16dp" />
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@color/surface_card"
-            android:padding="12dp"
+            android:padding="14dp"
             android:layout_marginBottom="16dp">
 
             <TextView
@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/notif_status_denied"
                 android:textColor="@color/status_red"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -54,8 +54,8 @@
                 android:layout_height="wrap_content"
                 android:text="Очередь сообщений: 0"
                 android:textColor="@color/text_secondary"
-                android:textSize="12sp"
-                android:layout_marginTop="4dp" />
+                android:textSize="14sp"
+                android:layout_marginTop="6dp" />
 
             <Switch
                 android:id="@+id/switch_service"
@@ -63,55 +63,30 @@
                 android:layout_height="wrap_content"
                 android:text="Активность шлюза"
                 android:textColor="@color/text_primary"
-                android:textSize="14sp"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 android:checked="true"
-                android:layout_marginTop="8dp" />
+                android:layout_marginTop="10dp" />
         </LinearLayout>
 
-        <!-- Configuration Inputs -->
+        <!-- Device & Chat ID Section -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Параметры Telegram"
+            android:text="Параметры устройства и получателя"
             android:textColor="@color/accent"
             android:textStyle="bold"
-            android:textSize="14sp"
-            android:layout_marginBottom="6dp" />
-
-        <EditText
-            android:id="@+id/et_bot_token"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/bot_token_hint"
-            android:textColorHint="@color/text_secondary"
-            android:textColor="@color/text_primary"
-            android:textSize="13sp"
-            android:inputType="textPassword"
-            android:background="@color/surface"
-            android:padding="12dp"
-            android:layout_marginBottom="10dp" />
-
-        <EditText
-            android:id="@+id/et_chat_id"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/chat_id_hint"
-            android:textColorHint="@color/text_secondary"
-            android:textColor="@color/text_primary"
-            android:textSize="13sp"
-            android:inputType="text"
-            android:background="@color/surface"
-            android:padding="12dp"
-            android:layout_marginBottom="14dp" />
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Идентификация устройства и SIM"
-            android:textColor="@color/accent"
-            android:textStyle="bold"
+            android:text="Имя устройства (префикс):"
+            android:textColor="@color/text_primary"
             android:textSize="14sp"
-            android:layout_marginBottom="6dp" />
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
 
         <EditText
             android:id="@+id/et_device_name"
@@ -120,11 +95,43 @@
             android:hint="@string/device_name_hint"
             android:textColorHint="@color/text_secondary"
             android:textColor="@color/text_primary"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:inputType="text"
             android:background="@color/surface"
-            android:padding="12dp"
-            android:layout_marginBottom="12dp" />
+            android:padding="14dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telegram Chat ID (получатель):"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_chat_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/chat_id_hint"
+            android:textColorHint="@color/text_secondary"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:background="@color/surface"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- SIM Cards Configuration -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIM-карты (слоты 1 и 2)"
+            android:textColor="@color/accent"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
 
         <!-- SIM 1 Configuration -->
         <TextView
@@ -133,7 +140,7 @@
             android:text="SIM 1 (Слот 1): имя и номер"
             android:textColor="@color/text_primary"
             android:textStyle="bold"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:layout_marginBottom="4dp" />
 
         <EditText
@@ -143,10 +150,10 @@
             android:hint="@string/sim1_hint"
             android:textColorHint="@color/text_secondary"
             android:textColor="@color/text_primary"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:inputType="text"
             android:background="@color/surface"
-            android:padding="12dp"
+            android:padding="14dp"
             android:layout_marginBottom="6dp" />
 
         <EditText
@@ -156,11 +163,11 @@
             android:hint="@string/sim1_number_hint"
             android:textColorHint="@color/text_secondary"
             android:textColor="@color/text_primary"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:inputType="phone"
             android:background="@color/surface"
-            android:padding="12dp"
-            android:layout_marginBottom="12dp" />
+            android:padding="14dp"
+            android:layout_marginBottom="14dp" />
 
         <!-- SIM 2 Configuration -->
         <TextView
@@ -169,7 +176,7 @@
             android:text="SIM 2 (Слот 2): имя и номер"
             android:textColor="@color/text_primary"
             android:textStyle="bold"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:layout_marginBottom="4dp" />
 
         <EditText
@@ -179,10 +186,10 @@
             android:hint="@string/sim2_hint"
             android:textColorHint="@color/text_secondary"
             android:textColor="@color/text_primary"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:inputType="text"
             android:background="@color/surface"
-            android:padding="12dp"
+            android:padding="14dp"
             android:layout_marginBottom="6dp" />
 
         <EditText
@@ -192,20 +199,21 @@
             android:hint="@string/sim2_number_hint"
             android:textColorHint="@color/text_secondary"
             android:textColor="@color/text_primary"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:inputType="phone"
             android:background="@color/surface"
-            android:padding="12dp"
-            android:layout_marginBottom="14dp" />
+            android:padding="14dp"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Monitoring Section -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Мониторинг Uptime Kuma"
             android:textColor="@color/accent"
             android:textStyle="bold"
-            android:textSize="14sp"
-            android:layout_marginBottom="6dp" />
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
 
         <EditText
             android:id="@+id/et_kuma_url"
@@ -214,11 +222,54 @@
             android:hint="@string/kuma_url_hint"
             android:textColorHint="@color/text_secondary"
             android:textColor="@color/text_primary"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:inputType="textUri"
             android:background="@color/surface"
-            android:padding="12dp"
+            android:padding="14dp"
             android:layout_marginBottom="16dp" />
+
+        <!-- Protected Telegram Bot Token Section (Hidden/Masked at Bottom) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Защищенный ключ Telegram (Bot Token)"
+            android:textColor="@color/accent"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="6dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/surface"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_masked_token"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="••••••••••••••••"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:typeface="monospace"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btn_edit_token"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✏️ Изменить"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:background="@color/surface_card"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" />
+        </LinearLayout>
 
         <!-- Action Buttons -->
         <Button
@@ -226,8 +277,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn_save"
+            android:textSize="16sp"
+            android:textStyle="bold"
             android:textColor="@color/text_primary"
             android:background="@color/primary"
+            android:padding="14dp"
             android:layout_marginBottom="10dp" />
 
         <LinearLayout
@@ -242,9 +296,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/btn_test_tg"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textColor="@color/text_primary"
                 android:background="@color/surface_card"
+                android:padding="12dp"
                 android:layout_marginEnd="5dp" />
 
             <Button
@@ -253,9 +308,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/btn_test_kuma"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textColor="@color/text_primary"
                 android:background="@color/surface_card"
+                android:padding="12dp"
                 android:layout_marginStart="5dp" />
         </LinearLayout>
 
@@ -264,9 +320,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn_whitelist"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:textColor="@color/text_primary"
             android:background="@color/surface_card"
+            android:padding="12dp"
             android:layout_marginBottom="10dp" />
 
         <Button
@@ -274,9 +331,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn_notif_permission"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:textColor="@color/text_primary"
             android:background="@color/surface_card"
+            android:padding="12dp"
             android:layout_marginBottom="10dp" />
 
         <!-- On-Demand Version Update Signature Button -->
@@ -284,11 +342,12 @@
             android:id="@+id/btn_update_signature"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="VladiMIR+AI ||| v003"
-            android:textSize="13sp"
+            android:text="VladiMIR+AI ||| v004"
+            android:textSize="15sp"
             android:textStyle="bold"
             android:textColor="@color/sand_yellow"
             android:background="@color/surface_card"
+            android:padding="12dp"
             android:layout_marginBottom="16dp" />
 
     </LinearLayout>

@@ -44,7 +44,8 @@ import java.util.Set;
 
 public class MainActivity extends Activity {
 
-    private EditText etBotToken;
+    private TextView tvMaskedToken;
+    private Button btnEditToken;
     private EditText etChatId;
     private EditText etDeviceName;
     private EditText etSim1Name;
@@ -61,7 +62,14 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        etBotToken = findViewById(R.id.et_bot_token);
+        tvMaskedToken = findViewById(R.id.tv_masked_token);
+        btnEditToken = findViewById(R.id.btn_edit_token);
+        btnEditToken.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showEditTokenDialog();
+            }
+        });
         etChatId = findViewById(R.id.et_chat_id);
         etDeviceName = findViewById(R.id.et_device_name);
         etSim1Name = findViewById(R.id.et_sim1_name);
@@ -156,7 +164,7 @@ public class MainActivity extends Activity {
 
     private void loadSettings() {
         ConfigManager config = ConfigManager.getInstance(this);
-        etBotToken.setText(config.getBotToken());
+        updateMaskedTokenDisplay();
         etChatId.setText(config.getChatId());
         etDeviceName.setText(config.getDeviceName());
         etSim1Name.setText(config.getSim1Name());
@@ -169,7 +177,6 @@ public class MainActivity extends Activity {
 
     private void saveSettings() {
         ConfigManager config = ConfigManager.getInstance(this);
-        config.setBotToken(etBotToken.getText().toString());
         config.setChatId(etChatId.getText().toString());
         config.setDeviceName(etDeviceName.getText().toString());
         config.setSim1Name(etSim1Name.getText().toString());
@@ -182,6 +189,55 @@ public class MainActivity extends Activity {
         if (switchService.isChecked()) {
             HeartbeatManager.scheduleNext(this);
         }
+    }
+
+    private void updateMaskedTokenDisplay() {
+        String token = ConfigManager.getInstance(this).getBotToken();
+        tvMaskedToken.setText(maskToken(token));
+    }
+
+    private String maskToken(String token) {
+        if (token == null || token.trim().isEmpty()) {
+            return "(ключ не задан)";
+        }
+        token = token.trim();
+        if (token.length() <= 14) {
+            return "••••••••••••";
+        }
+        int prefixLen = Math.min(10, token.length() / 3);
+        int suffixLen = Math.min(6, token.length() / 4);
+        String prefix = token.substring(0, prefixLen);
+        String suffix = token.substring(token.length() - suffixLen);
+        return prefix + "••••••••••••" + suffix;
+    }
+
+    private void showEditTokenDialog() {
+        final ConfigManager config = ConfigManager.getInstance(this);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Редактирование Telegram Bot Token");
+
+        final EditText input = new EditText(this);
+        input.setInputType(android.text.InputType.TYPE_CLASS_TEXT);
+        input.setText(config.getBotToken());
+        if (input.getText().length() > 0) {
+            input.setSelection(input.getText().length());
+        }
+        input.setHint("123456789:ABCdefGhIJKlmNoPQRsTUVwxyZ");
+        input.setTextSize(15);
+        input.setPadding(36, 28, 36, 28);
+
+        builder.setView(input);
+        builder.setPositiveButton("Сохранить", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                String newToken = input.getText().toString().trim();
+                config.setBotToken(newToken);
+                updateMaskedTokenDisplay();
+                Toast.makeText(MainActivity.this, "Токен бота сохранен!", Toast.LENGTH_SHORT).show();
+            }
+        });
+        builder.setNegativeButton("Отмена", null);
+        builder.show();
     }
 
     private void updateServiceAndQueueStatus() {
