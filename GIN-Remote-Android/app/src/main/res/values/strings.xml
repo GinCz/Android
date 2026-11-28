@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GIN-Remote</string>
+    <string name="app_subtitle">Шлюз защищенного управления и ADB-мост</string>
+    <string name="btn_connect">Подключить</string>
+    <string name="btn_disconnect">Отключить</string>
+    <string name="status_connected">Подключено к Oracle-49</string>
+    <string name="status_connecting">Подключение...</string>
+    <string name="status_disconnected">Отключено</string>
+    <string name="version_text">GIN-Remote v017 • Обновить (OK)</string>
+    <string name="accessibility_desc">Служба дистанционного управления GIN-Remote для эмуляции кликов, свайпов и системных жестов без подключения к ПК.</string>
+</resources>
