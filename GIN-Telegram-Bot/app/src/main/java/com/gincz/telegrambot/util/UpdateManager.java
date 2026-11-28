@@ -187,10 +187,13 @@ public class UpdateManager {
                 String errorMsg = null;
 
                 try {
-                    File updatesDir = new File(activity.getCacheDir(), "updates");
+                    File extDir = activity.getExternalCacheDir();
+                    File updatesDir = (extDir != null) ? new File(extDir, "updates") : new File(activity.getCacheDir(), "updates");
                     if (!updatesDir.exists()) {
                         updatesDir.mkdirs();
                     }
+                    updatesDir.setReadable(true, false);
+                    updatesDir.setExecutable(true, false);
 
                     apkFile = new File(updatesDir, "GIN-Telegram-Bot_" + updateInfo.versionName + ".apk");
                     if (apkFile.exists()) {
@@ -235,6 +238,9 @@ public class UpdateManager {
                     }
                     out.flush();
                     success = apkFile.length() > 5000;
+                    if (success) {
+                        apkFile.setReadable(true, false);
+                    }
                 } catch (Exception e) {
                     errorMsg = e.getMessage();
                     Log.e(TAG, "Download error", e);
@@ -276,6 +282,13 @@ public class UpdateManager {
                     Toast.makeText(activity, "Разрешите установку из этого источника для обновления", Toast.LENGTH_LONG).show();
                     return;
                 }
+            }
+
+            apkFile.setReadable(true, false);
+            File parent = apkFile.getParentFile();
+            if (parent != null) {
+                parent.setReadable(true, false);
+                parent.setExecutable(true, false);
             }
 
             Uri apkUri = GenericFileProvider.getUriForFile(activity, apkFile);

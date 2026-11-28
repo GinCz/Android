@@ -33,6 +33,17 @@ public class GenericFileProvider extends ContentProvider {
         return true;
     }
 
+    private static File getUpdateFile(Context context, String fileName) {
+        File ext = context.getExternalCacheDir();
+        if (ext != null) {
+            File extFile = new File(new File(ext, "updates"), fileName);
+            if (extFile.exists()) {
+                return extFile;
+            }
+        }
+        return new File(new File(context.getCacheDir(), "updates"), fileName);
+    }
+
     @Override
     public ParcelFileDescriptor openFile(Uri uri, String mode) throws FileNotFoundException {
         Context context = getContext();
@@ -44,8 +55,7 @@ public class GenericFileProvider extends ContentProvider {
             throw new FileNotFoundException("Invalid URI: " + uri);
         }
 
-        File updatesDir = new File(context.getCacheDir(), "updates");
-        File file = new File(updatesDir, fileName);
+        File file = getUpdateFile(context, fileName);
         if (!file.exists()) {
             throw new FileNotFoundException("File not found: " + file.getAbsolutePath());
         }
@@ -64,7 +74,7 @@ public class GenericFileProvider extends ContentProvider {
         String fileName = uri.getLastPathSegment();
         if (fileName == null) return null;
 
-        File file = new File(new File(context.getCacheDir(), "updates"), fileName);
+        File file = getUpdateFile(context, fileName);
         if (!file.exists()) return null;
 
         String[] cols = projection != null ? projection : new String[]{

@@ -10,8 +10,8 @@ android {
         applicationId = "com.gincz.telegrambot"
         minSdk = 21
         targetSdk = 35
-        versionCode = 4
-        versionName = "v004"
+        versionCode = 5
+        versionName = "v005"
     }
 
     signingConfigs {

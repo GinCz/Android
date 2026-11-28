@@ -342,7 +342,7 @@
             android:id="@+id/btn_update_signature"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="VladiMIR+AI ||| v004"
+            android:text="VladiMIR+AI ||| v005"
             android:textSize="15sp"
             android:textStyle="bold"
             android:textColor="@color/sand_yellow"
