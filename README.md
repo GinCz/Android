@@ -15,11 +15,12 @@ Each application is distributed as a single standalone APK build without third-p
 
 | Application | Target Platform | Latest Release | Direct Download (.apk) | SHA-256 Checksum |
 | :--- | :--- | :---: | :--- | :--- |
-| 🚀 **[GIN-Launcher ↗](GIN-Launcher/)** | Android TV / Google TV / FireTV | `v034` | [⬇️ **Download GIN-TV-Launcher.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-Launcher/GIN-TV-Launcher.apk) | `36.5 MB` |
-| 🎬 **[GIN-Cinema ↗](GIN-Cinema/)** | Android TV / Tablets / Phones | `v114` | [⬇️ **Download GIN-Cinema.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-Cinema/GIN-Cinema.apk) | `5c6a3fe852e3...` |
-| 📺 **[GIN-TV ↗](GIN-TV/)** | Android TV / Smart TV / Mobile | `v077` | [⬇️ **Download GIN-TV.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-TV/GIN-TV.apk) | `da988b95ef5d...` |
-| 🌐 **[GIN-IP ↗](GIN-IP/)** | All Android Devices (Phone/TV) | `v013` | [⬇️ **Download GIN-IP.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-IP/GIN-IP.apk) | `bbee1deb4cd8...` |
+| 🚀 **[GIN-Launcher ↗](GIN-Launcher/)** | Android TV / Google TV / FireTV | `v053` | [⬇️ **Download GIN-TV-Launcher.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-Launcher/GIN-TV-Launcher.apk) | `d7da91130050...` |
+| 🎬 **[GIN-Cinema ↗](GIN-Cinema/)** | Android TV / Tablets / Phones | `v114` | [⬇️ **Download GIN-Cinema.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-Cinema/GIN-Cinema.apk) | `40dad63dedc5...` |
+| 📺 **[GIN-TV ↗](GIN-TV/)** | Android TV / Smart TV / Mobile | `v077` | [⬇️ **Download GIN-TV.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-TV/GIN-TV.apk) | `ddd075718b01...` |
+| 🌐 **[GIN-IP ↗](GIN-IP/)** | All Android Devices (Phone/TV) | `v013` | [⬇️ **Download GIN-IP.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-IP/GIN-IP.apk) | `18b8f62b5789...` |
 | 📦 **[GIN-APP ↗](GIN-APP/)** | Android TV / Mobile Hub | `v006` | [⬇️ **Download GIN-APP.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-APP/GIN-APP.apk) | `55ae6d199abd...` |
+| 📊 **[Ultarix-Monitor ↗](Ultarix-Monitor/)** | Android TV / Telemetry Daemon | `v002` | [⬇️ **Download Ultarix-Monitor.apk**](https://raw.githubusercontent.com/GinCz/Android/main/Ultarix-Monitor/Ultarix-Monitor_v002.apk) | `687e10cdbebf...` |
 
 ---
 
@@ -68,11 +69,28 @@ Get-FileHash -Algorithm SHA256 .\GIN-TV-Launcher.apk
 
 | Package Name | File | SHA-256 Hash |
 | :--- | :--- | :--- |
-| `GIN-TV-Launcher` | `GIN-TV-Launcher.apk` | `67d04ad62959efbf22ffa2ae800b2bd43ac2160cfbdea75dcc117a0eb98fcb84` |
-| `GIN-Cinema` | `GIN-Cinema.apk` | `5c6a3fe852e3baad0409806856c6c8ed415b9c8362b7c89d9b6452149c4bc0af` |
-| `GIN-TV` | `GIN-TV.apk` | `da988b95ef5dea5d81af8ca0ab6d71e06e49aca1c4492227ec6a404cd0c2fb29` |
-| `GIN-IP` | `GIN-IP.apk` | `bbee1deb4cd896ffa60367bfac670f7745803f2a8d1435373121230da22951ea` |
+| `GIN-TV-Launcher` | `GIN-TV-Launcher.apk` | `d7da9113005098c1871428ce1f9f59a77edad98e98840e55ff27ae514dfb61ab` |
+| `GIN-Cinema` | `GIN-Cinema.apk` | `40dad63dedc5ae93c0ca1066004000dc32451ed6ded0558eed34a917c0659563` |
+| `GIN-TV` | `GIN-TV.apk` | `ddd075718b01dbfe64766ad9a3dd7640982acf012b6a398da1c3faf7ca5e2c0c` |
+| `GIN-IP` | `GIN-IP.apk` | `18b8f62b57899370cc55895e0acb788e380d01e82397b00aaf80c62defe41d64` |
 | `GIN-APP` | `GIN-APP.apk` | `55ae6d199abd1dd4c9dd11ba5927eb7248e70dca78e4fe29b62d36ac03432df8` |
+| `Ultarix-Monitor` | `Ultarix-Monitor_v002.apk` | `687e10cdbebf4d9822aa71faf1d69e5cd36515b2669bc1ed8ae129d659fedba8` |
+
+---
+
+## 📋 Version History & Changelog
+
+<details>
+<summary><b>Click to expand full suite version history</b></summary>
+
+### v2026-11 (Latest)
+* **GIN-Launcher v053:** Leanback TV home interface with real-time network sentinels, 60fps D-pad performance.
+* **GIN-Cinema v114:** Hardware-accelerated 4K HDR playback and cross-device family sync.
+* **GIN-TV v077:** Ultra-fast sub-300ms live IPTV channel switching and EPG guide.
+* **Ultarix-Monitor v002:** Android TV hardware telemetry and background thermal monitoring.
+* **Integrity Audit:** Re-verified and published cryptographic SHA-256 hashes for all production APK files.
+
+</details>
 
 ---
 
