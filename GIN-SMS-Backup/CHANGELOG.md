@@ -28,6 +28,15 @@
 
 ---
 
+## [v002] — 2026-11-28
+### Added
+- **Integrated In-App Update Engine:** Lightweight `UpdateManager` checking releases via primary CDN (`https://gincz.com/gin_sms_backup_version.json`) and GitHub fallback mirrors.
+- **Settings Update Button (`VladiMIR+AI ||| v002`):** Direct manual update check button integrated into application settings layout.
+- **Native FileProvider Implementation:** Zero-dependency `UpdateFileProvider` allowing standard Android package installer (Android 7.0–15+) to safely read downloaded updates without heavy AndroidX bloat.
+- **Package Installation Permission:** Integrated `REQUEST_INSTALL_PACKAGES` permission handling.
+
+---
+
 ## [v001-plan] — 2026-11-28
 ### Добавлено
 - Создана полная архитектурная спецификация и пошаговый план разработки легковесного Android IMAP-архиватора SMS в Google Почту (`GIN-SMS-Backup`).

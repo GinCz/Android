@@ -3,7 +3,7 @@
 <div align="center">
 
 ![Platform](https://img.shields.io/badge/Platform-Android%205.0+-3DDC84?logo=android&logoColor=white)
-![Release](https://img.shields.io/badge/Release-v001--plan-brightgreen)
+![Release](https://img.shields.io/badge/Release-v002-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT%20%7C%20Open%20Source-blue)
 ![Size](https://img.shields.io/badge/Size-%3C%20250%20KB-orange)
 ![Google Play Dep](https://img.shields.io/badge/Google%20Play%20Services-None%20(Zero)-success)

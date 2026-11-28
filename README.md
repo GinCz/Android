@@ -16,7 +16,7 @@ Each application is distributed as a single standalone APK build without third-p
 | Application | Target Platform | Latest Release | Direct Download (.apk) | SHA-256 Checksum |
 | :--- | :--- | :---: | :--- | :--- |
 | 📱 **[GIN-Telegram-Bot ↗](GIN-Telegram-Bot/)** | All Android Devices (Phone/Tablet) | `v001` | [⬇️ **Download GIN-Telegram-Bot_v001.apk**](https://gincz.com/GIN-Telegram-Bot_v001.apk) | 30 KB |
-| ✉️ **[GIN-SMS-Backup ↗](GIN-SMS-Backup/)** | All Android Devices (Phone/Tablet) | `v001` | [⬇️ **Download GIN-SMS-Backup_v001.apk**](https://github.com/GinCz/Android/tree/main/GIN-SMS-Backup) | 62 KB |
+| ✉️ **[GIN-SMS-Backup ↗](GIN-SMS-Backup/)** | All Android Devices (Phone/Tablet) | `v002` | [⬇️ **Download GIN-SMS-Backup_v002.apk**](https://github.com/GinCz/Android/tree/main/GIN-SMS-Backup) | 73 KB |
 | 🚀 **[GIN-Launcher ↗](GIN-Launcher/)** | Android TV / Google TV / FireTV | `v053` | [⬇️ **Download GIN-TV-Launcher.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-Launcher/GIN-TV-Launcher.apk) | `d7da91130050...` |
 | 🎬 **[GIN-Cinema ↗](GIN-Cinema/)** | Android TV / Tablets / Phones | `v114` | [⬇️ **Download GIN-Cinema.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-Cinema/GIN-Cinema.apk) | `40dad63dedc5...` |
 | 📺 **[GIN-TV ↗](GIN-TV/)** | Android TV / Smart TV / Mobile | `v077` | [⬇️ **Download GIN-TV.apk**](https://raw.githubusercontent.com/GinCz/Android/main/GIN-TV/GIN-TV.apk) | `ddd075718b01...` |
