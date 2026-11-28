@@ -101,6 +101,12 @@ Get-FileHash -Algorithm SHA256 .\GIN-TV-Launcher.apk
 
 ---
 
+## 🏷️ Keywords, Topics & Search Metadata
+
+`#android-tv` `#google-tv` `#firetv` `#leanback-launcher` `#smart-tv-apps` `#exoplayer-4k` `#iptv-player` `#ad-free-streaming` `#android-telemetry` `#ultarix-monitor` `#kotlin-android` `#clean-architecture`
+
+---
+
 <div align="center">
 
 <h3>= Engineered by VladiMIR + AI =</h3>
