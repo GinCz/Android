@@ -4,6 +4,16 @@
 
 ---
 
+## [v007] — 2026-11-28
+### Исправлено
+- **Устранение «Синтаксической ошибки» (PackageParser: INVALID TYPE CONFIG) на Android 5.1 (DOOGEE X3):**
+  - **Отключен R8 Resource Shrinker (`isShrinkResources = false`, `isMinifyEnabled = false`):** Выявлена глубинная первопричина краха парсера пакетов на Android 5.1 Lollipop: современный механизм сжатия ресурсов AGP 8.7 удалял неиспользуемые ID и оставлял в бинарном файле `resources.arsc` пустые типы (`INVALID TYPE CONFIG FOR RESOURCE`), из-за чего устаревший C++ загрузчик `AssetManager::addAssetPath` на Android 5.1 возвращал ошибку при попытке прочитать манифест и ресурсы APK. Таблица ресурсов возвращена к абсолютно непрерывной и валидной структуре, идентичной проверенному модулю `GIN-SMS-Backup`.
+  - **Стабилизация Java Байткода (`VERSION_1_8`):** `compileOptions` переведены с Java 17 на `JavaVersion.VERSION_1_8` (`sourceCompatibility` и `targetCompatibility`) для безупречной интерпретации виртуальной машиной ART первого поколения на Android 5.1.
+  - **Отключение `android.enableR8.fullMode`:** В `gradle.properties` деактивирован агрессивный режим R8 Full Mode, исключая скрытые трансформации байткода и ресурсов.
+- **Фирменная кнопка версии обновлена до `v007`:** В нижней части настроек отображается статус `VladiMIR+AI ||| v007`.
+
+---
+
 ## [v006] — 2026-11-28
 ### Исправлено
 - **Устранение «Синтаксической ошибки» (Parse Error) на MediaTek Android 5.1 (API 22, DOOGEE X3):**
