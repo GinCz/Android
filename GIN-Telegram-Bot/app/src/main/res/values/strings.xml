@@ -15,4 +15,5 @@
     <string name="btn_whitelist">📱 Белый список приложений (Push)</string>
     <string name="notif_status_granted">✅ Доступ к уведомлениям: АКТИВЕН</string>
     <string name="notif_status_denied">⚠️ Доступ к уведомлениям: НЕ ВЫДАН</string>
+    <string name="footer_signature">VladiMIR+AI ||| %s</string>
 </resources>

@@ -34,6 +34,7 @@ import com.gincz.telegrambot.service.HeartbeatManager;
 import com.gincz.telegrambot.service.NotificationListener;
 import com.gincz.telegrambot.transport.KumaPinger;
 import com.gincz.telegrambot.transport.TelegramClient;
+import com.gincz.telegrambot.util.UpdateManager;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -73,6 +74,16 @@ public class MainActivity extends Activity {
         Button btnTestKuma = findViewById(R.id.btn_test_kuma);
         Button btnWhitelist = findViewById(R.id.btn_whitelist);
         Button btnNotifPermission = findViewById(R.id.btn_notif_permission);
+        Button btnUpdateSignature = findViewById(R.id.btn_update_signature);
+
+        String currentVer = UpdateManager.getCurrentVersionName(this);
+        btnUpdateSignature.setText(String.format(getString(R.string.footer_signature), currentVer));
+        btnUpdateSignature.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                UpdateManager.checkForUpdates(MainActivity.this, false);
+            }
+        });
 
         loadSettings();
         requestSmsPermissions();
@@ -132,6 +143,11 @@ public class MainActivity extends Activity {
     protected void onResume() {
         super.onResume();
         updateServiceAndQueueStatus();
+        Button btnUpdateSignature = findViewById(R.id.btn_update_signature);
+        if (btnUpdateSignature != null) {
+            String ver = UpdateManager.getCurrentVersionName(this);
+            btnUpdateSignature.setText(String.format(getString(R.string.footer_signature), ver));
+        }
     }
 
     private void loadSettings() {

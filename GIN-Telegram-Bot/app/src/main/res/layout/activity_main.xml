@@ -240,6 +240,18 @@
             android:textSize="13sp"
             android:textColor="@color/text_primary"
             android:background="@color/surface_card"
+            android:layout_marginBottom="10dp" />
+
+        <!-- On-Demand Version Update Signature Button -->
+        <Button
+            android:id="@+id/btn_update_signature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VladiMIR+AI ||| v002"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/sand_yellow"
+            android:background="@color/surface_card"
             android:layout_marginBottom="16dp" />
 
     </LinearLayout>

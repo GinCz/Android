@@ -10,5 +10,6 @@
     <color name="text_secondary">#B0B0B0</color>
     <color name="status_green">#00E676</color>
     <color name="status_red">#FF5252</color>
+    <color name="sand_yellow">#E5A93C</color>
     <color name="divider">#333333</color>
 </resources>
