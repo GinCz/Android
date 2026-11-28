@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title & Subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GIN-Telegram-Bot"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/accent"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMS &amp; Push Gateway • Uptime Kuma Heartbeat"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Status Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/surface_card"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_notif_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/notif_status_denied"
+                android:textColor="@color/status_red"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_queue_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Очередь сообщений: 0"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp" />
+
+            <Switch
+                android:id="@+id/switch_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Активность шлюза"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:checked="true"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Configuration Inputs -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Параметры Telegram"
+            android:textColor="@color/accent"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/et_bot_token"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bot_token_hint"
+            android:textColorHint="@color/text_secondary"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:inputType="textPassword"
+            android:background="@color/surface"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/et_chat_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/chat_id_hint"
+            android:textColorHint="@color/text_secondary"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:inputType="text"
+            android:background="@color/surface"
+            android:padding="12dp"
+            android:layout_marginBottom="14dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Идентификация устройства и SIM"
+            android:textColor="@color/accent"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/et_device_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/device_name_hint"
+            android:textColorHint="@color/text_secondary"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:inputType="text"
+            android:background="@color/surface"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="14dp">
+
+            <EditText
+                android:id="@+id/et_sim1_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/sim1_hint"
+                android:textColorHint="@color/text_secondary"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:inputType="text"
+                android:background="@color/surface"
+                android:padding="12dp"
+                android:layout_marginEnd="6dp" />
+
+            <EditText
+                android:id="@+id/et_sim2_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/sim2_hint"
+                android:textColorHint="@color/text_secondary"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:inputType="text"
+                android:background="@color/surface"
+                android:padding="12dp"
+                android:layout_marginStart="6dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Мониторинг Uptime Kuma"
+            android:textColor="@color/accent"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/et_kuma_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/kuma_url_hint"
+            android:textColorHint="@color/text_secondary"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:inputType="textUri"
+            android:background="@color/surface"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Action Buttons -->
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_save"
+            android:textColor="@color/text_primary"
+            android:background="@color/primary"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btn_test_tg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_test_tg"
+                android:textSize="12sp"
+                android:textColor="@color/text_primary"
+                android:background="@color/surface_card"
+                android:layout_marginEnd="5dp" />
+
+            <Button
+                android:id="@+id/btn_test_kuma"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_test_kuma"
+                android:textSize="12sp"
+                android:textColor="@color/text_primary"
+                android:background="@color/surface_card"
+                android:layout_marginStart="5dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_whitelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_whitelist"
+            android:textSize="13sp"
+            android:textColor="@color/text_primary"
+            android:background="@color/surface_card"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btn_notif_permission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_notif_permission"
+            android:textSize="13sp"
+            android:textColor="@color/text_primary"
+            android:background="@color/surface_card"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

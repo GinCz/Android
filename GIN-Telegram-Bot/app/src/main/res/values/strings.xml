@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GIN-Telegram-Bot</string>
+    <string name="settings_title">Настройки шлюза</string>
+    <string name="bot_token_hint">Telegram Bot Token (e.g. 123456:ABC-DEF...)</string>
+    <string name="chat_id_hint">Telegram Chat ID (e.g. 261784949)</string>
+    <string name="device_name_hint">Имя устройства (префикс)</string>
+    <string name="kuma_url_hint">Uptime Kuma Push URL (https://kuma.../api/push/...)</string>
+    <string name="sim1_hint">SIM 1 Название (МТС)</string>
+    <string name="sim2_hint">SIM 2 Название (МегаФон)</string>
+    <string name="btn_save">💾 Сохранить настройки</string>
+    <string name="btn_test_tg">🚀 Проверить Telegram</string>
+    <string name="btn_test_kuma">💓 Проверить Uptime Kuma</string>
+    <string name="btn_notif_permission">🔔 Доступ к уведомлениям</string>
+    <string name="btn_whitelist">📱 Белый список приложений (Push)</string>
+    <string name="notif_status_granted">✅ Доступ к уведомлениям: АКТИВЕН</string>
+    <string name="notif_status_denied">⚠️ Доступ к уведомлениям: НЕ ВЫДАН</string>
+</resources>
