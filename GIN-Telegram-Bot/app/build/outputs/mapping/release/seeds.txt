@@ -1,0 +1,74 @@
+com.gincz.telegrambot.util.UpdateManager$UpdateInfo
+com.gincz.telegrambot.receiver.BootReceiver
+com.gincz.telegrambot.util.UpdateManager
+com.gincz.telegrambot.util.UpdateManager$3
+com.gincz.telegrambot.util.UpdateManager$3$2
+com.gincz.telegrambot.service.NotificationListener
+com.gincz.telegrambot.util.UpdateManager$2
+com.gincz.telegrambot.util.UpdateManager$1
+com.gincz.telegrambot.util.UpdateManager$1$1
+com.gincz.telegrambot.receiver.SmsReceiver
+com.gincz.telegrambot.util.GenericFileProvider
+com.gincz.telegrambot.util.UpdateManager$3$1
+com.gincz.telegrambot.service.HeartbeatManager
+com.gincz.telegrambot.MainActivity
+com.gincz.telegrambot.util.UpdateManager$3: android.app.ProgressDialog val$progressDialog
+com.gincz.telegrambot.util.UpdateManager$1: boolean val$silent
+com.gincz.telegrambot.util.UpdateManager$3$2: java.lang.String val$finalErrorMsg
+com.gincz.telegrambot.util.UpdateManager$1: android.app.Activity val$activity
+com.gincz.telegrambot.util.UpdateManager$3$2: boolean val$finalSuccess
+com.gincz.telegrambot.util.UpdateManager$3$1: com.gincz.telegrambot.util.UpdateManager$3 this$0
+com.gincz.telegrambot.util.UpdateManager: java.lang.String[] MANIFEST_URLS
+com.gincz.telegrambot.util.UpdateManager$UpdateInfo: java.lang.String changelog
+com.gincz.telegrambot.util.UpdateManager$UpdateInfo: java.lang.String apkUrl
+com.gincz.telegrambot.util.UpdateManager$3: android.os.Handler val$mainHandler
+com.gincz.telegrambot.util.UpdateManager: java.lang.String TAG
+com.gincz.telegrambot.util.UpdateManager$3$1: int val$percent
+com.gincz.telegrambot.util.UpdateManager$3$2: java.io.File val$finalApkFile
+com.gincz.telegrambot.util.UpdateManager$UpdateInfo: int versionCode
+com.gincz.telegrambot.util.UpdateManager$1$1: com.gincz.telegrambot.util.UpdateManager$UpdateInfo val$updateInfo
+com.gincz.telegrambot.util.UpdateManager$3: com.gincz.telegrambot.util.UpdateManager$UpdateInfo val$updateInfo
+com.gincz.telegrambot.util.UpdateManager$UpdateInfo: java.lang.String versionName
+com.gincz.telegrambot.util.UpdateManager$3$2: com.gincz.telegrambot.util.UpdateManager$3 this$0
+com.gincz.telegrambot.util.GenericFileProvider: java.lang.String AUTHORITY_SUFFIX
+com.gincz.telegrambot.util.UpdateManager$2: com.gincz.telegrambot.util.UpdateManager$UpdateInfo val$updateInfo
+com.gincz.telegrambot.util.UpdateManager$2: android.app.Activity val$activity
+com.gincz.telegrambot.util.UpdateManager$1: android.os.Handler val$mainHandler
+com.gincz.telegrambot.util.UpdateManager$1$1: com.gincz.telegrambot.util.UpdateManager$1 this$0
+com.gincz.telegrambot.util.UpdateManager$3: android.app.Activity val$activity
+com.gincz.telegrambot.util.GenericFileProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])
+com.gincz.telegrambot.util.UpdateManager$3$1: void run()
+com.gincz.telegrambot.util.UpdateManager$2: void onClick(android.content.DialogInterface,int)
+com.gincz.telegrambot.util.UpdateManager: void showUpdateDialog(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo)
+com.gincz.telegrambot.util.GenericFileProvider: android.os.ParcelFileDescriptor openFile(android.net.Uri,java.lang.String)
+com.gincz.telegrambot.util.UpdateManager$3: void run()
+com.gincz.telegrambot.receiver.SmsReceiver: SmsReceiver()
+com.gincz.telegrambot.util.UpdateManager: void installApk(android.app.Activity,java.io.File)
+com.gincz.telegrambot.util.UpdateManager$3$2: void run()
+com.gincz.telegrambot.util.UpdateManager: void checkForUpdates(android.app.Activity,boolean)
+com.gincz.telegrambot.MainActivity: MainActivity()
+com.gincz.telegrambot.util.GenericFileProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])
+com.gincz.telegrambot.util.UpdateManager: java.lang.String getCurrentVersionName(android.content.Context)
+com.gincz.telegrambot.service.HeartbeatManager: HeartbeatManager()
+com.gincz.telegrambot.util.UpdateManager: com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest()
+com.gincz.telegrambot.util.UpdateManager$1: UpdateManager$1(android.os.Handler,android.app.Activity,boolean)
+com.gincz.telegrambot.util.GenericFileProvider: java.io.File getUpdateFile(android.content.Context,java.lang.String)
+com.gincz.telegrambot.util.UpdateManager$2: UpdateManager$2(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo)
+com.gincz.telegrambot.util.UpdateManager$3: UpdateManager$3(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo,android.os.Handler,android.app.ProgressDialog)
+com.gincz.telegrambot.util.UpdateManager$3$2: UpdateManager$3$2(com.gincz.telegrambot.util.UpdateManager$3,boolean,java.io.File,java.lang.String)
+com.gincz.telegrambot.util.UpdateManager$1$1: UpdateManager$1$1(com.gincz.telegrambot.util.UpdateManager$1,com.gincz.telegrambot.util.UpdateManager$UpdateInfo)
+com.gincz.telegrambot.util.GenericFileProvider: java.lang.String getType(android.net.Uri)
+com.gincz.telegrambot.util.GenericFileProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)
+com.gincz.telegrambot.util.GenericFileProvider: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)
+com.gincz.telegrambot.util.UpdateManager$1: void run()
+com.gincz.telegrambot.util.GenericFileProvider: boolean onCreate()
+com.gincz.telegrambot.util.UpdateManager$3$1: UpdateManager$3$1(com.gincz.telegrambot.util.UpdateManager$3,int)
+com.gincz.telegrambot.util.UpdateManager: UpdateManager()
+com.gincz.telegrambot.util.UpdateManager$UpdateInfo: UpdateManager$UpdateInfo(int,java.lang.String,java.lang.String,java.lang.String)
+com.gincz.telegrambot.util.GenericFileProvider: GenericFileProvider()
+com.gincz.telegrambot.util.UpdateManager: long getCurrentVersionCode(android.content.Context)
+com.gincz.telegrambot.util.UpdateManager$1$1: void run()
+com.gincz.telegrambot.util.UpdateManager: void startDownloadAndInstall(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo)
+com.gincz.telegrambot.service.NotificationListener: NotificationListener()
+com.gincz.telegrambot.receiver.BootReceiver: BootReceiver()
+com.gincz.telegrambot.util.GenericFileProvider: android.net.Uri getUriForFile(android.content.Context,java.io.File)

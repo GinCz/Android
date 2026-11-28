@@ -1,0 +1,158 @@
+Marking layout:item_app_whitelist:2130903041 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:iv_app_icon:2130837519 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tv_app_label:2130837521 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tv_app_package:2130837522 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:cb_app_selected:2130837511 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:notif_status_granted:2131034124 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking color:status_green:2130771974 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:notif_status_denied:2131034123 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking color:status_red:2130771975 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking layout:activity_main:2130903040 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tv_masked_token:2130837523 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:btn_edit_token:2130837504 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:et_chat_id:2130837512 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:et_device_name:2130837513 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:et_sim1_name:2130837515 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:et_sim1_number:2130837516 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:et_sim2_name:2130837517 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:et_sim2_number:2130837518 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:et_kuma_url:2130837514 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:switch_service:2130837520 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tv_notif_status:2130837524 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tv_queue_status:2130837525 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:btn_save:2130837506 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:btn_test_tg:2130837508 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:btn_test_kuma:2130837507 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:btn_whitelist:2130837510 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:btn_notif_permission:2130837505 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:btn_update_signature:2130837509 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:footer_signature:2131034121 reachable: referenced from /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+@color/accent : reachable=false
+@color/background : reachable=false
+@color/divider : reachable=false
+@color/primary : reachable=false
+@color/primary_dark : reachable=false
+@color/sand_yellow : reachable=false
+@color/status_green : reachable=true
+@color/status_red : reachable=true
+@color/surface : reachable=false
+@color/surface_card : reachable=false
+@color/text_primary : reachable=false
+@color/text_secondary : reachable=false
+@id/btn_edit_token : reachable=true
+@id/btn_notif_permission : reachable=true
+@id/btn_save : reachable=true
+@id/btn_test_kuma : reachable=true
+@id/btn_test_tg : reachable=true
+@id/btn_update_signature : reachable=true
+@id/btn_whitelist : reachable=true
+@id/cb_app_selected : reachable=true
+@id/et_chat_id : reachable=true
+@id/et_device_name : reachable=true
+@id/et_kuma_url : reachable=true
+@id/et_sim1_name : reachable=true
+@id/et_sim1_number : reachable=true
+@id/et_sim2_name : reachable=true
+@id/et_sim2_number : reachable=true
+@id/iv_app_icon : reachable=true
+@id/switch_service : reachable=true
+@id/tv_app_label : reachable=true
+@id/tv_app_package : reachable=true
+@id/tv_masked_token : reachable=true
+@id/tv_notif_status : reachable=true
+@id/tv_queue_status : reachable=true
+@layout/activity_main : reachable=true
+    @color/background
+    @color/accent
+    @color/text_secondary
+    @color/surface_card
+    @color/status_red
+    @string/notif_status_denied
+    @color/text_primary
+    @color/surface
+    @string/device_name_hint
+    @string/chat_id_hint
+    @string/sim1_hint
+    @string/sim1_number_hint
+    @string/sim2_hint
+    @string/sim2_number_hint
+    @string/kuma_url_hint
+    @color/primary
+    @string/btn_save
+    @string/btn_test_tg
+    @string/btn_test_kuma
+    @string/btn_whitelist
+    @string/btn_notif_permission
+    @color/sand_yellow
+@layout/item_app_whitelist : reachable=true
+    @color/surface
+    @color/text_primary
+    @color/text_secondary
+@mipmap/ic_launcher : reachable=true
+@mipmap/ic_launcher_background : reachable=false
+@mipmap/ic_launcher_foreground : reachable=false
+@mipmap/ic_launcher_round : reachable=false
+@string/app_name : reachable=true
+@string/bot_token_hint : reachable=false
+@string/btn_notif_permission : reachable=false
+@string/btn_save : reachable=false
+@string/btn_test_kuma : reachable=false
+@string/btn_test_tg : reachable=false
+@string/btn_whitelist : reachable=false
+@string/chat_id_hint : reachable=false
+@string/device_name_hint : reachable=false
+@string/footer_signature : reachable=true
+@string/kuma_url_hint : reachable=false
+@string/notif_status_denied : reachable=true
+@string/notif_status_granted : reachable=true
+@string/settings_title : reachable=false
+@string/sim1_hint : reachable=false
+@string/sim1_number_hint : reachable=false
+@string/sim2_hint : reachable=false
+@string/sim2_number_hint : reachable=false
+@style/AppTheme : reachable=true
+    @color/background
+    @color/primary
+    @color/primary_dark
+    @color/accent
+
+The root reachable resources are:
+ color:status_green:2130771974
+ color:status_red:2130771975
+ id:btn_edit_token:2130837504
+ id:btn_notif_permission:2130837505
+ id:btn_save:2130837506
+ id:btn_test_kuma:2130837507
+ id:btn_test_tg:2130837508
+ id:btn_update_signature:2130837509
+ id:btn_whitelist:2130837510
+ id:cb_app_selected:2130837511
+ id:et_chat_id:2130837512
+ id:et_device_name:2130837513
+ id:et_kuma_url:2130837514
+ id:et_sim1_name:2130837515
+ id:et_sim1_number:2130837516
+ id:et_sim2_name:2130837517
+ id:et_sim2_number:2130837518
+ id:iv_app_icon:2130837519
+ id:switch_service:2130837520
+ id:tv_app_label:2130837521
+ id:tv_app_package:2130837522
+ id:tv_masked_token:2130837523
+ id:tv_notif_status:2130837524
+ id:tv_queue_status:2130837525
+ layout:activity_main:2130903040
+ layout:item_app_whitelist:2130903041
+ mipmap:ic_launcher:2130968576
+ string:app_name:2131034112
+ string:footer_signature:2131034121
+ string:notif_status_denied:2131034123
+ string:notif_status_granted:2131034124
+ style:AppTheme:2131099648
+Unused resources are: 
+ color:divider:2130771970
+ mipmap:ic_launcher_background:2130968577
+ mipmap:ic_launcher_foreground:2130968578
+ mipmap:ic_launcher_round:2130968579
+ string:bot_token_hint:2131034113
+ string:settings_title:2131034125

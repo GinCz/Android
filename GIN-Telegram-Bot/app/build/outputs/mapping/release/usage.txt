@@ -1,0 +1,131 @@
+com.gincz.telegrambot.R$color:
+    public static int accent
+    public static int background
+    public static int divider
+    public static int primary
+    public static int primary_dark
+    public static int sand_yellow
+    public static int surface
+    public static int surface_card
+    public static int text_primary
+    public static int text_secondary
+    private void <init>()
+com.gincz.telegrambot.R$id:
+    private void <init>()
+com.gincz.telegrambot.R$layout:
+    private void <init>()
+com.gincz.telegrambot.R$mipmap
+com.gincz.telegrambot.R$string:
+    public static int app_name
+    public static int bot_token_hint
+    public static int btn_notif_permission
+    public static int btn_save
+    public static int btn_test_kuma
+    public static int btn_test_tg
+    public static int btn_whitelist
+    public static int chat_id_hint
+    public static int device_name_hint
+    public static int kuma_url_hint
+    public static int settings_title
+    public static int sim1_hint
+    public static int sim1_number_hint
+    public static int sim2_hint
+    public static int sim2_number_hint
+    private void <init>()
+com.gincz.telegrambot.R$style
+com.gincz.telegrambot.R
+com.gincz.telegrambot.data.ConfigManager:
+    private static final java.lang.String KEY_BOT_TOKEN
+    private static final java.lang.String KEY_CHAT_ID
+    private static final java.lang.String KEY_DEVICE_NAME
+    private static final java.lang.String KEY_KUMA_INTERVAL
+    private static final java.lang.String KEY_KUMA_URL
+    private static final java.lang.String KEY_SERVICE_ACTIVE
+    private static final java.lang.String KEY_SIM1_NAME
+    private static final java.lang.String KEY_SIM1_NUMBER
+    private static final java.lang.String KEY_SIM2_NAME
+    private static final java.lang.String KEY_SIM2_NUMBER
+    private static final java.lang.String KEY_WHITELIST
+    private static final java.lang.String PREF_NAME
+    public void setKumaIntervalMinutes(int)
+com.gincz.telegrambot.data.OfflineQueue:
+    private static final java.lang.String COL_ID
+    private static final java.lang.String COL_MESSAGE
+    private static final java.lang.String COL_TIMESTAMP
+    private static final java.lang.String DB_NAME
+    private static final int DB_VERSION
+    private static final java.lang.String TABLE_NAME
+com.gincz.telegrambot.receiver.BootReceiver:
+    private static final java.lang.String TAG
+com.gincz.telegrambot.receiver.SmsReceiver:
+    private static final java.lang.String TAG
+com.gincz.telegrambot.service.HeartbeatManager:
+    public static final java.lang.String ACTION_HEARTBEAT
+    private static final java.lang.String TAG
+com.gincz.telegrambot.service.NotificationListener:
+    private static final java.lang.String TAG
+com.gincz.telegrambot.transport.KumaPinger:
+    private static final java.lang.String TAG
+    public void <init>()
+com.gincz.telegrambot.transport.TelegramClient:
+    private static final java.lang.String TAG
+    public void <init>()
+com.gincz.telegrambot.MainActivity$10:
+    public static void onResult()
+com.gincz.telegrambot.MainActivity$11:
+    public static void onResult()
+com.gincz.telegrambot.MainActivity$12:
+    public final synthetic com.gincz.telegrambot.MainActivity this$0
+    public static int compare()
+com.gincz.telegrambot.MainActivity$14:
+    public final synthetic com.gincz.telegrambot.MainActivity this$0
+com.gincz.telegrambot.MainActivity:
+    public android.widget.Button btnEditToken
+    public static boolean isNotificationServiceEnabled()
+    public static void loadSettings()
+    public static java.lang.String maskToken()
+    public static void requestSmsPermissions()
+    public static void saveSettings()
+    public static void sendTestTelegramMessage()
+    public static void showAppWhitelistDialog()
+    public static void showEditTokenDialog()
+    public static void testKumaPing()
+com.gincz.telegrambot.R$color
+com.gincz.telegrambot.R$id
+com.gincz.telegrambot.R$layout
+com.gincz.telegrambot.R$string
+com.gincz.telegrambot.data.ConfigManager:
+    public final java.lang.String getBotToken()
+    public final java.lang.String getChatId()
+    public final java.lang.String getDeviceName()
+    public static int getKumaIntervalMinutes()
+    public final java.lang.String getKumaUrl()
+    public final java.lang.String getSim1Name()
+    public final java.lang.String getSim1Number()
+    public final java.lang.String getSim2Name()
+    public final java.lang.String getSim2Number()
+    public static boolean isPackageWhitelisted()
+    public final boolean isServiceActive()
+    public static void setBotToken()
+    public static void setChatId()
+    public static void setDeviceName()
+    public static void setKumaUrl()
+    public final void setServiceActive(boolean)
+    public static void setSim1Name()
+    public static void setSim1Number()
+    public static void setSim2Name()
+    public static void setSim2Number()
+    public static void setWhitelistedPackages()
+com.gincz.telegrambot.data.OfflineQueue$QueueItem:
+    public final long timestamp
+com.gincz.telegrambot.data.OfflineQueue:
+    public final synchronized java.util.List peekAll()
+com.gincz.telegrambot.receiver.BootReceiver:
+    public static int getBatteryPercentage()
+    public static java.lang.String getWifiDetails()
+com.gincz.telegrambot.transport.KumaPinger$PingCallback
+com.gincz.telegrambot.transport.KumaPinger:
+    public static void pingAsync(android.content.Context,com.gincz.telegrambot.MainActivity$11)
+com.gincz.telegrambot.transport.TelegramClient$SendCallback
+com.gincz.telegrambot.transport.TelegramClient:
+    public static void flushQueueAsync(android.content.Context)

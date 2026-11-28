@@ -1,0 +1,6 @@
+-keep class com.gincz.telegrambot.MainActivity { <init>(); }
+-keep class com.gincz.telegrambot.receiver.BootReceiver { <init>(); }
+-keep class com.gincz.telegrambot.receiver.SmsReceiver { <init>(); }
+-keep class com.gincz.telegrambot.service.HeartbeatManager { <init>(); }
+-keep class com.gincz.telegrambot.service.NotificationListener { <init>(); }
+-keep class com.gincz.telegrambot.util.GenericFileProvider { <init>(); }

@@ -1,0 +1,165 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:2:1-81:12
+	package
+		INJECTED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:6:5-76
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:6:22-73
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:7:5-70
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:7:22-67
+uses-permission#android.permission.READ_SMS
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:8:22-64
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:9:5-75
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:9:22-72
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:11:22-65
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:12:5-83
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:12:22-80
+application
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:14:5-79:19
+INJECTED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:14:5-79:19
+	android:extractNativeLibs
+		INJECTED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml
+	android:label
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:17:9-41
+	android:icon
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:16:9-43
+	android:allowBackup
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:15:9-36
+	android:theme
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:18:9-40
+	android:usesCleartextTraffic
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:19:9-45
+activity#com.gincz.telegrambot.MainActivity
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:21:9-30:20
+	android:label
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:24:13-45
+	android:launchMode
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:25:13-43
+	android:exported
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:23:13-36
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:22:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:26:13-29:29
+action#android.intent.action.MAIN
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:27:17-69
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:27:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:28:27-74
+receiver#com.gincz.telegrambot.receiver.SmsReceiver
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:33:9-39:20
+	android:exported
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:35:13-36
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:34:13-49
+intent-filter#action:name:android.provider.Telephony.SMS_RECEIVED
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:36:13-38:29
+	android:priority
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:36:28-57
+action#android.provider.Telephony.SMS_RECEIVED
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:37:17-82
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:37:25-79
+receiver#com.gincz.telegrambot.receiver.BootReceiver
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:42:9-50:20
+	android:exported
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:44:13-36
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:43:13-50
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.MY_PACKAGE_REPLACED+action:name:android.intent.action.QUICKBOOT_POWERON
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:45:13-49:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:46:17-79
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:46:25-76
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:47:17-82
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:47:25-79
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:48:17-84
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:48:25-81
+receiver#com.gincz.telegrambot.service.HeartbeatManager
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:53:9-59:20
+	android:exported
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:55:13-37
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:54:13-53
+intent-filter#action:name:com.gincz.telegrambot.ACTION_HEARTBEAT
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:56:13-58:29
+action#com.gincz.telegrambot.ACTION_HEARTBEAT
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:57:17-81
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:57:25-78
+service#com.gincz.telegrambot.service.NotificationListener
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:62:9-70:19
+	android:label
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:65:13-45
+	android:exported
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:64:13-36
+	android:permission
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:66:13-87
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:63:13-57
+intent-filter#action:name:android.service.notification.NotificationListenerService
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:67:13-69:29
+action#android.service.notification.NotificationListenerService
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:68:17-99
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:68:25-96
+provider#com.gincz.telegrambot.util.GenericFileProvider
+ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:73:9-77:50
+	android:grantUriPermissions
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:77:13-47
+	android:authorities
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:75:13-69
+	android:exported
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:76:13-37
+	android:name
+		ADDED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml:74:13-53
+uses-sdk
+INJECTED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml
+INJECTED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/AndroidManifest.xml

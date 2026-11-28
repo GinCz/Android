@@ -1,0 +1,8 @@
+com.gincz.telegrambot.app-pngs-0 /root/.AI/github/Android/GIN-Telegram-Bot/app/build/generated/res/pngs/release
+com.gincz.telegrambot.app-resValues-1 /root/.AI/github/Android/GIN-Telegram-Bot/app/build/generated/res/resValues/release
+com.gincz.telegrambot.app-packageReleaseResources-2 /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+com.gincz.telegrambot.app-packageReleaseResources-3 /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+com.gincz.telegrambot.app-merged-not-compiled-resources-4 /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/merged-not-compiled-resources/release
+com.gincz.telegrambot.app-release-5 /root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/merged_res/release/mergeReleaseResources
+com.gincz.telegrambot.app-main-6 /root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/res
+com.gincz.telegrambot.app-release-7 /root/.AI/github/Android/GIN-Telegram-Bot/app/src/release/res

@@ -1,0 +1,1189 @@
+# compiler: R8
+# compiler_version: 8.7.18
+# min_api: 21
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"2.2"}
+# pg_map_id: 20f5829
+# pg_map_hash: SHA-256 20f5829d4c96e0f09759ba483ee5c87b2aa995bdd3dbef8828228c5f248093c3
+com.gincz.telegrambot.MainActivity -> com.gincz.telegrambot.MainActivity:
+# {"id":"sourceFile","fileName":"MainActivity.java"}
+    android.widget.TextView tvMaskedToken -> a
+    android.widget.EditText etChatId -> b
+    android.widget.EditText etDeviceName -> c
+    android.widget.EditText etSim1Name -> d
+    android.widget.EditText etSim1Number -> e
+    android.widget.EditText etSim2Name -> f
+    android.widget.EditText etSim2Number -> g
+    android.widget.EditText etKumaUrl -> h
+    android.widget.Switch switchService -> i
+    android.widget.TextView tvNotifStatus -> j
+    android.widget.TextView tvQueueStatus -> k
+    int $r8$clinit -> l
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:4:void <init>():45:45 -> <init>
+    4:7:void saveSettings():179:179 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lcom/gincz/telegrambot/MainActivity;)V"}
+    8:17:void saveSettings():180:180 -> a
+    18:21:void com.gincz.telegrambot.data.ConfigManager.setChatId(java.lang.String):50:50 -> a
+    18:21:void saveSettings():180 -> a
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    22:44:void com.gincz.telegrambot.data.ConfigManager.setChatId(java.lang.String):50:50 -> a
+    22:44:void saveSettings():180 -> a
+    45:54:void saveSettings():181:181 -> a
+    55:80:void com.gincz.telegrambot.data.ConfigManager.setDeviceName(java.lang.String):58:58 -> a
+    55:80:void saveSettings():181 -> a
+    81:90:void saveSettings():182:182 -> a
+    91:112:void com.gincz.telegrambot.data.ConfigManager.setSim1Name(java.lang.String):82:82 -> a
+    91:112:void saveSettings():182 -> a
+    113:122:void saveSettings():183:183 -> a
+    123:143:void com.gincz.telegrambot.data.ConfigManager.setSim1Number(java.lang.String):90:90 -> a
+    123:143:void saveSettings():183 -> a
+    144:153:void saveSettings():184:184 -> a
+    154:175:void com.gincz.telegrambot.data.ConfigManager.setSim2Name(java.lang.String):98:98 -> a
+    154:175:void saveSettings():184 -> a
+    176:185:void saveSettings():185:185 -> a
+    186:206:void com.gincz.telegrambot.data.ConfigManager.setSim2Number(java.lang.String):106:106 -> a
+    186:206:void saveSettings():185 -> a
+    207:216:void saveSettings():186:186 -> a
+    217:235:void com.gincz.telegrambot.data.ConfigManager.setKumaUrl(java.lang.String):66:66 -> a
+    217:235:void saveSettings():186 -> a
+    236:241:void saveSettings():187:187 -> a
+    242:254:void com.gincz.telegrambot.data.ConfigManager.setServiceActive(boolean):114:114 -> a
+    242:254:void saveSettings():187 -> a
+    255:262:void saveSettings():189:189 -> a
+    263:266:void saveSettings():190:190 -> a
+    1:4:void updateMaskedTokenDisplay():195:195 -> b
+    5:6:java.lang.String com.gincz.telegrambot.data.ConfigManager.getBotToken():38:38 -> b
+    5:6:void updateMaskedTokenDisplay():195 -> b
+    7:10:java.lang.String com.gincz.telegrambot.data.ConfigManager.getBotToken():38:38 -> b
+    7:10:void updateMaskedTokenDisplay():195 -> b
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    11:16:java.lang.String com.gincz.telegrambot.data.ConfigManager.getBotToken():38:38 -> b
+    11:16:void updateMaskedTokenDisplay():195 -> b
+    17:20:void updateMaskedTokenDisplay():196:196 -> b
+    21:31:java.lang.String maskToken(java.lang.String):200:200 -> b
+    21:31:void updateMaskedTokenDisplay():196 -> b
+    32:35:java.lang.String maskToken(java.lang.String):203:203 -> b
+    32:35:void updateMaskedTokenDisplay():196 -> b
+    36:46:java.lang.String maskToken(java.lang.String):204:204 -> b
+    36:46:void updateMaskedTokenDisplay():196 -> b
+    47:58:java.lang.String maskToken(java.lang.String):207:207 -> b
+    47:58:void updateMaskedTokenDisplay():196 -> b
+    59:70:java.lang.String maskToken(java.lang.String):208:208 -> b
+    59:70:void updateMaskedTokenDisplay():196 -> b
+    71:74:java.lang.String maskToken(java.lang.String):209:209 -> b
+    71:74:void updateMaskedTokenDisplay():196 -> b
+    75:83:java.lang.String maskToken(java.lang.String):210:210 -> b
+    75:83:void updateMaskedTokenDisplay():196 -> b
+    84:102:java.lang.String maskToken(java.lang.String):211:211 -> b
+    84:102:void updateMaskedTokenDisplay():196 -> b
+    103:104:java.lang.String maskToken(java.lang.String):201:201 -> b
+    103:104:void updateMaskedTokenDisplay():196 -> b
+    105:108:void updateMaskedTokenDisplay():196:196 -> b
+    1:4:boolean isNotificationServiceEnabled():258:258 -> c
+    1:4:void updateServiceAndQueueStatus():244 -> c
+    5:14:boolean isNotificationServiceEnabled():259:259 -> c
+    5:14:void updateServiceAndQueueStatus():244 -> c
+    15:20:boolean isNotificationServiceEnabled():260:260 -> c
+    15:20:void updateServiceAndQueueStatus():244 -> c
+    21:26:boolean isNotificationServiceEnabled():261:261 -> c
+    21:26:void updateServiceAndQueueStatus():244 -> c
+    27:32:boolean isNotificationServiceEnabled():262:262 -> c
+    27:32:void updateServiceAndQueueStatus():244 -> c
+    33:38:boolean isNotificationServiceEnabled():263:263 -> c
+    33:38:void updateServiceAndQueueStatus():244 -> c
+    39:48:boolean isNotificationServiceEnabled():264:264 -> c
+    39:48:void updateServiceAndQueueStatus():244 -> c
+    49:56:void updateServiceAndQueueStatus():246:246 -> c
+    57:76:void updateServiceAndQueueStatus():247:247 -> c
+    77:84:void updateServiceAndQueueStatus():249:249 -> c
+    85:100:void updateServiceAndQueueStatus():250:250 -> c
+    101:108:void updateServiceAndQueueStatus():253:253 -> c
+    109:133:void updateServiceAndQueueStatus():254:254 -> c
+    2:6:void onCreate(android.os.Bundle):62:62 -> onCreate
+    7:12:void onCreate(android.os.Bundle):63:63 -> onCreate
+    13:22:void onCreate(android.os.Bundle):65:65 -> onCreate
+    23:28:void onCreate(android.os.Bundle):66:66 -> onCreate
+    29:40:void onCreate(android.os.Bundle):67:67 -> onCreate
+    41:51:void onCreate(android.os.Bundle):73:73 -> onCreate
+    52:62:void onCreate(android.os.Bundle):74:74 -> onCreate
+    63:73:void onCreate(android.os.Bundle):75:75 -> onCreate
+    74:84:void onCreate(android.os.Bundle):76:76 -> onCreate
+    85:95:void onCreate(android.os.Bundle):77:77 -> onCreate
+    96:106:void onCreate(android.os.Bundle):78:78 -> onCreate
+    107:117:void onCreate(android.os.Bundle):79:79 -> onCreate
+    118:128:void onCreate(android.os.Bundle):80:80 -> onCreate
+    129:139:void onCreate(android.os.Bundle):81:81 -> onCreate
+    140:150:void onCreate(android.os.Bundle):82:82 -> onCreate
+    151:159:void onCreate(android.os.Bundle):84:84 -> onCreate
+    160:168:void onCreate(android.os.Bundle):85:85 -> onCreate
+    169:177:void onCreate(android.os.Bundle):86:86 -> onCreate
+    178:186:void onCreate(android.os.Bundle):87:87 -> onCreate
+    187:195:void onCreate(android.os.Bundle):88:88 -> onCreate
+    196:201:void onCreate(android.os.Bundle):89:89 -> onCreate
+    202:208:void onCreate(android.os.Bundle):91:91 -> onCreate
+    209:224:void onCreate(android.os.Bundle):92:92 -> onCreate
+    225:232:void onCreate(android.os.Bundle):93:93 -> onCreate
+    233:236:void loadSettings():166:166 -> onCreate
+    233:236:void onCreate(android.os.Bundle):100 -> onCreate
+    237:239:void loadSettings():167:167 -> onCreate
+    237:239:void onCreate(android.os.Bundle):100 -> onCreate
+    240:241:void loadSettings():168:168 -> onCreate
+    240:241:void onCreate(android.os.Bundle):100 -> onCreate
+    242:245:java.lang.String com.gincz.telegrambot.data.ConfigManager.getChatId():46:46 -> onCreate
+    242:245:void loadSettings():168 -> onCreate
+    242:245:void onCreate(android.os.Bundle):100 -> onCreate
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(2)"]}
+    246:253:java.lang.String com.gincz.telegrambot.data.ConfigManager.getChatId():46:46 -> onCreate
+    246:253:void loadSettings():168 -> onCreate
+    246:253:void onCreate(android.os.Bundle):100 -> onCreate
+    254:256:void loadSettings():168:168 -> onCreate
+    254:256:void onCreate(android.os.Bundle):100 -> onCreate
+    257:258:void loadSettings():169:169 -> onCreate
+    257:258:void onCreate(android.os.Bundle):100 -> onCreate
+    259:270:java.lang.String com.gincz.telegrambot.data.ConfigManager.getDeviceName():54:54 -> onCreate
+    259:270:void loadSettings():169 -> onCreate
+    259:270:void onCreate(android.os.Bundle):100 -> onCreate
+    271:273:void loadSettings():169:169 -> onCreate
+    271:273:void onCreate(android.os.Bundle):100 -> onCreate
+    274:275:void loadSettings():170:170 -> onCreate
+    274:275:void onCreate(android.os.Bundle):100 -> onCreate
+    276:283:java.lang.String com.gincz.telegrambot.data.ConfigManager.getSim1Name():78:78 -> onCreate
+    276:283:void loadSettings():170 -> onCreate
+    276:283:void onCreate(android.os.Bundle):100 -> onCreate
+    284:286:void loadSettings():170:170 -> onCreate
+    284:286:void onCreate(android.os.Bundle):100 -> onCreate
+    287:288:void loadSettings():171:171 -> onCreate
+    287:288:void onCreate(android.os.Bundle):100 -> onCreate
+    289:294:java.lang.String com.gincz.telegrambot.data.ConfigManager.getSim1Number():86:86 -> onCreate
+    289:294:void loadSettings():171 -> onCreate
+    289:294:void onCreate(android.os.Bundle):100 -> onCreate
+    295:297:void loadSettings():171:171 -> onCreate
+    295:297:void onCreate(android.os.Bundle):100 -> onCreate
+    298:299:void loadSettings():172:172 -> onCreate
+    298:299:void onCreate(android.os.Bundle):100 -> onCreate
+    300:307:java.lang.String com.gincz.telegrambot.data.ConfigManager.getSim2Name():94:94 -> onCreate
+    300:307:void loadSettings():172 -> onCreate
+    300:307:void onCreate(android.os.Bundle):100 -> onCreate
+    308:310:void loadSettings():172:172 -> onCreate
+    308:310:void onCreate(android.os.Bundle):100 -> onCreate
+    311:312:void loadSettings():173:173 -> onCreate
+    311:312:void onCreate(android.os.Bundle):100 -> onCreate
+    313:318:java.lang.String com.gincz.telegrambot.data.ConfigManager.getSim2Number():102:102 -> onCreate
+    313:318:void loadSettings():173 -> onCreate
+    313:318:void onCreate(android.os.Bundle):100 -> onCreate
+    319:321:void loadSettings():173:173 -> onCreate
+    319:321:void onCreate(android.os.Bundle):100 -> onCreate
+    322:323:void loadSettings():174:174 -> onCreate
+    322:323:void onCreate(android.os.Bundle):100 -> onCreate
+    324:329:java.lang.String com.gincz.telegrambot.data.ConfigManager.getKumaUrl():62:62 -> onCreate
+    324:329:void loadSettings():174 -> onCreate
+    324:329:void onCreate(android.os.Bundle):100 -> onCreate
+    330:332:void loadSettings():174:174 -> onCreate
+    330:332:void onCreate(android.os.Bundle):100 -> onCreate
+    333:334:void loadSettings():175:175 -> onCreate
+    333:334:void onCreate(android.os.Bundle):100 -> onCreate
+    335:340:boolean com.gincz.telegrambot.data.ConfigManager.isServiceActive():110:110 -> onCreate
+    335:340:void loadSettings():175 -> onCreate
+    335:340:void onCreate(android.os.Bundle):100 -> onCreate
+    341:343:void loadSettings():175:175 -> onCreate
+    341:343:void onCreate(android.os.Bundle):100 -> onCreate
+    344:349:void requestSmsPermissions():273:273 -> onCreate
+    344:349:void onCreate(android.os.Bundle):101 -> onCreate
+    350:359:void requestSmsPermissions():274:274 -> onCreate
+    350:359:void onCreate(android.os.Bundle):101 -> onCreate
+    360:367:void requestSmsPermissions():279:279 -> onCreate
+    360:367:void onCreate(android.os.Bundle):101 -> onCreate
+    368:369:void requestSmsPermissions():280:280 -> onCreate
+    368:369:void onCreate(android.os.Bundle):101 -> onCreate
+    370:375:void requestSmsPermissions():281:281 -> onCreate
+    370:375:void onCreate(android.os.Bundle):101 -> onCreate
+    376:380:void requestSmsPermissions():282:282 -> onCreate
+    376:380:void onCreate(android.os.Bundle):101 -> onCreate
+    381:386:void requestSmsPermissions():285:285 -> onCreate
+    381:386:void onCreate(android.os.Bundle):101 -> onCreate
+    387:397:void requestSmsPermissions():286:286 -> onCreate
+    387:397:void onCreate(android.os.Bundle):101 -> onCreate
+    398:406:void onCreate(android.os.Bundle):103:103 -> onCreate
+    407:414:void onCreate(android.os.Bundle):111:111 -> onCreate
+    415:423:void onCreate(android.os.Bundle):119:119 -> onCreate
+    424:432:void onCreate(android.os.Bundle):127:127 -> onCreate
+    433:441:void onCreate(android.os.Bundle):134:134 -> onCreate
+    442:452:void onCreate(android.os.Bundle):141:141 -> onCreate
+    1:3:void onResume():156:156 -> onResume
+    4:9:void onResume():157:157 -> onResume
+    10:17:void onResume():158:158 -> onResume
+    18:24:void onResume():160:160 -> onResume
+    25:42:void onResume():161:161 -> onResume
+com.gincz.telegrambot.MainActivity$$ExternalSyntheticApiModelOutline0 -> a.a:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    1:1:int a.MainActivity$$ExternalSyntheticApiModelOutline0.m(com.gincz.telegrambot.MainActivity,java.lang.String):0:0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:android.telephony.SmsMessage a.MainActivity$$ExternalSyntheticApiModelOutline0.m(byte[],java.lang.String):0:0 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:void a.MainActivity$$ExternalSyntheticApiModelOutline0.m(android.app.AlarmManager,long,android.app.PendingIntent):0:0 -> c
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:void a.MainActivity$$ExternalSyntheticApiModelOutline0.m(com.gincz.telegrambot.MainActivity,java.lang.String[]):0:0 -> d
+      # {"id":"com.android.tools.r8.synthesized"}
+com.gincz.telegrambot.MainActivity$1 -> a.h:
+# {"id":"sourceFile","fileName":"MainActivity.java"}
+    int a.MainActivity$1.$r8$classId -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    com.gincz.telegrambot.MainActivity this$0 -> b
+    1:1:void a.MainActivity$1.<init>(com.gincz.telegrambot.MainActivity,int):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    17:18:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137:137 -> onClick
+    19:24:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():369:369 -> onClick
+    19:24:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    25:28:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():370:370 -> onClick
+    25:28:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    29:32:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():371:371 -> onClick
+    29:32:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    33:36:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():372:372 -> onClick
+    33:36:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    37:41:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():374:374 -> onClick
+    37:41:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    42:57:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():375:375 -> onClick
+    42:57:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    58:70:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():377:377 -> onClick
+    58:70:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    71:78:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():379:379 -> onClick
+    71:78:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    79:82:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():380:380 -> onClick
+    79:82:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    83:88:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():381:381 -> onClick
+    83:88:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    89:99:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():382:382 -> onClick
+    89:99:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    100:101:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():386:386 -> onClick
+    100:101:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    102:104:void com.gincz.telegrambot.MainActivity$12.<init>(com.gincz.telegrambot.MainActivity):386:386 -> onClick
+    102:104:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():386 -> onClick
+    102:104:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    105:107:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():386:386 -> onClick
+    105:107:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    108:112:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():396:396 -> onClick
+    108:112:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    113:117:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():397:397 -> onClick
+    113:117:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    118:122:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():399:399 -> onClick
+    118:122:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    123:127:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():400:400 -> onClick
+    123:127:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    128:130:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():436:436 -> onClick
+    128:130:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    131:138:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():437:437 -> onClick
+    131:138:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    139:141:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():446:446 -> onClick
+    139:141:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    142:149:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():447:447 -> onClick
+    142:149:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    150:152:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():460:460 -> onClick
+    150:152:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    153:156:void com.gincz.telegrambot.MainActivity.showAppWhitelistDialog():461:461 -> onClick
+    153:156:void com.gincz.telegrambot.MainActivity$7.onClick(android.view.View):137 -> onClick
+    157:167:void com.gincz.telegrambot.MainActivity$6.onClick(android.view.View):130:130 -> onClick
+    168:170:void com.gincz.telegrambot.MainActivity$5.onClick(android.view.View):122:122 -> onClick
+    171:179:void com.gincz.telegrambot.MainActivity.testKumaPing():335:335 -> onClick
+    171:179:void com.gincz.telegrambot.MainActivity$5.onClick(android.view.View):123 -> onClick
+    180:184:void com.gincz.telegrambot.MainActivity.testKumaPing():336:336 -> onClick
+    180:184:void com.gincz.telegrambot.MainActivity$5.onClick(android.view.View):123 -> onClick
+    185:195:void com.gincz.telegrambot.transport.KumaPinger.pingAsync(android.content.Context,com.gincz.telegrambot.transport.KumaPinger$PingCallback):27:27 -> onClick
+    185:195:void com.gincz.telegrambot.MainActivity.testKumaPing():336 -> onClick
+    185:195:void com.gincz.telegrambot.MainActivity$5.onClick(android.view.View):123 -> onClick
+    196:198:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):114:114 -> onClick
+    199:202:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():292:292 -> onClick
+    199:202:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    203:206:java.lang.String com.gincz.telegrambot.data.ConfigManager.getDeviceName():54:54 -> onClick
+    203:206:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():293 -> onClick
+    203:206:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(2)"]}
+    207:214:java.lang.String com.gincz.telegrambot.data.ConfigManager.getDeviceName():54:54 -> onClick
+    207:214:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():293 -> onClick
+    207:214:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    215:226:java.lang.String com.gincz.telegrambot.data.ConfigManager.getSim1Name():78:78 -> onClick
+    215:226:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():294 -> onClick
+    215:226:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    227:232:java.lang.String com.gincz.telegrambot.data.ConfigManager.getSim1Number():86:86 -> onClick
+    227:232:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():295 -> onClick
+    227:232:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    233:240:java.lang.String com.gincz.telegrambot.data.ConfigManager.getSim2Name():94:94 -> onClick
+    233:240:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():296 -> onClick
+    233:240:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    241:246:java.lang.String com.gincz.telegrambot.data.ConfigManager.getSim2Number():102:102 -> onClick
+    241:246:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():297 -> onClick
+    241:246:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    247:253:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():299:299 -> onClick
+    247:253:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    254:265:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():300:300 -> onClick
+    254:265:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    266:272:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():303:303 -> onClick
+    266:272:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    273:288:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():304:304 -> onClick
+    273:288:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    289:305:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():305:305 -> onClick
+    289:305:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    306:319:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():307:307 -> onClick
+    306:319:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    320:329:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():308:308 -> onClick
+    320:329:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    330:346:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():309:309 -> onClick
+    330:346:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    347:351:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():311:311 -> onClick
+    347:351:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    352:355:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():313:313 -> onClick
+    352:355:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    356:364:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():315:315 -> onClick
+    356:364:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    365:373:void com.gincz.telegrambot.MainActivity.sendTestTelegramMessage():316:316 -> onClick
+    365:373:void com.gincz.telegrambot.MainActivity$4.onClick(android.view.View):115 -> onClick
+    374:376:void com.gincz.telegrambot.MainActivity$3.onClick(android.view.View):106:106 -> onClick
+    377:386:void com.gincz.telegrambot.MainActivity$3.onClick(android.view.View):107:107 -> onClick
+    387:390:void com.gincz.telegrambot.MainActivity$2.onClick(android.view.View):96:96 -> onClick
+    391:395:void onClick(android.view.View):70:70 -> onClick
+    396:399:void com.gincz.telegrambot.MainActivity.showEditTokenDialog():215:215 -> onClick
+    396:399:void onClick(android.view.View):70 -> onClick
+    400:404:void com.gincz.telegrambot.MainActivity.showEditTokenDialog():216:216 -> onClick
+    400:404:void onClick(android.view.View):70 -> onClick
+    405:409:void com.gincz.telegrambot.MainActivity.showEditTokenDialog():217:217 -> onClick
+    405:409:void onClick(android.view.View):70 -> onClick
+    410:414:void com.gincz.telegrambot.MainActivity.showEditTokenDialog():219:219 -> onClick
+    410:414:void onClick(android.view.View):70 -> onClick
+    415:417:void com.gincz.telegrambot.MainActivity.showEditTokenDialog():220:220 -> onClick
+    415:417:void onClick(android.view.View):70 -> onClick
+    418:421:java.lang.String com.gincz.telegrambot.data.ConfigManager.getBotToken():38:38 -> onClick
+    418:421:void com.gincz.telegrambot.MainActivity.showEditTokenDialog():221 -> onClick
+    418:421:void onClick(android.view.View):70 -> onClick
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(2)"]}
+    422:427:java.lang.String com.gincz.telegrambot.data.ConfigManager.getBotToken():38:38 -> onClick
+    422:427:void com.gincz.telegrambot.MainActivity.showEditTokenDialog():221 -> onClick
+    422:427:void onClick(android.view.View):70 -> onClick
+    428:430:void com.gincz.telegrambot.MainActivity.showEditTokenDialog():221:221 -> onClick
+    428:430:void onClick(android.view.View):70 -> onClick
+    431:440:void com.gincz.telegrambot.MainActivity.showEditTokenDialog():222:222 -> onClick
+    431:440:void onClick(android.view.View):70 -> onClick
+    441:451:void com.gincz.telegrambot.MainActivity.showEditTokenDialog():223:223 -> onClick
+    441:451:void onClick(android.view.View):70 -> onClick
+    452:458:void com.gincz.telegrambot.MainActivity.showEditTokenDialog():225:225 -> onClick
+    452:458:void onClick(android.view.View):70 -> onClick
+    459:465:void com.gincz.telegrambot.MainActivity.showEditTokenDialog():226:226 -> onClick
+    459:465:void onClick(android.view.View):70 -> onClick
+    466:468:void com.gincz.telegrambot.MainActivity.showEditTokenDialog():227:227 -> onClick
+    466:468:void onClick(android.view.View):70 -> onClick
+    469:471:void com.gincz.telegrambot.MainActivity.showEditTokenDialog():229:229 -> onClick
+    469:471:void onClick(android.view.View):70 -> onClick
+    472:479:void com.gincz.telegrambot.MainActivity.showEditTokenDialog():230:230 -> onClick
+    472:479:void onClick(android.view.View):70 -> onClick
+    480:482:void com.gincz.telegrambot.MainActivity.showEditTokenDialog():239:239 -> onClick
+    480:482:void onClick(android.view.View):70 -> onClick
+    483:486:void com.gincz.telegrambot.MainActivity.showEditTokenDialog():240:240 -> onClick
+    483:486:void onClick(android.view.View):70 -> onClick
+com.gincz.telegrambot.MainActivity$10 -> a.c:
+# {"id":"sourceFile","fileName":"MainActivity.java"}
+    com.gincz.telegrambot.MainActivity this$0 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/lang/Object;"}
+    com.gincz.telegrambot.data.ConfigManager com.gincz.telegrambot.data.ConfigManager.instance -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"La/c;"}
+    1:1:void a.MainActivity$10.<init>(com.gincz.telegrambot.MainActivity):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    2:3:void com.gincz.telegrambot.data.ConfigManager.<init>(android.content.Context):26:27 -> <init>
+    4:7:com.gincz.telegrambot.data.ConfigManager com.gincz.telegrambot.data.ConfigManager.getInstance(android.content.Context):31:31 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroid/content/Context;)La/c;"}
+    8:17:com.gincz.telegrambot.data.ConfigManager com.gincz.telegrambot.data.ConfigManager.getInstance(android.content.Context):32:32 -> a
+    18:23:com.gincz.telegrambot.data.ConfigManager com.gincz.telegrambot.data.ConfigManager.getInstance(android.content.Context):34:34 -> a
+    2:13:java.util.Set com.gincz.telegrambot.data.ConfigManager.getWhitelistedPackages():118:118 -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"()Ljava/util/HashSet;"}
+    14:18:java.util.Set com.gincz.telegrambot.data.ConfigManager.getWhitelistedPackages():120:120 -> b
+    19:23:java.util.Set com.gincz.telegrambot.data.ConfigManager.getWhitelistedPackages():122:122 -> b
+    24:28:java.util.Set com.gincz.telegrambot.data.ConfigManager.getWhitelistedPackages():123:123 -> b
+    29:33:java.util.Set com.gincz.telegrambot.data.ConfigManager.getWhitelistedPackages():124:124 -> b
+    34:38:java.util.Set com.gincz.telegrambot.data.ConfigManager.getWhitelistedPackages():125:125 -> b
+    39:43:java.util.Set com.gincz.telegrambot.data.ConfigManager.getWhitelistedPackages():126:126 -> b
+    44:48:java.util.Set com.gincz.telegrambot.data.ConfigManager.getWhitelistedPackages():127:127 -> b
+    49:53:java.util.Set com.gincz.telegrambot.data.ConfigManager.getWhitelistedPackages():128:128 -> b
+    54:58:java.util.Set com.gincz.telegrambot.data.ConfigManager.getWhitelistedPackages():129:129 -> b
+    59:64:java.util.Set com.gincz.telegrambot.data.ConfigManager.getWhitelistedPackages():130:130 -> b
+    65:70:java.util.Set com.gincz.telegrambot.data.ConfigManager.getWhitelistedPackages():133:133 -> b
+com.gincz.telegrambot.MainActivity$10$1 -> a.b:
+# {"id":"sourceFile","fileName":"MainActivity.java"}
+    int a.MainActivity$10$1.$r8$classId -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    boolean val$success -> b
+    java.lang.String val$error -> c
+    com.gincz.telegrambot.MainActivity$10 this$1 -> d
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/lang/Object;"}
+    1:1:void a.MainActivity$10$1.<init>(java.lang.Object,boolean,java.lang.String,int):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    13:16:void com.gincz.telegrambot.MainActivity$11$1.run():342:342 -> run
+    17:42:void com.gincz.telegrambot.MainActivity$11$1.run():343:343 -> run
+    43:56:void com.gincz.telegrambot.MainActivity$11$1.run():345:345 -> run
+    57:60:void run():322:322 -> run
+    61:74:void run():323:323 -> run
+    75:104:void run():325:325 -> run
+    105:114:void run():327:327 -> run
+com.gincz.telegrambot.MainActivity$12 -> a.d:
+# {"id":"sourceFile","fileName":"MainActivity.java"}
+    1:4:int compare(java.lang.Object,java.lang.Object):386:386 -> compare
+    5:16:int compare(com.gincz.telegrambot.MainActivity$AppItem,com.gincz.telegrambot.MainActivity$AppItem):389:389 -> compare
+    5:16:int compare(java.lang.Object,java.lang.Object):386 -> compare
+    17:25:int compare(com.gincz.telegrambot.MainActivity$AppItem,com.gincz.telegrambot.MainActivity$AppItem):392:392 -> compare
+    17:25:int compare(java.lang.Object,java.lang.Object):386 -> compare
+com.gincz.telegrambot.MainActivity$13 -> a.e:
+# {"id":"sourceFile","fileName":"MainActivity.java"}
+    java.util.List val$appItems -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/util/ArrayList;"}
+    com.gincz.telegrambot.MainActivity this$0 -> b
+    1:8:void <init>(com.gincz.telegrambot.MainActivity,java.util.List):400:400 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lcom/gincz/telegrambot/MainActivity;Ljava/util/ArrayList;)V"}
+    1:7:int getCount():403:403 -> getCount
+    1:7:java.lang.Object getItem(int):408:408 -> getItem
+    1:2:long getItemId(int):413:413 -> getItemId
+    1:1:android.view.View getView(int,android.view.View,android.view.ViewGroup):419:419 -> getView
+    2:6:android.view.View getView(int,android.view.View,android.view.ViewGroup):421:425 -> getView
+    7:10:android.view.View getView(int,android.view.View,android.view.ViewGroup):427:430 -> getView
+com.gincz.telegrambot.MainActivity$14 -> a.f:
+# {"id":"sourceFile","fileName":"MainActivity.java"}
+    java.util.List val$appItems -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/util/ArrayList;"}
+    android.widget.BaseAdapter val$adapter -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"La/e;"}
+    1:8:void <init>(com.gincz.telegrambot.MainActivity,java.util.List,android.widget.BaseAdapter):437:437 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/util/ArrayList;La/e;)V"}
+    1:8:void onItemClick(android.widget.AdapterView,android.view.View,int,long):440:440 -> onItemClick
+    9:14:void onItemClick(android.widget.AdapterView,android.view.View,int,long):441:441 -> onItemClick
+    15:20:void onItemClick(android.widget.AdapterView,android.view.View,int,long):442:442 -> onItemClick
+com.gincz.telegrambot.MainActivity$15 -> a.g:
+# {"id":"sourceFile","fileName":"MainActivity.java"}
+    int a.MainActivity$15.$r8$classId -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    com.gincz.telegrambot.data.ConfigManager val$config -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"La/c;"}
+    com.gincz.telegrambot.MainActivity this$0 -> c
+    java.util.List val$appItems -> d
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/lang/Object;"}
+    1:1:void a.MainActivity$15.<init>(com.gincz.telegrambot.MainActivity,java.lang.Object,a.MainActivity$10,int):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lcom/gincz/telegrambot/MainActivity;Ljava/lang/Object;La/c;I)V"}
+    13:26:void com.gincz.telegrambot.MainActivity$9.onClick(android.content.DialogInterface,int):233:233 -> onClick
+    27:30:void com.gincz.telegrambot.data.ConfigManager.setBotToken(java.lang.String):42:42 -> onClick
+    27:30:void com.gincz.telegrambot.MainActivity$9.onClick(android.content.DialogInterface,int):234 -> onClick
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    31:52:void com.gincz.telegrambot.data.ConfigManager.setBotToken(java.lang.String):42:42 -> onClick
+    31:52:void com.gincz.telegrambot.MainActivity$9.onClick(android.content.DialogInterface,int):234 -> onClick
+    53:57:void com.gincz.telegrambot.MainActivity$9.onClick(android.content.DialogInterface,int):235:235 -> onClick
+    58:67:void com.gincz.telegrambot.MainActivity$9.onClick(android.content.DialogInterface,int):236:236 -> onClick
+    68:72:void onClick(android.content.DialogInterface,int):450:450 -> onClick
+    73:90:void onClick(android.content.DialogInterface,int):451:451 -> onClick
+    91:94:void onClick(android.content.DialogInterface,int):452:452 -> onClick
+    95:100:void onClick(android.content.DialogInterface,int):453:453 -> onClick
+    101:104:void com.gincz.telegrambot.data.ConfigManager.setWhitelistedPackages(java.util.Set):137:137 -> onClick
+    101:104:void onClick(android.content.DialogInterface,int):456 -> onClick
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    105:122:void com.gincz.telegrambot.data.ConfigManager.setWhitelistedPackages(java.util.Set):137:137 -> onClick
+    105:122:void onClick(android.content.DialogInterface,int):456 -> onClick
+    123:148:void onClick(android.content.DialogInterface,int):457:457 -> onClick
+com.gincz.telegrambot.MainActivity$8 -> a.i:
+# {"id":"sourceFile","fileName":"MainActivity.java"}
+    com.gincz.telegrambot.MainActivity this$0 -> a
+    1:6:void <init>(com.gincz.telegrambot.MainActivity):141:141 -> <init>
+    1:6:void onCheckedChanged(android.widget.CompoundButton,boolean):144:144 -> onCheckedChanged
+    7:10:void com.gincz.telegrambot.data.ConfigManager.setServiceActive(boolean):114:114 -> onCheckedChanged
+    7:10:void onCheckedChanged(android.widget.CompoundButton,boolean):144 -> onCheckedChanged
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    11:25:void com.gincz.telegrambot.data.ConfigManager.setServiceActive(boolean):114:114 -> onCheckedChanged
+    11:25:void onCheckedChanged(android.widget.CompoundButton,boolean):144 -> onCheckedChanged
+    26:29:void onCheckedChanged(android.widget.CompoundButton,boolean):146:146 -> onCheckedChanged
+    30:31:void onCheckedChanged(android.widget.CompoundButton,boolean):148:148 -> onCheckedChanged
+    32:42:void com.gincz.telegrambot.service.HeartbeatManager.cancel(android.content.Context):63:63 -> onCheckedChanged
+    32:42:void onCheckedChanged(android.widget.CompoundButton,boolean):148 -> onCheckedChanged
+    43:49:void com.gincz.telegrambot.service.HeartbeatManager.cancel(android.content.Context):66:66 -> onCheckedChanged
+    43:49:void onCheckedChanged(android.widget.CompoundButton,boolean):148 -> onCheckedChanged
+    50:54:void com.gincz.telegrambot.service.HeartbeatManager.cancel(android.content.Context):67:67 -> onCheckedChanged
+    50:54:void onCheckedChanged(android.widget.CompoundButton,boolean):148 -> onCheckedChanged
+    55:67:void com.gincz.telegrambot.service.HeartbeatManager.cancel(android.content.Context):70:70 -> onCheckedChanged
+    55:67:void onCheckedChanged(android.widget.CompoundButton,boolean):148 -> onCheckedChanged
+    68:71:void com.gincz.telegrambot.service.HeartbeatManager.cancel(android.content.Context):74:74 -> onCheckedChanged
+    68:71:void onCheckedChanged(android.widget.CompoundButton,boolean):148 -> onCheckedChanged
+    72:74:void com.gincz.telegrambot.service.HeartbeatManager.cancel(android.content.Context):75:75 -> onCheckedChanged
+    72:74:void onCheckedChanged(android.widget.CompoundButton,boolean):148 -> onCheckedChanged
+    75:82:void com.gincz.telegrambot.service.HeartbeatManager.cancel(android.content.Context):76:76 -> onCheckedChanged
+    75:82:void onCheckedChanged(android.widget.CompoundButton,boolean):148 -> onCheckedChanged
+com.gincz.telegrambot.MainActivity$AppItem -> a.j:
+# {"id":"sourceFile","fileName":"MainActivity.java"}
+    java.lang.String label -> a
+    java.lang.String packageName -> b
+    android.graphics.drawable.Drawable icon -> c
+    boolean selected -> d
+    1:3:void <init>(java.lang.String,java.lang.String,android.graphics.drawable.Drawable,boolean):360:360 -> <init>
+    4:5:void <init>(java.lang.String,java.lang.String,android.graphics.drawable.Drawable,boolean):361:361 -> <init>
+    6:7:void <init>(java.lang.String,java.lang.String,android.graphics.drawable.Drawable,boolean):362:362 -> <init>
+    8:9:void <init>(java.lang.String,java.lang.String,android.graphics.drawable.Drawable,boolean):363:363 -> <init>
+    10:12:void <init>(java.lang.String,java.lang.String,android.graphics.drawable.Drawable,boolean):364:364 -> <init>
+com.gincz.telegrambot.data.OfflineQueue -> b.b:
+# {"id":"sourceFile","fileName":"OfflineQueue.java"}
+    com.gincz.telegrambot.data.OfflineQueue instance -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lb/b;"}
+    2:5:void delete(long):90:90 -> a
+    6:20:void delete(long):91:91 -> a
+    21:25:void delete(long):92:92 -> a
+    4:14:void enqueue(java.lang.String):60:60 -> b
+    15:18:void enqueue(java.lang.String):61:61 -> b
+    19:23:void enqueue(java.lang.String):62:62 -> b
+    24:28:void enqueue(java.lang.String):63:63 -> b
+    29:41:void enqueue(java.lang.String):64:64 -> b
+    42:47:void enqueue(java.lang.String):65:65 -> b
+    48:52:void enqueue(java.lang.String):66:66 -> b
+    53:54:void enqueue(java.lang.String):60:60 -> b
+    2:5:int getCount():95:95 -> c
+    6:15:int getCount():96:96 -> c
+    16:21:int getCount():99:99 -> c
+    22:28:int getCount():100:100 -> c
+    29:31:int getCount():102:102 -> c
+    32:35:int getCount():104:104 -> c
+    4:7:com.gincz.telegrambot.data.OfflineQueue getInstance(android.content.Context):39:39 -> d
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroid/content/Context;)Lb/b;"}
+    8:9:com.gincz.telegrambot.data.OfflineQueue getInstance(android.content.Context):40:40 -> d
+    10:20:void <init>(android.content.Context):35:35 -> d
+    10:20:com.gincz.telegrambot.data.OfflineQueue getInstance(android.content.Context):40 -> d
+    21:25:com.gincz.telegrambot.data.OfflineQueue getInstance(android.content.Context):40:40 -> d
+    26:31:com.gincz.telegrambot.data.OfflineQueue getInstance(android.content.Context):42:42 -> d
+    1:6:void onCreate(android.database.sqlite.SQLiteDatabase):47:47 -> onCreate
+    1:5:void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int):55:55 -> onUpgrade
+    6:11:void onCreate(android.database.sqlite.SQLiteDatabase):47:47 -> onUpgrade
+    6:11:void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int):56 -> onUpgrade
+com.gincz.telegrambot.data.OfflineQueue$QueueItem -> b.a:
+# {"id":"sourceFile","fileName":"OfflineQueue.java"}
+    long id -> a
+    java.lang.String message -> b
+    1:3:void <init>(long,java.lang.String,long):27:27 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(JLjava/lang/String;)V"}
+    4:5:void <init>(long,java.lang.String,long):28:28 -> <init>
+    6:8:void <init>(long,java.lang.String,long):29:29 -> <init>
+com.gincz.telegrambot.receiver.BootReceiver -> com.gincz.telegrambot.receiver.BootReceiver:
+# {"id":"sourceFile","fileName":"BootReceiver.java"}
+    1:4:void <init>():15:15 -> <init>
+    4:7:void onReceive(android.content.Context,android.content.Intent):21:21 -> onReceive
+    8:17:void onReceive(android.content.Context,android.content.Intent):23:23 -> onReceive
+    18:25:void onReceive(android.content.Context,android.content.Intent):24:24 -> onReceive
+    26:31:void onReceive(android.content.Context,android.content.Intent):25:25 -> onReceive
+    32:38:void onReceive(android.content.Context,android.content.Intent):27:27 -> onReceive
+    39:41:void onReceive(android.content.Context,android.content.Intent):30:30 -> onReceive
+    42:45:void onReceive(android.content.Context,android.content.Intent):32:32 -> onReceive
+    46:49:boolean com.gincz.telegrambot.data.ConfigManager.isServiceActive():110:110 -> onReceive
+    46:49:void onReceive(android.content.Context,android.content.Intent):33 -> onReceive
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    50:59:boolean com.gincz.telegrambot.data.ConfigManager.isServiceActive():110:110 -> onReceive
+    50:59:void onReceive(android.content.Context,android.content.Intent):33 -> onReceive
+    60:72:java.lang.String com.gincz.telegrambot.data.ConfigManager.getDeviceName():54:54 -> onReceive
+    60:72:void onReceive(android.content.Context,android.content.Intent):36 -> onReceive
+    73:79:int getBatteryPercentage(android.content.Context):51:51 -> onReceive
+    73:79:void onReceive(android.content.Context,android.content.Intent):37 -> onReceive
+    80:85:int getBatteryPercentage(android.content.Context):52:52 -> onReceive
+    80:85:void onReceive(android.content.Context,android.content.Intent):37 -> onReceive
+    86:92:int getBatteryPercentage(android.content.Context):54:54 -> onReceive
+    86:92:void onReceive(android.content.Context,android.content.Intent):37 -> onReceive
+    93:113:int getBatteryPercentage(android.content.Context):55:55 -> onReceive
+    93:113:void onReceive(android.content.Context,android.content.Intent):37 -> onReceive
+    114:129:java.lang.String getWifiDetails(android.content.Context):66:66 -> onReceive
+    114:129:void onReceive(android.content.Context,android.content.Intent):38 -> onReceive
+    130:135:java.lang.String getWifiDetails(android.content.Context):67:67 -> onReceive
+    130:135:void onReceive(android.content.Context,android.content.Intent):38 -> onReceive
+    136:141:java.lang.String getWifiDetails(android.content.Context):68:68 -> onReceive
+    136:141:void onReceive(android.content.Context,android.content.Intent):38 -> onReceive
+    142:147:java.lang.String getWifiDetails(android.content.Context):70:70 -> onReceive
+    142:147:void onReceive(android.content.Context,android.content.Intent):38 -> onReceive
+    148:159:java.lang.String getWifiDetails(android.content.Context):71:71 -> onReceive
+    148:159:void onReceive(android.content.Context,android.content.Intent):38 -> onReceive
+    160:168:java.lang.String getWifiDetails(android.content.Context):72:72 -> onReceive
+    160:168:void onReceive(android.content.Context,android.content.Intent):38 -> onReceive
+    169:172:java.lang.String getWifiDetails(android.content.Context):74:74 -> onReceive
+    169:172:void onReceive(android.content.Context,android.content.Intent):38 -> onReceive
+    173:198:java.lang.String getWifiDetails(android.content.Context):75:75 -> onReceive
+    173:198:void onReceive(android.content.Context,android.content.Intent):38 -> onReceive
+    199:200:java.lang.String getWifiDetails(android.content.Context):79:79 -> onReceive
+    199:200:void onReceive(android.content.Context,android.content.Intent):38 -> onReceive
+    201:219:void onReceive(android.content.Context,android.content.Intent):40:40 -> onReceive
+    220:243:void onReceive(android.content.Context,android.content.Intent):42:42 -> onReceive
+    244:247:void onReceive(android.content.Context,android.content.Intent):45:45 -> onReceive
+com.gincz.telegrambot.receiver.SmsReceiver -> com.gincz.telegrambot.receiver.SmsReceiver:
+# {"id":"sourceFile","fileName":"SmsReceiver.java"}
+    1:4:void <init>():21:21 -> <init>
+    1:21:int detectSimSlot(android.content.Context,android.content.Intent,android.os.Bundle):131:131 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroid/content/Context;Landroid/os/Bundle;)I"}
+    22:28:int detectSimSlot(android.content.Context,android.content.Intent,android.os.Bundle):132:132 -> a
+    29:34:int detectSimSlot(android.content.Context,android.content.Intent,android.os.Bundle):133:133 -> a
+    35:40:int detectSimSlot(android.content.Context,android.content.Intent,android.os.Bundle):135:135 -> a
+    41:72:int detectSimSlot(android.content.Context,android.content.Intent,android.os.Bundle):137:137 -> a
+    73:78:int detectSimSlot(android.content.Context,android.content.Intent,android.os.Bundle):145:145 -> a
+    79:86:int detectSimSlot(android.content.Context,android.content.Intent,android.os.Bundle):147:147 -> a
+    87:94:int detectSimSlot(android.content.Context,android.content.Intent,android.os.Bundle):148:148 -> a
+    95:98:int detectSimSlot(android.content.Context,android.content.Intent,android.os.Bundle):150:150 -> a
+    99:104:int detectSimSlot(android.content.Context,android.content.Intent,android.os.Bundle):151:151 -> a
+    105:108:int detectSimSlot(android.content.Context,android.content.Intent,android.os.Bundle):153:153 -> a
+    109:130:int detectSimSlot(android.content.Context,android.content.Intent,android.os.Bundle):154:154 -> a
+    1:1:void onReceive(android.content.Context,android.content.Intent):26:26 -> onReceive
+    2:2:void onReceive(android.content.Context,android.content.Intent):30:30 -> onReceive
+    3:3:boolean com.gincz.telegrambot.data.ConfigManager.isServiceActive():110:110 -> onReceive
+    3:3:void onReceive(android.content.Context,android.content.Intent):31 -> onReceive
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    4:4:boolean com.gincz.telegrambot.data.ConfigManager.isServiceActive():110:110 -> onReceive
+    4:4:void onReceive(android.content.Context,android.content.Intent):31 -> onReceive
+    5:6:void onReceive(android.content.Context,android.content.Intent):31:32 -> onReceive
+    7:7:void onReceive(android.content.Context,android.content.Intent):37:37 -> onReceive
+    8:9:void onReceive(android.content.Context,android.content.Intent):40:41 -> onReceive
+    10:10:void onReceive(android.content.Context,android.content.Intent):45:45 -> onReceive
+    11:11:void onReceive(android.content.Context,android.content.Intent):120:120 -> onReceive
+    12:12:void onReceive(android.content.Context,android.content.Intent):122:122 -> onReceive
+    13:14:void onReceive(android.content.Context,android.content.Intent):48:49 -> onReceive
+    15:15:void onReceive(android.content.Context,android.content.Intent):51:51 -> onReceive
+    16:17:void onReceive(android.content.Context,android.content.Intent):54:55 -> onReceive
+    18:18:java.lang.String com.gincz.telegrambot.data.ConfigManager.getSim2Name():94:94 -> onReceive
+    18:18:void onReceive(android.content.Context,android.content.Intent):55 -> onReceive
+    19:19:java.lang.String com.gincz.telegrambot.data.ConfigManager.getSim1Name():78:78 -> onReceive
+    19:19:void onReceive(android.content.Context,android.content.Intent):55 -> onReceive
+    20:20:void onReceive(android.content.Context,android.content.Intent):56:56 -> onReceive
+    21:21:java.lang.String com.gincz.telegrambot.data.ConfigManager.getSim2Number():102:102 -> onReceive
+    21:21:void onReceive(android.content.Context,android.content.Intent):56 -> onReceive
+    22:22:java.lang.String com.gincz.telegrambot.data.ConfigManager.getSim1Number():86:86 -> onReceive
+    22:22:void onReceive(android.content.Context,android.content.Intent):56 -> onReceive
+    23:23:void onReceive(android.content.Context,android.content.Intent):57:57 -> onReceive
+    24:25:void onReceive(android.content.Context,android.content.Intent):60:61 -> onReceive
+    26:26:void onReceive(android.content.Context,android.content.Intent):63:63 -> onReceive
+    27:28:void onReceive(android.content.Context,android.content.Intent):67:68 -> onReceive
+    29:29:void onReceive(android.content.Context,android.content.Intent):70:70 -> onReceive
+    30:31:void onReceive(android.content.Context,android.content.Intent):72:73 -> onReceive
+    32:32:void onReceive(android.content.Context,android.content.Intent):75:75 -> onReceive
+    33:35:void onReceive(android.content.Context,android.content.Intent):79:81 -> onReceive
+    36:37:void onReceive(android.content.Context,android.content.Intent):84:85 -> onReceive
+    38:38:void onReceive(android.content.Context,android.content.Intent):87:87 -> onReceive
+    39:40:void onReceive(android.content.Context,android.content.Intent):89:90 -> onReceive
+    41:41:void onReceive(android.content.Context,android.content.Intent):92:92 -> onReceive
+    42:43:void onReceive(android.content.Context,android.content.Intent):96:97 -> onReceive
+    44:46:void onReceive(android.content.Context,android.content.Intent):99:101 -> onReceive
+    47:48:void onReceive(android.content.Context,android.content.Intent):103:104 -> onReceive
+    49:50:void onReceive(android.content.Context,android.content.Intent):106:107 -> onReceive
+    51:52:void onReceive(android.content.Context,android.content.Intent):110:111 -> onReceive
+    53:54:void onReceive(android.content.Context,android.content.Intent):113:114 -> onReceive
+    55:55:void onReceive(android.content.Context,android.content.Intent):120:120 -> onReceive
+    56:56:void onReceive(android.content.Context,android.content.Intent):122:122 -> onReceive
+    57:57:void onReceive(android.content.Context,android.content.Intent):120:120 -> onReceive
+    58:58:void onReceive(android.content.Context,android.content.Intent):122:122 -> onReceive
+    59:59:void onReceive(android.content.Context,android.content.Intent):118:118 -> onReceive
+    60:60:void onReceive(android.content.Context,android.content.Intent):120:120 -> onReceive
+    61:61:void onReceive(android.content.Context,android.content.Intent):122:122 -> onReceive
+    62:62:void onReceive(android.content.Context,android.content.Intent):125:125 -> onReceive
+com.gincz.telegrambot.receiver.SmsReceiver$$ExternalSyntheticApiModelOutline1 -> c.a:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    1:1:int c.SmsReceiver$$ExternalSyntheticApiModelOutline1.m(android.telephony.SubscriptionInfo):0:0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:android.telephony.SubscriptionInfo c.SmsReceiver$$ExternalSyntheticApiModelOutline1.m(android.telephony.SubscriptionManager,int):0:0 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:android.telephony.SubscriptionManager c.SmsReceiver$$ExternalSyntheticApiModelOutline1.m(android.content.Context):0:0 -> c
+      # {"id":"com.android.tools.r8.synthesized"}
+com.gincz.telegrambot.service.HeartbeatManager -> com.gincz.telegrambot.service.HeartbeatManager:
+# {"id":"sourceFile","fileName":"HeartbeatManager.java"}
+    int $r8$clinit -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:4:void <init>():14:14 -> <init>
+    1:6:void scheduleNext(android.content.Context):31:31 -> a
+    7:10:int com.gincz.telegrambot.data.ConfigManager.getKumaIntervalMinutes():70:70 -> a
+    7:10:void scheduleNext(android.content.Context):32 -> a
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    11:18:int com.gincz.telegrambot.data.ConfigManager.getKumaIntervalMinutes():70:70 -> a
+    11:18:void scheduleNext(android.content.Context):32 -> a
+    19:29:void scheduleNext(android.content.Context):33:33 -> a
+    30:40:void scheduleNext(android.content.Context):35:35 -> a
+    41:47:void scheduleNext(android.content.Context):38:38 -> a
+    48:52:void scheduleNext(android.content.Context):39:39 -> a
+    53:65:void scheduleNext(android.content.Context):42:42 -> a
+    66:69:void scheduleNext(android.content.Context):46:46 -> a
+    70:73:void scheduleNext(android.content.Context):49:49 -> a
+    74:80:void scheduleNext(android.content.Context):50:50 -> a
+    81:83:void scheduleNext(android.content.Context):52:52 -> a
+    84:104:void scheduleNext(android.content.Context):56:56 -> a
+    105:126:void scheduleNext(android.content.Context):58:58 -> a
+    3:15:void onReceive(android.content.Context,android.content.Intent):20:20 -> onReceive
+    16:22:void onReceive(android.content.Context,android.content.Intent):22:22 -> onReceive
+    23:33:void com.gincz.telegrambot.transport.KumaPinger.pingAsync(android.content.Context,com.gincz.telegrambot.transport.KumaPinger$PingCallback):27:27 -> onReceive
+    23:33:void onReceive(android.content.Context,android.content.Intent):23 -> onReceive
+    34:43:void com.gincz.telegrambot.transport.TelegramClient.flushQueueAsync(android.content.Context):144:144 -> onReceive
+    34:43:void onReceive(android.content.Context,android.content.Intent):24 -> onReceive
+    44:47:void onReceive(android.content.Context,android.content.Intent):27:27 -> onReceive
+com.gincz.telegrambot.service.NotificationListener -> com.gincz.telegrambot.service.NotificationListener:
+# {"id":"sourceFile","fileName":"NotificationListener.java"}
+    java.util.Map RECENT_NOTIFICATIONS -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Ld/a;"}
+    1:7:void <clinit>():23:23 -> <clinit>
+    8:10:void com.gincz.telegrambot.service.NotificationListener$1.<init>(int,float,boolean):23:23 -> <clinit>
+    8:10:void <clinit>():23 -> <clinit>
+    11:13:void <clinit>():23:23 -> <clinit>
+    1:4:void <init>():19:19 -> <init>
+    1:3:void onListenerConnected():127:127 -> onListenerConnected
+    4:11:void onListenerConnected():128:128 -> onListenerConnected
+    1:3:void onListenerDisconnected():133:133 -> onListenerDisconnected
+    4:11:void onListenerDisconnected():134:134 -> onListenerDisconnected
+    4:7:void onNotificationPosted(android.service.notification.StatusBarNotification):34:34 -> onNotificationPosted
+    8:9:boolean com.gincz.telegrambot.data.ConfigManager.isServiceActive():110:110 -> onNotificationPosted
+    8:9:void onNotificationPosted(android.service.notification.StatusBarNotification):35 -> onNotificationPosted
+    10:14:boolean com.gincz.telegrambot.data.ConfigManager.isServiceActive():110:110 -> onNotificationPosted
+    10:14:void onNotificationPosted(android.service.notification.StatusBarNotification):35 -> onNotificationPosted
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    15:21:boolean com.gincz.telegrambot.data.ConfigManager.isServiceActive():110:110 -> onNotificationPosted
+    15:21:void onNotificationPosted(android.service.notification.StatusBarNotification):35 -> onNotificationPosted
+    22:27:void onNotificationPosted(android.service.notification.StatusBarNotification):37:37 -> onNotificationPosted
+    28:39:void onNotificationPosted(android.service.notification.StatusBarNotification):38:38 -> onNotificationPosted
+    40:50:boolean com.gincz.telegrambot.data.ConfigManager.isPackageWhitelisted(java.lang.String):142:142 -> onNotificationPosted
+    40:50:void onNotificationPosted(android.service.notification.StatusBarNotification):44 -> onNotificationPosted
+    51:57:void onNotificationPosted(android.service.notification.StatusBarNotification):48:48 -> onNotificationPosted
+    58:69:void onNotificationPosted(android.service.notification.StatusBarNotification):52:52 -> onNotificationPosted
+    70:74:void onNotificationPosted(android.service.notification.StatusBarNotification):57:57 -> onNotificationPosted
+    75:80:void onNotificationPosted(android.service.notification.StatusBarNotification):60:60 -> onNotificationPosted
+    81:86:void onNotificationPosted(android.service.notification.StatusBarNotification):61:61 -> onNotificationPosted
+    87:94:void onNotificationPosted(android.service.notification.StatusBarNotification):62:62 -> onNotificationPosted
+    95:107:void onNotificationPosted(android.service.notification.StatusBarNotification):64:64 -> onNotificationPosted
+    108:125:void onNotificationPosted(android.service.notification.StatusBarNotification):65:65 -> onNotificationPosted
+    126:138:void onNotificationPosted(android.service.notification.StatusBarNotification):67:67 -> onNotificationPosted
+    139:166:void onNotificationPosted(android.service.notification.StatusBarNotification):72:72 -> onNotificationPosted
+    167:170:void onNotificationPosted(android.service.notification.StatusBarNotification):73:73 -> onNotificationPosted
+    171:173:void onNotificationPosted(android.service.notification.StatusBarNotification):74:74 -> onNotificationPosted
+    174:181:void onNotificationPosted(android.service.notification.StatusBarNotification):76:76 -> onNotificationPosted
+    182:189:void onNotificationPosted(android.service.notification.StatusBarNotification):77:77 -> onNotificationPosted
+    190:195:void onNotificationPosted(android.service.notification.StatusBarNotification):78:78 -> onNotificationPosted
+    196:211:void onNotificationPosted(android.service.notification.StatusBarNotification):79:79 -> onNotificationPosted
+    212:218:void onNotificationPosted(android.service.notification.StatusBarNotification):80:80 -> onNotificationPosted
+    219:228:void onNotificationPosted(android.service.notification.StatusBarNotification):84:84 -> onNotificationPosted
+    229:238:void onNotificationPosted(android.service.notification.StatusBarNotification):85:85 -> onNotificationPosted
+    239:265:void onNotificationPosted(android.service.notification.StatusBarNotification):86:86 -> onNotificationPosted
+    266:267:void onNotificationPosted(android.service.notification.StatusBarNotification):87:87 -> onNotificationPosted
+    268:274:void onNotificationPosted(android.service.notification.StatusBarNotification):89:89 -> onNotificationPosted
+    275:275:void onNotificationPosted(android.service.notification.StatusBarNotification):90:90 -> onNotificationPosted
+    276:280:void onNotificationPosted(android.service.notification.StatusBarNotification):95:95 -> onNotificationPosted
+    281:284:void onNotificationPosted(android.service.notification.StatusBarNotification):96:96 -> onNotificationPosted
+    285:295:void onNotificationPosted(android.service.notification.StatusBarNotification):97:97 -> onNotificationPosted
+    296:306:void onNotificationPosted(android.service.notification.StatusBarNotification):100:100 -> onNotificationPosted
+    307:329:void onNotificationPosted(android.service.notification.StatusBarNotification):101:101 -> onNotificationPosted
+    330:331:void onNotificationPosted(android.service.notification.StatusBarNotification):104:104 -> onNotificationPosted
+    332:335:void onNotificationPosted(android.service.notification.StatusBarNotification):105:105 -> onNotificationPosted
+    336:343:void onNotificationPosted(android.service.notification.StatusBarNotification):106:106 -> onNotificationPosted
+    344:346:void onNotificationPosted(android.service.notification.StatusBarNotification):107:107 -> onNotificationPosted
+    347:378:void onNotificationPosted(android.service.notification.StatusBarNotification):108:108 -> onNotificationPosted
+    379:380:void onNotificationPosted(android.service.notification.StatusBarNotification):109:109 -> onNotificationPosted
+    381:385:void onNotificationPosted(android.service.notification.StatusBarNotification):112:112 -> onNotificationPosted
+    386:413:void onNotificationPosted(android.service.notification.StatusBarNotification):113:113 -> onNotificationPosted
+    414:419:void onNotificationPosted(android.service.notification.StatusBarNotification):114:114 -> onNotificationPosted
+    420:436:void onNotificationPosted(android.service.notification.StatusBarNotification):115:115 -> onNotificationPosted
+    437:442:void onNotificationPosted(android.service.notification.StatusBarNotification):117:117 -> onNotificationPosted
+    443:454:void onNotificationPosted(android.service.notification.StatusBarNotification):118:118 -> onNotificationPosted
+    455:486:void onNotificationPosted(android.service.notification.StatusBarNotification):121:121 -> onNotificationPosted
+    487:495:void onNotificationPosted(android.service.notification.StatusBarNotification):122:122 -> onNotificationPosted
+    496:498:void onNotificationPosted(android.service.notification.StatusBarNotification):90:90 -> onNotificationPosted
+com.gincz.telegrambot.service.NotificationListener$1 -> d.a:
+# {"id":"sourceFile","fileName":"NotificationListener.java"}
+    1:12:boolean removeEldestEntry(java.util.Map$Entry):26:26 -> removeEldestEntry
+com.gincz.telegrambot.transport.KumaPinger -> e.b:
+# {"id":"sourceFile","fileName":"KumaPinger.java"}
+    java.util.concurrent.ExecutorService EXECUTOR -> a
+    1:7:void <clinit>():20:20 -> <clinit>
+com.gincz.telegrambot.transport.KumaPinger$1 -> e.a:
+# {"id":"sourceFile","fileName":"KumaPinger.java"}
+    android.content.Context val$context -> a
+    com.gincz.telegrambot.transport.KumaPinger$PingCallback val$callback -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"La/c;"}
+    1:8:void <init>(android.content.Context,com.gincz.telegrambot.transport.KumaPinger$PingCallback):27:27 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroid/content/Context;La/c;)V"}
+    1:1:void run():30:30 -> run
+    2:2:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):41:41 -> run
+    2:2:void run():31 -> run
+    3:3:java.lang.String com.gincz.telegrambot.data.ConfigManager.getKumaUrl():62:62 -> run
+    3:3:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):42 -> run
+    3:3:void run():31 -> run
+    4:4:java.lang.String com.gincz.telegrambot.data.ConfigManager.getKumaUrl():62:62 -> run
+    4:4:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):42 -> run
+    4:4:void run():31 -> run
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(2)"]}
+    5:5:java.lang.String com.gincz.telegrambot.data.ConfigManager.getKumaUrl():62:62 -> run
+    5:5:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):42 -> run
+    5:5:void run():31 -> run
+    6:6:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):43:43 -> run
+    6:6:void run():31 -> run
+    7:8:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):48:49 -> run
+    7:8:void run():31 -> run
+    9:10:int com.gincz.telegrambot.transport.KumaPinger.getBatteryPercentage(android.content.Context):97:98 -> run
+    9:10:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):54 -> run
+    9:10:void run():31 -> run
+    11:12:int com.gincz.telegrambot.transport.KumaPinger.getBatteryPercentage(android.content.Context):100:101 -> run
+    11:12:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):54 -> run
+    11:12:void run():31 -> run
+    13:14:java.lang.String com.gincz.telegrambot.transport.KumaPinger.getChargingStatus(android.content.Context):112:113 -> run
+    13:14:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):55 -> run
+    13:14:void run():31 -> run
+    15:15:java.lang.String com.gincz.telegrambot.transport.KumaPinger.getChargingStatus(android.content.Context):115:115 -> run
+    15:15:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):55 -> run
+    15:15:void run():31 -> run
+    16:19:java.lang.String com.gincz.telegrambot.transport.KumaPinger.getChargingStatus(android.content.Context):119:122 -> run
+    16:19:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):55 -> run
+    16:19:void run():31 -> run
+    20:20:java.lang.String com.gincz.telegrambot.transport.KumaPinger.getChargingStatus(android.content.Context):126:126 -> run
+    20:20:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):55 -> run
+    20:20:void run():31 -> run
+    21:23:java.lang.String com.gincz.telegrambot.transport.KumaPinger.getWifiDetails(android.content.Context):131:133 -> run
+    21:23:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):56 -> run
+    21:23:void run():31 -> run
+    24:26:java.lang.String com.gincz.telegrambot.transport.KumaPinger.getWifiDetails(android.content.Context):135:137 -> run
+    24:26:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):56 -> run
+    24:26:void run():31 -> run
+    27:28:java.lang.String com.gincz.telegrambot.transport.KumaPinger.getWifiDetails(android.content.Context):139:140 -> run
+    27:28:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):56 -> run
+    27:28:void run():31 -> run
+    29:29:java.lang.String com.gincz.telegrambot.transport.KumaPinger.getWifiDetails(android.content.Context):144:144 -> run
+    29:29:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):56 -> run
+    29:29:void run():31 -> run
+    30:30:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):57:57 -> run
+    30:30:void run():31 -> run
+    31:31:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):59:59 -> run
+    31:31:void run():31 -> run
+    32:34:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):63:65 -> run
+    32:34:void run():31 -> run
+    35:35:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):67:67 -> run
+    35:35:void run():31 -> run
+    36:40:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):71:75 -> run
+    36:40:void run():31 -> run
+    41:43:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):77:79 -> run
+    41:43:void run():31 -> run
+    44:44:void com.gincz.telegrambot.transport.TelegramClient.flushQueueAsync(android.content.Context):144:144 -> run
+    44:44:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):82 -> run
+    44:44:void run():31 -> run
+    45:45:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):90:90 -> run
+    45:45:void run():31 -> run
+    46:46:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):86:86 -> run
+    46:46:void run():31 -> run
+    47:47:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):90:90 -> run
+    47:47:void run():31 -> run
+    48:48:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):92:92 -> run
+    48:48:void run():31 -> run
+    49:49:boolean com.gincz.telegrambot.transport.KumaPinger.pingSync(android.content.Context):44:44 -> run
+    49:49:void run():31 -> run
+    50:52:void run():32:34 -> run
+    53:53:void com.gincz.telegrambot.MainActivity$11.onResult(boolean,java.lang.String):339:339 -> run
+    53:53:void run():34 -> run
+com.gincz.telegrambot.transport.TelegramClient -> e.e:
+# {"id":"sourceFile","fileName":"TelegramClient.java"}
+    java.util.concurrent.ExecutorService EXECUTOR -> a
+    1:7:void <clinit>():22:22 -> <clinit>
+    3:5:java.lang.String escapeHtml(java.lang.String):175:175 -> a
+    6:17:java.lang.String escapeHtml(java.lang.String):176:176 -> a
+    18:25:java.lang.String escapeHtml(java.lang.String):177:177 -> a
+    26:30:java.lang.String escapeHtml(java.lang.String):178:178 -> a
+    1:11:boolean isNetworkAvailable(android.content.Context):29:29 -> b
+    12:17:boolean isNetworkAvailable(android.content.Context):31:31 -> b
+    18:25:boolean isNetworkAvailable(android.content.Context):32:32 -> b
+    1:11:void sendAsync(android.content.Context,java.lang.String,boolean,com.gincz.telegrambot.transport.TelegramClient$SendCallback):38:38 -> c
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroid/content/Context;Ljava/lang/String;ZLa/c;)V"}
+    12:25:void sendAsync(android.content.Context,java.lang.String,boolean,com.gincz.telegrambot.transport.TelegramClient$SendCallback):40:40 -> c
+    26:28:void sendAsync(android.content.Context,java.lang.String,boolean,com.gincz.telegrambot.transport.TelegramClient$SendCallback):43:43 -> c
+    29:44:void sendAsync(android.content.Context,java.lang.String,boolean,com.gincz.telegrambot.transport.TelegramClient$SendCallback):47:47 -> c
+    1:1:boolean sendSync(android.content.Context,java.lang.String,boolean):67:67 -> d
+    2:2:java.lang.String com.gincz.telegrambot.data.ConfigManager.getBotToken():38:38 -> d
+    2:2:boolean sendSync(android.content.Context,java.lang.String,boolean):68 -> d
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    3:3:java.lang.String com.gincz.telegrambot.data.ConfigManager.getBotToken():38:38 -> d
+    3:3:boolean sendSync(android.content.Context,java.lang.String,boolean):68 -> d
+    4:4:java.lang.String com.gincz.telegrambot.data.ConfigManager.getChatId():46:46 -> d
+    4:4:boolean sendSync(android.content.Context,java.lang.String,boolean):69 -> d
+    5:5:boolean sendSync(android.content.Context,java.lang.String,boolean):71:71 -> d
+    6:7:boolean sendSync(android.content.Context,java.lang.String,boolean):79:80 -> d
+    8:8:boolean sendSync(android.content.Context,java.lang.String,boolean):82:82 -> d
+    9:15:boolean sendSync(android.content.Context,java.lang.String,boolean):89:95 -> d
+    16:16:boolean sendSync(android.content.Context,java.lang.String,boolean):97:97 -> d
+    17:17:boolean sendSync(android.content.Context,java.lang.String,boolean):100:100 -> d
+    18:19:boolean sendSync(android.content.Context,java.lang.String,boolean):102:103 -> d
+    20:23:boolean sendSync(android.content.Context,java.lang.String,boolean):105:108 -> d
+    24:24:boolean sendSync(android.content.Context,java.lang.String,boolean):110:110 -> d
+    25:25:boolean sendSync(android.content.Context,java.lang.String,boolean):112:112 -> d
+    26:26:void flushQueueAsync(android.content.Context):144:144 -> d
+    26:26:boolean sendSync(android.content.Context,java.lang.String,boolean):114 -> d
+    27:27:boolean sendSync(android.content.Context,java.lang.String,boolean):138:138 -> d
+    28:29:boolean sendSync(android.content.Context,java.lang.String,boolean):117:118 -> d
+    30:31:boolean sendSync(android.content.Context,java.lang.String,boolean):120:121 -> d
+    32:33:boolean sendSync(android.content.Context,java.lang.String,boolean):123:124 -> d
+    34:34:boolean sendSync(android.content.Context,java.lang.String,boolean):126:126 -> d
+    35:35:boolean sendSync(android.content.Context,java.lang.String,boolean):138:138 -> d
+    36:36:boolean sendSync(android.content.Context,java.lang.String,boolean):131:131 -> d
+    37:37:boolean sendSync(android.content.Context,java.lang.String,boolean):133:133 -> d
+    38:38:boolean sendSync(android.content.Context,java.lang.String,boolean):138:138 -> d
+    39:39:boolean sendSync(android.content.Context,java.lang.String,boolean):140:140 -> d
+    40:40:boolean sendSync(android.content.Context,java.lang.String,boolean):72:72 -> d
+    41:41:boolean sendSync(android.content.Context,java.lang.String,boolean):74:74 -> d
+com.gincz.telegrambot.transport.TelegramClient$1 -> e.c:
+# {"id":"sourceFile","fileName":"TelegramClient.java"}
+    android.content.Context val$context -> a
+    java.lang.String val$htmlMessage -> b
+    boolean val$canEnqueue -> c
+    com.gincz.telegrambot.transport.TelegramClient$SendCallback val$callback -> d
+      # {"id":"com.android.tools.r8.residualsignature","signature":"La/c;"}
+    android.os.PowerManager$WakeLock val$wakeLock -> e
+    1:1:void <init>(android.content.Context,java.lang.String,boolean,com.gincz.telegrambot.transport.TelegramClient$SendCallback,android.os.PowerManager$WakeLock):47:47 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroid/content/Context;Ljava/lang/String;ZLa/c;Landroid/os/PowerManager$WakeLock;)V"}
+    1:12:void run():51:51 -> run
+    13:20:void run():52:52 -> run
+    21:22:void run():53:53 -> run
+    23:40:void com.gincz.telegrambot.MainActivity$10.onResult(boolean,java.lang.String):319:319 -> run
+    23:40:void run():53 -> run
+    41:46:void run():56:56 -> run
+    47:52:void run():58:58 -> run
+    53:58:void run():56:56 -> run
+    59:61:void run():58:58 -> run
+    62:62:void run():61:61 -> run
+com.gincz.telegrambot.transport.TelegramClient$2 -> e.d:
+# {"id":"sourceFile","fileName":"TelegramClient.java"}
+    android.content.Context val$context -> a
+    1:6:void <init>(android.content.Context):144:144 -> <init>
+    1:2:void run():147:147 -> run
+    3:10:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):153:153 -> run
+    3:10:void run():147 -> run
+    11:14:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):154:154 -> run
+    11:14:void run():147 -> run
+    15:22:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):155:155 -> run
+    15:22:void run():147 -> run
+    23:46:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):158:158 -> run
+    23:46:void run():147 -> run
+    47:47:java.util.List com.gincz.telegrambot.data.OfflineQueue.peekAll(int):0:0 -> run
+    47:47:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):159 -> run
+    47:47:void run():147 -> run
+    48:52:java.util.List com.gincz.telegrambot.data.OfflineQueue.peekAll(int):69:69 -> run
+    48:52:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):159 -> run
+    48:52:void run():147 -> run
+    53:56:java.util.List com.gincz.telegrambot.data.OfflineQueue.peekAll(int):70:70 -> run
+    53:56:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):159 -> run
+    53:56:void run():147 -> run
+    57:72:java.util.List com.gincz.telegrambot.data.OfflineQueue.peekAll(int):71:71 -> run
+    57:72:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):159 -> run
+    57:72:void run():147 -> run
+    73:80:java.util.List com.gincz.telegrambot.data.OfflineQueue.peekAll(int):75:75 -> run
+    73:80:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):159 -> run
+    73:80:void run():147 -> run
+    81:87:java.util.List com.gincz.telegrambot.data.OfflineQueue.peekAll(int):71:71 -> run
+    81:87:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):159 -> run
+    81:87:void run():147 -> run
+    88:93:java.util.List com.gincz.telegrambot.data.OfflineQueue.peekAll(int):78:78 -> run
+    88:93:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):159 -> run
+    88:93:void run():147 -> run
+    94:98:java.util.List com.gincz.telegrambot.data.OfflineQueue.peekAll(int):79:79 -> run
+    94:98:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):159 -> run
+    94:98:void run():147 -> run
+    99:103:java.util.List com.gincz.telegrambot.data.OfflineQueue.peekAll(int):80:80 -> run
+    99:103:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):159 -> run
+    99:103:void run():147 -> run
+    104:106:java.util.List com.gincz.telegrambot.data.OfflineQueue.peekAll(int):81:81 -> run
+    104:106:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):159 -> run
+    104:106:void run():147 -> run
+    107:117:java.util.List com.gincz.telegrambot.data.OfflineQueue.peekAll(int):82:82 -> run
+    107:117:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):159 -> run
+    107:117:void run():147 -> run
+    118:120:java.util.List com.gincz.telegrambot.data.OfflineQueue.peekAll(int):84:84 -> run
+    118:120:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):159 -> run
+    118:120:void run():147 -> run
+    121:121:java.util.List com.gincz.telegrambot.data.OfflineQueue.peekAll(int):86:86 -> run
+    121:121:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):159 -> run
+    121:121:void run():147 -> run
+    122:137:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):160:160 -> run
+    122:137:void run():147 -> run
+    138:145:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):161:161 -> run
+    138:145:void run():147 -> run
+    146:152:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):163:163 -> run
+    146:152:void run():147 -> run
+    153:158:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):169:169 -> run
+    153:158:void run():147 -> run
+    159:185:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):165:165 -> run
+    159:185:void run():147 -> run
+    186:187:java.util.List com.gincz.telegrambot.data.OfflineQueue.peekAll(int):86:86 -> run
+    186:187:void com.gincz.telegrambot.transport.TelegramClient.flushQueueSync(android.content.Context):159 -> run
+    186:187:void run():147 -> run
+com.gincz.telegrambot.util.GenericFileProvider -> com.gincz.telegrambot.util.GenericFileProvider:
+# {"id":"sourceFile","fileName":"GenericFileProvider.java"}
+    1:4:void <init>():19:19 -> <init>
+    1:3:java.lang.String getType(android.net.Uri):67:67 -> getType
+    1:4:java.io.File getUpdateFile(android.content.Context,java.lang.String):37:37 -> getUpdateFile
+    5:8:java.io.File getUpdateFile(android.content.Context,java.lang.String):38:38 -> getUpdateFile
+    9:18:java.io.File getUpdateFile(android.content.Context,java.lang.String):39:39 -> getUpdateFile
+    19:25:java.io.File getUpdateFile(android.content.Context,java.lang.String):40:40 -> getUpdateFile
+    26:40:java.io.File getUpdateFile(android.content.Context,java.lang.String):44:44 -> getUpdateFile
+    1:6:android.net.Uri getUriForFile(android.content.Context,java.io.File):24:24 -> getUriForFile
+    7:41:android.net.Uri getUriForFile(android.content.Context,java.io.File):25:25 -> getUriForFile
+    42:46:android.net.Uri getUriForFile(android.content.Context,java.io.File):27:27 -> getUriForFile
+    1:6:android.os.ParcelFileDescriptor openFile(android.net.Uri,java.lang.String):49:49 -> openFile
+    7:12:android.os.ParcelFileDescriptor openFile(android.net.Uri,java.lang.String):53:53 -> openFile
+    13:16:android.os.ParcelFileDescriptor openFile(android.net.Uri,java.lang.String):58:58 -> openFile
+    17:24:android.os.ParcelFileDescriptor openFile(android.net.Uri,java.lang.String):59:59 -> openFile
+    25:29:android.os.ParcelFileDescriptor openFile(android.net.Uri,java.lang.String):62:62 -> openFile
+    30:53:android.os.ParcelFileDescriptor openFile(android.net.Uri,java.lang.String):60:60 -> openFile
+    54:73:android.os.ParcelFileDescriptor openFile(android.net.Uri,java.lang.String):55:55 -> openFile
+    74:81:android.os.ParcelFileDescriptor openFile(android.net.Uri,java.lang.String):51:51 -> openFile
+    1:1:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):72:72 -> query
+    2:2:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):74:74 -> query
+    3:4:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):77:78 -> query
+    5:5:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):80:80 -> query
+    6:12:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):84:90 -> query
+    13:13:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):92:92 -> query
+com.gincz.telegrambot.util.UpdateManager -> com.gincz.telegrambot.util.UpdateManager:
+# {"id":"sourceFile","fileName":"UpdateManager.java"}
+    1:11:void <clinit>():39:39 -> <clinit>
+    1:4:void <init>():35:35 -> <init>
+    1:1:com.gincz.telegrambot.util.UpdateManager$UpdateInfo -$$Nest$smfetchManifest():0:0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:void -$$Nest$smshowUpdateDialog(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):0:0 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:void -$$Nest$smstartDownloadAndInstall(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):0:0 -> c
+      # {"id":"com.android.tools.r8.synthesized"}
+    3:12:void checkForUpdates(android.app.Activity,boolean):60:60 -> checkForUpdates
+    13:21:void checkForUpdates(android.app.Activity,boolean):63:63 -> checkForUpdates
+    22:31:void checkForUpdates(android.app.Activity,boolean):65:65 -> checkForUpdates
+    32:35:void checkForUpdates(android.app.Activity,boolean):97:97 -> checkForUpdates
+    1:8:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():101:101 -> fetchManifest
+    9:18:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():103:103 -> fetchManifest
+    19:34:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():106:106 -> fetchManifest
+    35:62:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():107:107 -> fetchManifest
+    63:70:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():108:108 -> fetchManifest
+    71:73:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():109:109 -> fetchManifest
+    74:76:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():110:110 -> fetchManifest
+    77:79:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():111:111 -> fetchManifest
+    80:86:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():112:112 -> fetchManifest
+    87:94:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():113:113 -> fetchManifest
+    95:97:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():114:114 -> fetchManifest
+    98:109:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():116:116 -> fetchManifest
+    110:123:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():118:118 -> fetchManifest
+    124:128:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():119:119 -> fetchManifest
+    129:134:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():121:121 -> fetchManifest
+    135:147:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():122:122 -> fetchManifest
+    148:150:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():124:124 -> fetchManifest
+    151:159:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():126:126 -> fetchManifest
+    160:165:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():127:127 -> fetchManifest
+    166:188:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():128:128 -> fetchManifest
+    189:194:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():129:129 -> fetchManifest
+    195:202:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():130:130 -> fetchManifest
+    203:208:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():132:132 -> fetchManifest
+    209:213:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():133:133 -> fetchManifest
+    214:221:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():140:140 -> fetchManifest
+    222:257:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():137:137 -> fetchManifest
+    258:269:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():140:140 -> fetchManifest
+    270:271:com.gincz.telegrambot.util.UpdateManager$UpdateInfo fetchManifest():142:142 -> fetchManifest
+    1:13:long getCurrentVersionCode(android.content.Context):308:308 -> getCurrentVersionCode
+    14:19:long getCurrentVersionCode(android.content.Context):309:309 -> getCurrentVersionCode
+    20:24:long getCurrentVersionCode(android.content.Context):310:310 -> getCurrentVersionCode
+    25:31:long getCurrentVersionCode(android.content.Context):312:312 -> getCurrentVersionCode
+    1:15:java.lang.String getCurrentVersionName(android.content.Context):321:321 -> getCurrentVersionName
+    16:21:java.lang.String getCurrentVersionName(android.content.Context):322:322 -> getCurrentVersionName
+    1:9:void installApk(android.app.Activity,java.io.File):277:277 -> installApk
+    10:19:void installApk(android.app.Activity,java.io.File):278:278 -> installApk
+    20:28:void installApk(android.app.Activity,java.io.File):279:279 -> installApk
+    29:46:void installApk(android.app.Activity,java.io.File):280:280 -> installApk
+    47:49:void installApk(android.app.Activity,java.io.File):281:281 -> installApk
+    50:62:void installApk(android.app.Activity,java.io.File):282:282 -> installApk
+    63:65:void installApk(android.app.Activity,java.io.File):287:287 -> installApk
+    66:71:void installApk(android.app.Activity,java.io.File):288:288 -> installApk
+    72:74:void installApk(android.app.Activity,java.io.File):290:290 -> installApk
+    75:77:void installApk(android.app.Activity,java.io.File):291:291 -> installApk
+    78:81:void installApk(android.app.Activity,java.io.File):294:294 -> installApk
+    82:88:void installApk(android.app.Activity,java.io.File):295:295 -> installApk
+    89:93:void installApk(android.app.Activity,java.io.File):296:296 -> installApk
+    94:98:void installApk(android.app.Activity,java.io.File):297:297 -> installApk
+    99:101:void installApk(android.app.Activity,java.io.File):298:298 -> installApk
+    102:105:void installApk(android.app.Activity,java.io.File):299:299 -> installApk
+    106:112:void installApk(android.app.Activity,java.io.File):301:301 -> installApk
+    113:138:void installApk(android.app.Activity,java.io.File):302:302 -> installApk
+    1:5:void showUpdateDialog(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):148:148 -> showUpdateDialog
+    6:24:void showUpdateDialog(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):149:149 -> showUpdateDialog
+    25:38:void showUpdateDialog(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):151:151 -> showUpdateDialog
+    39:58:void showUpdateDialog(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):152:152 -> showUpdateDialog
+    59:79:void showUpdateDialog(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):153:153 -> showUpdateDialog
+    80:82:void showUpdateDialog(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):155:155 -> showUpdateDialog
+    83:92:void showUpdateDialog(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):156:156 -> showUpdateDialog
+    93:99:void showUpdateDialog(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):162:162 -> showUpdateDialog
+    100:102:void showUpdateDialog(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):163:163 -> showUpdateDialog
+    103:106:void showUpdateDialog(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):164:164 -> showUpdateDialog
+    1:5:void startDownloadAndInstall(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):168:168 -> startDownloadAndInstall
+    6:10:void startDownloadAndInstall(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):169:169 -> startDownloadAndInstall
+    11:35:void startDownloadAndInstall(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):170:170 -> startDownloadAndInstall
+    36:40:void startDownloadAndInstall(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):171:171 -> startDownloadAndInstall
+    41:44:void startDownloadAndInstall(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):172:172 -> startDownloadAndInstall
+    45:47:void startDownloadAndInstall(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):173:173 -> startDownloadAndInstall
+    48:50:void startDownloadAndInstall(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):174:174 -> startDownloadAndInstall
+    51:53:void startDownloadAndInstall(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):175:175 -> startDownloadAndInstall
+    54:62:void startDownloadAndInstall(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):177:177 -> startDownloadAndInstall
+    63:72:void startDownloadAndInstall(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):179:179 -> startDownloadAndInstall
+    73:76:void startDownloadAndInstall(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):272:272 -> startDownloadAndInstall
+com.gincz.telegrambot.util.UpdateManager$$ExternalSyntheticApiModelOutline0 -> com.gincz.telegrambot.util.a:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    1:1:long m(android.content.pm.PackageInfo):0:0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+com.gincz.telegrambot.util.UpdateManager$$ExternalSyntheticApiModelOutline1 -> com.gincz.telegrambot.util.b:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    1:1:boolean m(android.content.pm.PackageManager):0:0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+com.gincz.telegrambot.util.UpdateManager$1 -> com.gincz.telegrambot.util.UpdateManager$1:
+# {"id":"sourceFile","fileName":"UpdateManager.java"}
+    1:10:void <init>(android.os.Handler,android.app.Activity,boolean):65:65 -> <init>
+    1:4:void run():68:68 -> run
+    5:15:void run():70:70 -> run
+com.gincz.telegrambot.util.UpdateManager$1$1 -> com.gincz.telegrambot.util.UpdateManager$1$1:
+# {"id":"sourceFile","fileName":"UpdateManager.java"}
+    1:8:void <init>(com.gincz.telegrambot.util.UpdateManager$1,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):70:70 -> <init>
+    1:13:void run():73:73 -> run
+    14:17:void run():77:77 -> run
+    18:23:void run():78:78 -> run
+    24:36:void run():79:79 -> run
+    37:44:void run():84:84 -> run
+    45:52:void run():85:85 -> run
+    53:61:void run():87:87 -> run
+    62:69:void run():88:88 -> run
+    70:75:void run():90:90 -> run
+    76:105:void run():91:91 -> run
+com.gincz.telegrambot.util.UpdateManager$2 -> com.gincz.telegrambot.util.UpdateManager$2:
+# {"id":"sourceFile","fileName":"UpdateManager.java"}
+    1:8:void <init>(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo):156:156 -> <init>
+    1:8:void onClick(android.content.DialogInterface,int):159:159 -> onClick
+com.gincz.telegrambot.util.UpdateManager$3 -> com.gincz.telegrambot.util.UpdateManager$3:
+# {"id":"sourceFile","fileName":"UpdateManager.java"}
+    1:12:void <init>(android.app.Activity,com.gincz.telegrambot.util.UpdateManager$UpdateInfo,android.os.Handler,android.app.ProgressDialog):179:179 -> <init>
+    1:1:void run():182:182 -> run
+    2:5:void run():190:193 -> run
+    6:7:void run():195:196 -> run
+    8:10:void run():198:200 -> run
+    11:17:void run():203:209 -> run
+    18:18:void run():211:211 -> run
+    19:21:void run():216:218 -> run
+    22:22:void run():220:220 -> run
+    23:24:void run():224:225 -> run
+    25:26:void run():228:229 -> run
+    27:28:void run():239:240 -> run
+    29:29:void run():242:242 -> run
+    30:32:void run():248:250 -> run
+    33:33:void run():213:213 -> run
+    34:35:void run():245:246 -> run
+    36:38:void run():248:250 -> run
+    39:39:void run():257:257 -> run
+    40:43:void run():248:251 -> run
+com.gincz.telegrambot.util.UpdateManager$3$1 -> com.gincz.telegrambot.util.UpdateManager$3$1:
+# {"id":"sourceFile","fileName":"UpdateManager.java"}
+    1:8:void <init>(com.gincz.telegrambot.util.UpdateManager$3,int):229:229 -> <init>
+    1:10:void run():232:232 -> run
+    11:20:void run():233:233 -> run
+com.gincz.telegrambot.util.UpdateManager$3$2 -> com.gincz.telegrambot.util.UpdateManager$3$2:
+# {"id":"sourceFile","fileName":"UpdateManager.java"}
+    1:12:void <init>(com.gincz.telegrambot.util.UpdateManager$3,boolean,java.io.File,java.lang.String):257:257 -> <init>
+    1:10:void run():260:260 -> run
+    11:17:void run():261:261 -> run
+    18:31:void run():264:264 -> run
+    32:41:void run():265:265 -> run
+    42:75:void run():267:267 -> run
+com.gincz.telegrambot.util.UpdateManager$UpdateInfo -> com.gincz.telegrambot.util.UpdateManager$UpdateInfo:
+# {"id":"sourceFile","fileName":"UpdateManager.java"}
+    1:3:void <init>(int,java.lang.String,java.lang.String,java.lang.String):50:50 -> <init>
+    4:5:void <init>(int,java.lang.String,java.lang.String,java.lang.String):51:51 -> <init>
+    6:7:void <init>(int,java.lang.String,java.lang.String,java.lang.String):52:52 -> <init>
+    8:9:void <init>(int,java.lang.String,java.lang.String,java.lang.String):53:53 -> <init>
+    10:12:void <init>(int,java.lang.String,java.lang.String,java.lang.String):54:54 -> <init>

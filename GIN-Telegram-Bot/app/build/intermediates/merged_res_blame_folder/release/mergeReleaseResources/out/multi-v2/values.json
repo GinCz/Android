@@ -1,0 +1,62 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.gincz.telegrambot.app-mergeReleaseResources-2:/values/values.xml",
+            "map": [
+                {
+                    "source": "/root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "4,5,13,2,3,12,10,11,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "144,185,553,55,97,507,415,462,230,272,319,366",
+                        "endColumns": "40,44,41,41,46,45,46,44,41,46,46,48",
+                        "endOffsets": "180,225,590,92,139,548,457,502,267,314,361,410"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,96,141,183,225,272,318,365,410,452,499,546",
+                        "endColumns": "40,44,41,41,46,45,46,44,41,46,46,48",
+                        "endOffsets": "91,136,178,220,267,313,360,405,447,494,541,590"
+                    }
+                },
+                {
+                    "source": "/root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "2,4,15,12,14,13,16,5,6,19,7,18,17,3,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,168,1013,824,946,884,1087,255,330,1328,400,1245,1163,109,494,565,657,732",
+                        "endColumns": "53,86,73,59,66,61,75,74,69,63,93,82,81,58,70,91,74,91",
+                        "endOffsets": "104,250,1082,879,1008,941,1158,325,395,1387,489,1323,1240,163,560,652,727,819"
+                    },
+                    "to": {
+                        "startLines": "14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "595,649,736,810,870,937,999,1075,1150,1220,1284,1378,1461,1543,1602,1673,1765,1840",
+                        "endColumns": "53,86,73,59,66,61,75,74,69,63,93,82,81,58,70,91,74,91",
+                        "endOffsets": "644,731,805,865,932,994,1070,1145,1215,1279,1373,1456,1538,1597,1668,1760,1835,1927"
+                    }
+                },
+                {
+                    "source": "/root/.AI/github/Android/GIN-Telegram-Bot/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "7",
+                        "endColumns": "12",
+                        "endOffsets": "400"
+                    },
+                    "to": {
+                        "startLines": "32",
+                        "startColumns": "4",
+                        "startOffsets": "1932",
+                        "endLines": "37",
+                        "endColumns": "12",
+                        "endOffsets": "2277"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -9,9 +9,9 @@ android {
     defaultConfig {
         applicationId = "com.gincz.telegrambot"
         minSdk = 21
-        targetSdk = 35
-        versionCode = 5
-        versionName = "v005"
+        targetSdk = 33
+        versionCode = 6
+        versionName = "v006"
     }
 
     signingConfigs {
@@ -22,7 +22,16 @@ android {
                 storePassword = "android"
                 keyAlias = "androiddebugkey"
                 keyPassword = "android"
+                enableV1Signing = true
+                enableV2Signing = true
             }
+        }
+    }
+
+    packaging {
+        resources {
+            excludes += "/META-INF/version-control-info.textproto"
+            excludes += "/META-INF/com/android/build/gradle/app-metadata.properties"
         }
     }
 

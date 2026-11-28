@@ -1,0 +1,4 @@
+#Sat Nov 28 13:39:54 CET 2026
+base.0=/root/.AI/github/Android/GIN-Telegram-Bot/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

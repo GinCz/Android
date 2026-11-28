@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-xhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-xxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/layout_item_app_whitelist.xml.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/layout/item_app_whitelist.xml"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-xxxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/layout_activity_main.xml.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.gincz.telegrambot.app-release-5:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.gincz.telegrambot.app-main-6:/mipmap-xxxhdpi/ic_launcher_round.png"
+    }
+]
