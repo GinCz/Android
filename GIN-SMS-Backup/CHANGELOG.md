@@ -1,14 +1,37 @@
-﻿# 📝 Changelog — GIN-SMS-Backup
+# 📝 История изменений (CHANGELOG) — GIN-SMS-Backup
 
-All notable changes to this project will be documented in this file.
+Все изменения проекта документируются в данном файле.
+
+---
+
+## [v002] — 2026-11-28
+### Исправлено и Улучшено
+- **Принудительное предпочтение IPv4 (Fix IPv6 Blackhole):** В `ImapTlsClient` внедрен фильтр `Inet4Address` при разрешении хоста `imap.gmail.com` и таймаут соединения 10 секунд на `Socket.connect()`. Устранено зависание на 90 секунд при попытке подключения по IPv6 в сетях с немаршрутизируемым IPv6 префиксом.
+- **Непрерывный цикл откачки очереди (`while (true)`):** В `ImapSyncService` обработка очереди переведена на непрерывный цикл вычитки пачек по 50 сообщений. Любые новые SMS, поступившие во время активной сессии отправки, больше не застревают в статусе `PENDING`.
+- **Защита потока отправки Telegram:** В `GIN-Telegram-Bot` метод `TelegramClient.sendAsync` теперь удерживает собственный `WakeLock` на время выполнения фонового запроса, предотвращая сброс соединения при выходе из `onReceive()`.
+
+---
+
+## [v001] — 2026-11-28
+### Добавлено
+- Полная реализация легковесного Android-приложения `GIN-SMS-Backup` для надежного архивирования SMS в Google Почту (Gmail).
+- Размер скомпилированного и подписанного APK — **всего 61 КБ** (чистый Android SDK, 0 внешних тяжелых зависимостей и библиотек Google Play Services).
+- Модуль локальной транзакционной очереди SQLite `sms_queue.db` с индексами статусов и времени.
+- Перехватчик `SmsReceiver` с объединением многосегментных SMS, извлечением слота SIM 1 / SIM 2 и немедленной записью в SQLite.
+- Приемники жизненного цикла `BootReceiver` (автозапуск после перезагрузки) и `NetworkReceiver` (пробуждение при появлении сети).
+- Нативный TLS-клиент `ImapTlsClient` на базе чистого Java `SSLSocketFactory` для Gmail IMAP (`imap.gmail.com:993`) с командами `LOGIN`, `SELECT`, `CREATE`, `APPEND`, `LOGOUT`.
+- Генератор писем `MimeMessageBuilder` по стандартам RFC 2822 и RFC 2047 (Base64 UTF-8 темы), совместимый с цепочками диалогов Gmail и заголовками `X-smssync-*`.
+- Механизм защиты от блокировок Google (`RateLimiter`): принудительная задержка 3.0 секунды между сообщениями, удержание активного сокета для всей пачки, экспоненциальный откат (Backoff) при сбоях сети.
+- Служба `ImapSyncService` (Foreground Service) с тихим уведомлением и защитой процессора от засыпания `WakeLock`.
+- Пользовательский интерфейс `MainActivity` с мониторингом очередей, тестом подключения к Gmail, сбросом ошибок и предустановленными настройками из `PrivateConfig`.
+- Скрипт сборки и публикации `build_apk.sh` с автоматической выкладкой APK в DE-222 Samba (`/storage/user/APK/`) и Облако MEGA (`/MEGA/WIN-FLASH/ANDROID/GIN_APK/`), а также отправкой уведомления в Telegram.
 
 ---
 
 ## [v001-plan] — 2026-11-28
-### Added
-- Initial open-source public specification and architecture design.
-- Direct Gmail IMAP synchronization over native TLS 1.2+ (imap.gmail.com:993).
-- Zero Google Play Services dependencies (eliminating 200+ MB RAM bloat).
-- Anti-flood rate limiting engine with 3-second pacing between APPEND operations.
-- Single TLS session connection reuse for batched message uploads.
-- RFC 2822 email format generator with Dual-SIM slot tagging.
+### Добавлено
+- Создана полная архитектурная спецификация и пошаговый план разработки легковесного Android IMAP-архиватора SMS в Google Почту (`GIN-SMS-Backup`).
+- Спроектирован модуль перехвата входящих SMS (`SmsReceiver`) со склеиванием длинных PDU и распознаванием слотов SIM 1 / SIM 2.
+- Спроектирован нативный TLS-клиент `ImapTlsClient` для прямой записи сообщений в папку `SMS` на `imap.gmail.com:993` без использования сервисов Google Play.
+- Разработана система защиты от блокировок Google (`docs/RATE_LIMITING_ANTI_BLOCK.md`) с принудительными паузами 3 секунды, переиспользованием сессий и экспоненциальным откатом (Exponential Backoff).
+- Описана спецификация почтовых сообщений RFC 2822 для полной совместимости с цепочками диалогов в веб-интерфейсе Gmail.

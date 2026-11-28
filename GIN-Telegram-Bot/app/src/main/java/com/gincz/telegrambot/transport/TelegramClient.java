@@ -35,12 +35,29 @@ public class TelegramClient {
     }
 
     public static void sendAsync(final Context context, final String htmlMessage, final boolean canEnqueue, final SendCallback callback) {
+        android.os.PowerManager pm = (android.os.PowerManager) context.getSystemService(Context.POWER_SERVICE);
+        final android.os.PowerManager.WakeLock wakeLock = (pm != null) ?
+                pm.newWakeLock(android.os.PowerManager.PARTIAL_WAKE_LOCK, "GIN-TelegramBot:SendAsyncWakeLock") : null;
+        if (wakeLock != null) {
+            try {
+                wakeLock.acquire(10000);
+            } catch (Exception ignored) {}
+        }
+
         EXECUTOR.execute(new Runnable() {
             @Override
             public void run() {
-                boolean success = sendSync(context, htmlMessage, canEnqueue);
-                if (callback != null) {
-                    callback.onResult(success, success ? null : "Network error or offline");
+                try {
+                    boolean success = sendSync(context, htmlMessage, canEnqueue);
+                    if (callback != null) {
+                        callback.onResult(success, success ? null : "Network error or offline");
+                    }
+                } finally {
+                    if (wakeLock != null && wakeLock.isHeld()) {
+                        try {
+                            wakeLock.release();
+                        } catch (Exception ignored) {}
+                    }
                 }
             }
         });
